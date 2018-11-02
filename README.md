@@ -5,9 +5,6 @@ This code set accompanies a paper called
 _Hypergraph Type Theory for Specifications-Conformant Code and
 Generalized Lambda Calculus_.
 
-Be sure to clone the repo to a folder called "`cpp`" 
-(do not let git choose the folder name automaticallly).
-
 To build the code, open the projects in Qt Creator and 
 build them in the order listed in "`build-order.txt`".
 
