@@ -33,8 +33,6 @@ DEFINES += USE_RZNS
 DEFINES += USE_QSNS
 
 
-#DEFINES += USING_XPDF
-
 HEADERS += \
   $$SRC_DIR/test-functions.h \
 
@@ -63,7 +61,8 @@ exists($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/kauvir--kauvir-kcm--kcm-lisp-bridge)
 {
  message(DEFINE\'ing USING_ECL)
  include(../../../../find-ecl-sexp.pri)
- LIBS += -L$$ECL_DIR
+ LIBS += -L$$ECL_DIR -lasdf
+ message($$ECL_DIR)
 }
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
