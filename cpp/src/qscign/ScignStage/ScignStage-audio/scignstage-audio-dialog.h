@@ -216,9 +216,19 @@ public:
  ACCESSORS__SET(std::function<void(Phaon_Runner&)>, phr_init_function)
  ACCESSORS__SET(std::function<void()> ,screenshot_function)
 
- // // kai
+ // //  Kernel Application Interface
  void test_msgbox(QString msg);
  void play_sample(int index);
+ Q_INVOKABLE void play_next_sample();
+ Q_INVOKABLE void play_next_sample_in_peer_group();
+ Q_INVOKABLE void play_previous_sample();
+ Q_INVOKABLE void play_previous_sample_in_peer_group();
+ void show_sentence_text(int index);
+ void show_distractor_text(int index);
+ void highlight_sample(int index);
+ void highlight_peers(int index);
+ void test_data_to_text(QString result, int test, int column);
+
 
 Q_SIGNALS:
  void canceled(QDialog*);
