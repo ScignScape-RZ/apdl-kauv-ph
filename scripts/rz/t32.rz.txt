@@ -1,0 +1,1405 @@
+Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t32.rz
+<<node/<root> (&test-0-ss)>>
+
+For connection: run-block-entry
+==== 
+ <block 0:0>
+
+ For connection: run-call-entry
+ ==== 
+  <call 0>
+
+  For connection: run-call-entry
+  ==== 
+   [token= &test...]
+
+   For connection: run-call-sequence
+   ==== 
+    [token= "ab..."]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= "cd"]
+    ....
+   ....
+  ....
+
+  For connection: run-cross-sequence
+  ==== 
+   <call 1>
+
+   For connection: run-call-entry
+   ==== 
+    [token= my]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= ,x2]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= :::]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= str]
+      ....
+     ....
+    ....
+   ....
+
+   For connection: run-cross-sequence
+   ==== 
+    <call 2>
+
+    For connection: run-call-entry
+    ==== 
+     [token= x2]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= \=]
+
+      For connection: run-call-entry
+      ==== 
+       <call 3>
+
+       For connection: run-call-entry
+       ==== 
+        [token= test-...]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= "ab..."]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= "cd"]
+         ....
+        ....
+       ....
+      ....
+
+      For connection: run-call-entry-direct
+      ==== 
+
+      Annotated: 
+ [[<call 3> (test-s-ss)]]
+      ---- 
+       [token= test-...]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= "ab..."]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= "cd"]
+        ....
+       ....
+      ....
+     ....
+    ....
+
+    For connection: run-cross-sequence
+    ==== 
+     <call 4>
+
+     For connection: run-call-entry
+     ==== 
+      [token= &prs]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= x2]
+      ....
+     ....
+
+     For connection: run-cross-sequence
+     ==== 
+      <call 5>
+
+      For connection: run-call-entry
+      ==== 
+       [token= my]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= ,x3]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= :::]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= int]
+         ....
+        ....
+       ....
+      ....
+
+      For connection: run-cross-sequence
+      ==== 
+       <call 6>
+
+       For connection: run-call-entry
+       ==== 
+        [token= x3]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= \=]
+
+         For connection: run-call-entry
+         ==== 
+          <call 7>
+
+          For connection: run-call-entry
+          ==== 
+           [token= test-...]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= "ab..."]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= "cd"]
+            ....
+           ....
+          ....
+         ....
+
+         For connection: run-call-entry-direct
+         ==== 
+
+         Annotated: 
+ [[<call 7> (test-i-ss)]]
+         ---- 
+          [token= test-...]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= "ab..."]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= "cd"]
+           ....
+          ....
+         ....
+        ....
+       ....
+
+       For connection: run-cross-sequence
+       ==== 
+        <call 8>
+
+        For connection: run-call-entry
+        ==== 
+         [token= &prn]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= x3]
+         ....
+        ....
+
+        For connection: run-cross-sequence
+        ==== 
+         <call 9>
+
+         For connection: run-call-entry
+         ==== 
+          [token= &test...]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= "ab..."]
+          ....
+         ....
+
+         For connection: run-cross-sequence
+         ==== 
+          <call 10>
+
+          For connection: run-call-entry
+          ==== 
+           [token= my]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= ,x5]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= :::]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= str]
+             ....
+            ....
+           ....
+          ....
+
+          For connection: run-cross-sequence
+          ==== 
+           <call 11>
+
+           For connection: run-call-entry
+           ==== 
+            [token= x5]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= \=]
+
+             For connection: run-call-entry
+             ==== 
+              <call 12>
+
+              For connection: run-call-entry
+              ==== 
+               [token= test-s-s]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "ab..."]
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+ [[<call 12> (test-s-s)]]
+             ---- 
+              [token= test-s-s]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "ab..."]
+              ....
+             ....
+            ....
+           ....
+
+           For connection: run-cross-sequence
+           ==== 
+            <call 13>
+
+            For connection: run-call-entry
+            ==== 
+             [token= &prs]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= x5]
+             ....
+            ....
+
+            For connection: run-cross-sequence
+            ==== 
+             <call 14>
+
+             For connection: run-call-entry
+             ==== 
+              [token= my]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= ,x6]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= :::]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= int]
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-cross-sequence
+             ==== 
+              <call 15>
+
+              For connection: run-call-entry
+              ==== 
+               [token= x6]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= \=]
+
+                For connection: run-call-entry
+                ==== 
+                 <call 16>
+
+                 For connection: run-call-entry
+                 ==== 
+                  [token= test-i-s]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "ab..."]
+                  ....
+                 ....
+                ....
+
+                For connection: run-call-entry-direct
+                ==== 
+
+                Annotated: 
+ [[<call 16> (test-i-s)]]
+                ---- 
+                 [token= test-i-s]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "ab..."]
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-cross-sequence
+              ==== 
+               <call 17>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &prn]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= x6]
+                ....
+               ....
+
+               For connection: run-cross-sequence
+               ==== 
+                <call 18>
+
+                For connection: run-call-entry
+                ==== 
+                 [token= my]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= ,fnd]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= :::]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= Fn_Doc*]
+                   ....
+                  ....
+                 ....
+                ....
+
+                For connection: run-cross-sequence
+                ==== 
+                 <call 19>
+
+                 For connection: run-call-entry
+                 ==== 
+                  [token= fnd]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= \==]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= default]
+                   ....
+                  ....
+                 ....
+
+                 For connection: run-cross-sequence
+                 ==== 
+                  <call 20>
+
+                  For connection: run-call-entry
+                  ==== 
+                   [token= my]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= ,kenv]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= :::]
+
+                     For connection: run-call-sequence
+                     ==== 
+                      [token= KCM_Env*]
+                     ....
+                    ....
+                   ....
+                  ....
+
+                  For connection: run-cross-sequence
+                  ==== 
+                   <call 21>
+
+                   For connection: run-call-entry
+                   ==== 
+                    [token= kenv]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= \=]
+
+                     For connection: run-call-entry
+                     ==== 
+                      <call 22>
+
+                      For connection: run-call-entry
+                      ==== 
+                       [token= envv]
+
+                       For connection: run-call-sequence
+                       ==== 
+                        [token= "KC..."]
+                       ....
+                      ....
+
+                      For connection: run-call-entry-direct
+                      ==== 
+
+                      Annotated: 
+                      ---- 
+                       [token= envv]
+
+                       For connection: run-call-sequence
+                       ==== 
+                        [token= "KC..."]
+                       ....
+                      ....
+                     ....
+                    ....
+                   ....
+
+                   For connection: run-cross-sequence
+                   ==== 
+                    <call 23>
+
+                    For connection: run-call-entry
+                    ==== 
+                     [token= fnd]
+
+                     For connection: run-call-sequence
+                     ==== 
+                      [token= /->]
+
+                      For connection: run-call-sequence
+                      ==== 
+                       [token= init]
+
+                       For connection: run-call-sequence
+                       ==== 
+                        [token= kenv]
+                       ....
+                      ....
+                     ....
+                    ....
+
+                    For connection: run-cross-sequence
+                    ==== 
+                     <call 24>
+
+                     For connection: run-call-entry
+                     ==== 
+                      [token= fnd]
+
+                      For connection: run-call-sequence
+                      ==== 
+                       [token= /->]
+
+                       For connection: run-call-sequence
+                       ==== 
+                        [token= test-...]
+
+                        For connection: run-call-sequence
+                        ==== 
+                         [token= "abcd"]
+                        ....
+                       ....
+                      ....
+                     ....
+
+                     For connection: run-cross-sequence
+                     ==== 
+                      <call 25>
+
+                      For connection: run-call-entry
+                      ==== 
+                       [token= my]
+
+                       For connection: run-call-sequence
+                       ==== 
+                        [token= ,fnd]
+
+                        For connection: run-call-sequence
+                        ==== 
+                         [token= :::]
+
+                         For connection: run-call-sequence
+                         ==== 
+                          [token= Fn_Doc*]
+                         ....
+                        ....
+                       ....
+                      ....
+
+                      For connection: run-cross-sequence
+                      ==== 
+                       <call 26>
+
+                       For connection: run-call-entry
+                       ==== 
+                        [token= fnd]
+
+                        For connection: run-call-sequence
+                        ==== 
+                         [token= \==]
+
+                         For connection: run-call-sequence
+                         ==== 
+                          [token= default]
+                         ....
+                        ....
+                       ....
+
+                       For connection: run-cross-sequence
+                       ==== 
+                        <call 27>
+
+                        For connection: run-call-entry
+                        ==== 
+                         [token= my]
+
+                         For connection: run-call-sequence
+                         ==== 
+                          [token= ,kenv]
+
+                          For connection: run-call-sequence
+                          ==== 
+                           [token= :::]
+
+                           For connection: run-call-sequence
+                           ==== 
+                            [token= KCM_Env*]
+                           ....
+                          ....
+                         ....
+                        ....
+
+                        For connection: run-cross-sequence
+                        ==== 
+                         <call 28>
+
+                         For connection: run-call-entry
+                         ==== 
+                          [token= kenv]
+
+                          For connection: run-call-sequence
+                          ==== 
+                           [token= \=]
+
+                           For connection: run-call-entry
+                           ==== 
+                            <call 29>
+
+                            For connection: run-call-entry
+                            ==== 
+                             [token= envv]
+
+                             For connection: run-call-sequence
+                             ==== 
+                              [token= "KC..."]
+                             ....
+                            ....
+
+                            For connection: run-call-entry-direct
+                            ==== 
+
+                            Annotated: 
+                            ---- 
+                             [token= envv]
+
+                             For connection: run-call-sequence
+                             ==== 
+                              [token= "KC..."]
+                             ....
+                            ....
+                           ....
+                          ....
+                         ....
+
+                         For connection: run-cross-sequence
+                         ==== 
+                          <call 30>
+
+                          For connection: run-call-entry
+                          ==== 
+                           [token= fnd]
+
+                           For connection: run-call-sequence
+                           ==== 
+                            [token= /->]
+
+                            For connection: run-call-sequence
+                            ==== 
+                             [token= init]
+
+                             For connection: run-call-sequence
+                             ==== 
+                              [token= kenv]
+                             ....
+                            ....
+                           ....
+                          ....
+
+                          For connection: run-cross-sequence
+                          ==== 
+                           <call 31>
+
+                           For connection: run-call-entry
+                           ==== 
+                            [token= fnd]
+
+                            For connection: run-call-sequence
+                            ==== 
+                             [token= /->]
+
+                             For connection: run-call-sequence
+                             ==== 
+                              [token= test-...]
+                             ....
+                            ....
+                           ....
+                          ....
+
+                          For connection: run-call-entry-direct
+                          ==== 
+
+                          Annotated: 
+ [[<call 31> (fnd)]]
+                          ---- 
+                           [token= fnd]
+
+                           For connection: run-call-sequence
+                           ==== 
+                            [token= /->]
+
+                            For connection: run-call-sequence
+                            ==== 
+                             [token= test-...]
+                            ....
+                           ....
+                          ....
+                         ....
+
+                         For connection: run-call-entry-direct
+                         ==== 
+
+                         Annotated: 
+ [[<call 30> (fnd) (fnd)]]
+                         ---- 
+                          [token= fnd]
+
+                          For connection: run-call-sequence
+                          ==== 
+                           [token= /->]
+
+                           For connection: run-call-sequence
+                           ==== 
+                            [token= init]
+
+                            For connection: run-call-sequence
+                            ==== 
+                             [token= kenv]
+                            ....
+                           ....
+                          ....
+                         ....
+                        ....
+
+                        For connection: run-call-entry-direct
+                        ==== 
+
+                        Annotated: 
+ [[<call 28> (kenv) (fnd)]]
+                        ---- 
+                         [token= kenv]
+
+                         For connection: run-call-sequence
+                         ==== 
+                          [token= \=]
+
+                          For connection: run-call-entry
+                          ==== 
+                           <call 29>
+
+                           For connection: run-call-entry
+                           ==== 
+                            [token= envv]
+
+                            For connection: run-call-sequence
+                            ==== 
+                             [token= "KC..."]
+                            ....
+                           ....
+
+                           For connection: run-call-entry-direct
+                           ==== 
+
+                           Annotated: 
+                           ---- 
+                            [token= envv]
+
+                            For connection: run-call-sequence
+                            ==== 
+                             [token= "KC..."]
+                            ....
+                           ....
+                          ....
+                         ....
+                        ....
+                       ....
+
+                       For connection: run-call-entry-direct
+                       ==== 
+
+                       Annotated: 
+ [[<call 27> (my) (kenv)]]
+                       ---- 
+                        [token= my]
+
+                        For connection: run-call-sequence
+                        ==== 
+                         [token= ,kenv]
+
+                         For connection: run-call-sequence
+                         ==== 
+                          [token= :::]
+
+                          For connection: run-call-sequence
+                          ==== 
+                           [token= KCM_Env*]
+                          ....
+                         ....
+                        ....
+                       ....
+                      ....
+
+                      For connection: run-call-entry-direct
+                      ==== 
+
+                      Annotated: 
+ [[<call 26> (fnd) (my)]]
+                      ---- 
+                       [token= fnd]
+
+                       For connection: run-call-sequence
+                       ==== 
+                        [token= \==]
+
+                        For connection: run-call-sequence
+                        ==== 
+                         [token= default]
+                        ....
+                       ....
+                      ....
+                     ....
+
+                     For connection: run-call-entry-direct
+                     ==== 
+
+                     Annotated: 
+ [[<call 25> (my) (fnd)]]
+                     ---- 
+                      [token= my]
+
+                      For connection: run-call-sequence
+                      ==== 
+                       [token= ,fnd]
+
+                       For connection: run-call-sequence
+                       ==== 
+                        [token= :::]
+
+                        For connection: run-call-sequence
+                        ==== 
+                         [token= Fn_Doc*]
+                        ....
+                       ....
+                      ....
+                     ....
+                    ....
+
+                    For connection: run-call-entry-direct
+                    ==== 
+
+                    Annotated: 
+ [[<call 24> (fnd) (my)]]
+                    ---- 
+                     [token= fnd]
+
+                     For connection: run-call-sequence
+                     ==== 
+                      [token= /->]
+
+                      For connection: run-call-sequence
+                      ==== 
+                       [token= test-...]
+
+                       For connection: run-call-sequence
+                       ==== 
+                        [token= "abcd"]
+                       ....
+                      ....
+                     ....
+                    ....
+                   ....
+
+                   For connection: run-call-entry-direct
+                   ==== 
+
+                   Annotated: 
+ [[<call 23> (fnd) (fnd)]]
+                   ---- 
+                    [token= fnd]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= /->]
+
+                     For connection: run-call-sequence
+                     ==== 
+                      [token= init]
+
+                      For connection: run-call-sequence
+                      ==== 
+                       [token= kenv]
+                      ....
+                     ....
+                    ....
+                   ....
+                  ....
+
+                  For connection: run-call-entry-direct
+                  ==== 
+
+                  Annotated: 
+ [[<call 21> (kenv) (fnd)]]
+                  ---- 
+                   [token= kenv]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= \=]
+
+                    For connection: run-call-entry
+                    ==== 
+                     <call 22>
+
+                     For connection: run-call-entry
+                     ==== 
+                      [token= envv]
+
+                      For connection: run-call-sequence
+                      ==== 
+                       [token= "KC..."]
+                      ....
+                     ....
+
+                     For connection: run-call-entry-direct
+                     ==== 
+
+                     Annotated: 
+                     ---- 
+                      [token= envv]
+
+                      For connection: run-call-sequence
+                      ==== 
+                       [token= "KC..."]
+                      ....
+                     ....
+                    ....
+                   ....
+                  ....
+                 ....
+
+                 For connection: run-call-entry-direct
+                 ==== 
+
+                 Annotated: 
+ [[<call 20> (my) (kenv)]]
+                 ---- 
+                  [token= my]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= ,kenv]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= :::]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= KCM_Env*]
+                    ....
+                   ....
+                  ....
+                 ....
+                ....
+
+                For connection: run-call-entry-direct
+                ==== 
+
+                Annotated: 
+ [[<call 19> (fnd) (my)]]
+                ---- 
+                 [token= fnd]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= \==]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= default]
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+ [[<call 18> (my) (fnd)]]
+               ---- 
+                [token= my]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= ,fnd]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= :::]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= Fn_Doc*]
+                  ....
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+ [[<call 17> (&prn) (my)]]
+              ---- 
+               [token= &prn]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= x6]
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+ [[<call 15> (x6) (&prn)]]
+             ---- 
+              [token= x6]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= \=]
+
+               For connection: run-call-entry
+               ==== 
+                <call 16>
+
+                For connection: run-call-entry
+                ==== 
+                 [token= test-i-s]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "ab..."]
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+ [[<call 16> (test-i-s)]]
+               ---- 
+                [token= test-i-s]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "ab..."]
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-call-entry-direct
+            ==== 
+
+            Annotated: 
+ [[<call 14> (my) (x6)]]
+            ---- 
+             [token= my]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= ,x6]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= :::]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= int]
+               ....
+              ....
+             ....
+            ....
+           ....
+
+           For connection: run-call-entry-direct
+           ==== 
+
+           Annotated: 
+ [[<call 13> (&prs) (my)]]
+           ---- 
+            [token= &prs]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= x5]
+            ....
+           ....
+          ....
+
+          For connection: run-call-entry-direct
+          ==== 
+
+          Annotated: 
+ [[<call 11> (x5) (&prs)]]
+          ---- 
+           [token= x5]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= \=]
+
+            For connection: run-call-entry
+            ==== 
+             <call 12>
+
+             For connection: run-call-entry
+             ==== 
+              [token= test-s-s]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "ab..."]
+              ....
+             ....
+            ....
+
+            For connection: run-call-entry-direct
+            ==== 
+
+            Annotated: 
+ [[<call 12> (test-s-s)]]
+            ---- 
+             [token= test-s-s]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "ab..."]
+             ....
+            ....
+           ....
+          ....
+         ....
+
+         For connection: run-call-entry-direct
+         ==== 
+
+         Annotated: 
+ [[<call 10> (my) (x5)]]
+         ---- 
+          [token= my]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= ,x5]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= :::]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= str]
+            ....
+           ....
+          ....
+         ....
+        ....
+
+        For connection: run-call-entry-direct
+        ==== 
+
+        Annotated: 
+ [[<call 9> (&test-0-s) (my)]]
+        ---- 
+         [token= &test...]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= "ab..."]
+         ....
+        ....
+       ....
+
+       For connection: run-call-entry-direct
+       ==== 
+
+       Annotated: 
+ [[<call 8> (&prn) (&test-0-s)]]
+       ---- 
+        [token= &prn]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= x3]
+        ....
+       ....
+      ....
+
+      For connection: run-call-entry-direct
+      ==== 
+
+      Annotated: 
+ [[<call 6> (x3) (&prn)]]
+      ---- 
+       [token= x3]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= \=]
+
+        For connection: run-call-entry
+        ==== 
+         <call 7>
+
+         For connection: run-call-entry
+         ==== 
+          [token= test-...]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= "ab..."]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= "cd"]
+           ....
+          ....
+         ....
+        ....
+
+        For connection: run-call-entry-direct
+        ==== 
+
+        Annotated: 
+ [[<call 7> (test-i-ss)]]
+        ---- 
+         [token= test-...]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= "ab..."]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= "cd"]
+          ....
+         ....
+        ....
+       ....
+      ....
+     ....
+
+     For connection: run-call-entry-direct
+     ==== 
+
+     Annotated: 
+ [[<call 5> (my) (x3)]]
+     ---- 
+      [token= my]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= ,x3]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= :::]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= int]
+        ....
+       ....
+      ....
+     ....
+    ....
+
+    For connection: run-call-entry-direct
+    ==== 
+
+    Annotated: 
+ [[<call 4> (&prs) (my)]]
+    ---- 
+     [token= &prs]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= x2]
+     ....
+    ....
+   ....
+
+   For connection: run-call-entry-direct
+   ==== 
+
+   Annotated: 
+ [[<call 2> (x2) (&prs)]]
+   ---- 
+    [token= x2]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= \=]
+
+     For connection: run-call-entry
+     ==== 
+      <call 3>
+
+      For connection: run-call-entry
+      ==== 
+       [token= test-...]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= "ab..."]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= "cd"]
+        ....
+       ....
+      ....
+     ....
+
+     For connection: run-call-entry-direct
+     ==== 
+
+     Annotated: 
+ [[<call 3> (test-s-ss)]]
+     ---- 
+      [token= test-...]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= "ab..."]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= "cd"]
+       ....
+      ....
+     ....
+    ....
+   ....
+  ....
+
+  For connection: run-call-entry-direct
+  ==== 
+
+  Annotated: 
+ [[<call 1> (my) (x2)]]
+  ---- 
+   [token= my]
+
+   For connection: run-call-sequence
+   ==== 
+    [token= ,x2]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= :::]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= str]
+     ....
+    ....
+   ....
+  ....
+ ....
+
+ For connection: run-call-entry-direct
+ ==== 
+
+ Annotated: 
+ [[<call 0> (&test-0-ss) (my)]]
+ ---- 
+  [token= &test...]
+
+  For connection: run-call-sequence
+  ==== 
+   [token= "ab..."]
+
+   For connection: run-call-sequence
+   ==== 
+    [token= "cd"]
+   ....
+  ....
+ ....
+....

@@ -1,0 +1,41 @@
+Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t21.rz
+<<node/<root> (&test-void)>>
+
+For connection: run-block-entry
+==== 
+ <block 0:0>
+
+ For connection: run-call-entry
+ ==== 
+  <call 0>
+
+  For connection: run-call-entry
+  ==== 
+   [token= &test...]
+
+   For connection: element-association
+   ==== 
+    <<node/>>
+   ....
+  ....
+
+  For connection: element-review
+  ==== 
+   <<node/>>
+  ....
+ ....
+
+ For connection: run-call-entry-direct
+ ==== 
+
+ Annotated: 
+ [[<call 0> (&test-void)]]
+ ---- 
+  [token= &test...]
+
+  For connection: element-association
+  ==== 
+   <<node/>>
+  ....
+ ....
+....

@@ -1,0 +1,4748 @@
+Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t27.rz
+<<node/<root> (my)>>
+
+For connection: run-block-entry
+==== 
+ <block 0:0>
+
+ For connection: run-call-entry
+ ==== 
+  <call 0>
+
+  For connection: run-call-entry
+  ==== 
+   [token= my]
+
+   For connection: run-call-sequence
+   ==== 
+    [token= ,x]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= :::]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= int]
+     ....
+    ....
+   ....
+  ....
+
+  For connection: run-cross-sequence
+  ==== 
+   <call 1>
+
+   For connection: run-call-entry
+   ==== 
+    [token= \=]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= x]
+
+     For connection: run-call-entry
+     ==== 
+      <call 2>
+
+      For connection: run-call-entry
+      ==== 
+       [token= test-...]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= "ab..."]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= "cd"]
+        ....
+       ....
+      ....
+     ....
+    ....
+
+    For connection: run-call-entry-direct
+    ==== 
+
+    Annotated: 
+ [[<call 2> (test-find)]]
+    ---- 
+     [token= test-...]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= "ab..."]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= "cd"]
+      ....
+     ....
+    ....
+   ....
+
+   For connection: run-cross-sequence
+   ==== 
+    <call 3>
+
+    For connection: run-call-entry
+    ==== 
+     [token= &if]
+
+     For connection: run-call-entry
+     ==== 
+      <call 4 (\) >
+
+      For connection: run-call-entry
+      ==== 
+       [token= =?]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= x]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= -1]
+        ....
+       ....
+      ....
+
+      For connection: run-cross-sequence
+      ==== 
+       <call 5>
+
+       For connection: run-call-entry
+       ==== 
+        [token= do]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= ->]
+
+         For connection: run-function-def-entry
+         ==== 
+          <<node/<fdef>>>
+
+          For connection: run-call-entry
+          ==== 
+           <call 6>
+
+           For connection: run-data-entry
+           ==== 
+            <data 1 ...>
+
+            For connection: run-data-entry
+            ==== 
+             [token= .()]
+
+             For connection: run-data-leave
+             ==== 
+              <... data>
+             ....
+            ....
+           ....
+          ....
+         ....
+
+         For connection: run-fundef-arrow-sequence
+         ==== 
+          <call 8 (\) >
+
+          For connection: run-call-entry
+          ==== 
+           [token= values]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= t]
+           ....
+          ....
+
+          For connection: run-cross-sequence
+          ==== 
+           <call 9>
+
+           For connection: run-call-entry
+           ==== 
+            [token= do]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= ->]
+
+             For connection: run-function-def-entry
+             ==== 
+              <<node/<fdef>>>
+
+              For connection: run-call-entry
+              ==== 
+               <call 10>
+
+               For connection: run-data-entry
+               ==== 
+                <data 2 ...>
+
+                For connection: run-data-entry
+                ==== 
+                 [token= .()]
+
+                 For connection: run-data-leave
+                 ==== 
+                  <... data>
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-block-entry
+             ==== 
+              <block 2:2>
+
+              For connection: run-call-entry
+              ==== 
+               <call 11>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &lr]
+
+                For connection: run-call-entry
+                ==== 
+                 <call 12 (\) >
+
+                 For connection: run-call-entry
+                 ==== 
+                  [token= format]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= t]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= "Fo..."]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= x]
+                    ....
+                   ....
+                  ....
+                 ....
+
+                 For connection: run-call-entry-direct
+                 ==== 
+
+                 Annotated: 
+                 ---- 
+                  [token= format]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= t]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= "Fo..."]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= x]
+                    ....
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-cross-sequence
+               ==== 
+                <call 13>
+
+                For connection: run-call-entry
+                ==== 
+                 [token= &prs]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "OK"]
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+ [[<call 13> (&prs)]]
+               ---- 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              Has connection: parent-block-map
+
+             ....
+            ....
+           ....
+
+           For connection: run-call-entry-direct
+           ==== 
+
+           Annotated: 
+           ---- 
+            [token= do]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= ->]
+
+             For connection: run-function-def-entry
+             ==== 
+              <<node/<fdef>>>
+
+              For connection: run-call-entry
+              ==== 
+               <call 10>
+
+               For connection: run-data-entry
+               ==== 
+                <data 2 ...>
+
+                For connection: run-data-entry
+                ==== 
+                 [token= .()]
+
+                 For connection: run-data-leave
+                 ==== 
+                  <... data>
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-block-entry
+             ==== 
+              <block 2:2>
+
+              For connection: run-call-entry
+              ==== 
+               <call 11>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &lr]
+
+                For connection: run-call-entry
+                ==== 
+                 <call 12 (\) >
+
+                 For connection: run-call-entry
+                 ==== 
+                  [token= format]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= t]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= "Fo..."]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= x]
+                    ....
+                   ....
+                  ....
+                 ....
+
+                 For connection: run-call-entry-direct
+                 ==== 
+
+                 Annotated: 
+                 ---- 
+                  [token= format]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= t]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= "Fo..."]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= x]
+                    ....
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-cross-sequence
+               ==== 
+                <call 13>
+
+                For connection: run-call-entry
+                ==== 
+                 [token= &prs]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "OK"]
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+ [[<call 13> (&prs)]]
+               ---- 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              Has connection: parent-block-map
+
+             ....
+            ....
+           ....
+          ....
+
+          For connection: run-cross-do
+          ==== 
+           [token= do]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= ->]
+
+            For connection: run-function-def-entry
+            ==== 
+             <<node/<fdef>>>
+
+             For connection: run-call-entry
+             ==== 
+              <call 10>
+
+              For connection: run-data-entry
+              ==== 
+               <data 2 ...>
+
+               For connection: run-data-entry
+               ==== 
+                [token= .()]
+
+                For connection: run-data-leave
+                ==== 
+                 <... data>
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-block-entry
+            ==== 
+             <block 2:2>
+
+             For connection: run-call-entry
+             ==== 
+              <call 11>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &lr]
+
+               For connection: run-call-entry
+               ==== 
+                <call 12 (\) >
+
+                For connection: run-call-entry
+                ==== 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+
+                For connection: run-call-entry-direct
+                ==== 
+
+                Annotated: 
+                ---- 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-cross-sequence
+              ==== 
+               <call 13>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+ [[<call 13> (&prs)]]
+              ---- 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             Has connection: parent-block-map
+
+            ....
+           ....
+          ....
+
+          For connection: run-call-entry-direct
+          ==== 
+
+          Annotated: 
+          ---- 
+           [token= values]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= t]
+           ....
+          ....
+         ....
+
+         For connection: run-block-entry
+         ==== 
+          <block 1:1>
+
+          For connection: run-call-entry
+          ==== 
+           <call 7>
+
+           For connection: run-call-entry
+           ==== 
+            [token= &prs]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= "No..."]
+            ....
+
+            For connection: element-association
+            ==== 
+             <<node/>>
+            ....
+           ....
+
+           For connection: run-nested-block-entry
+           ==== 
+            <block 2:2>
+
+            For connection: run-call-entry
+            ==== 
+             <call 11>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &lr]
+
+              For connection: run-call-entry
+              ==== 
+               <call 12 (\) >
+
+               For connection: run-call-entry
+               ==== 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+               ---- 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-cross-sequence
+             ==== 
+              <call 13>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+ [[<call 13> (&prs)]]
+             ---- 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            Has connection: parent-block-map
+
+           ....
+          ....
+
+          For connection: run-lexical-scope
+          ==== 
+           <<node/>>
+          ....
+         ....
+        ....
+       ....
+
+       For connection: run-cross-sequence
+       ==== 
+        <call 8 (\) >
+
+        For connection: run-call-entry
+        ==== 
+         [token= values]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= t]
+         ....
+        ....
+
+        For connection: run-cross-sequence
+        ==== 
+         <call 9>
+
+         For connection: run-call-entry
+         ==== 
+          [token= do]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= ->]
+
+           For connection: run-function-def-entry
+           ==== 
+            <<node/<fdef>>>
+
+            For connection: run-call-entry
+            ==== 
+             <call 10>
+
+             For connection: run-data-entry
+             ==== 
+              <data 2 ...>
+
+              For connection: run-data-entry
+              ==== 
+               [token= .()]
+
+               For connection: run-data-leave
+               ==== 
+                <... data>
+               ....
+              ....
+             ....
+            ....
+           ....
+
+           For connection: run-block-entry
+           ==== 
+            <block 2:2>
+
+            For connection: run-call-entry
+            ==== 
+             <call 11>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &lr]
+
+              For connection: run-call-entry
+              ==== 
+               <call 12 (\) >
+
+               For connection: run-call-entry
+               ==== 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+               ---- 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-cross-sequence
+             ==== 
+              <call 13>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+ [[<call 13> (&prs)]]
+             ---- 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            Has connection: parent-block-map
+
+           ....
+          ....
+         ....
+
+         For connection: run-call-entry-direct
+         ==== 
+
+         Annotated: 
+         ---- 
+          [token= do]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= ->]
+
+           For connection: run-function-def-entry
+           ==== 
+            <<node/<fdef>>>
+
+            For connection: run-call-entry
+            ==== 
+             <call 10>
+
+             For connection: run-data-entry
+             ==== 
+              <data 2 ...>
+
+              For connection: run-data-entry
+              ==== 
+               [token= .()]
+
+               For connection: run-data-leave
+               ==== 
+                <... data>
+               ....
+              ....
+             ....
+            ....
+           ....
+
+           For connection: run-block-entry
+           ==== 
+            <block 2:2>
+
+            For connection: run-call-entry
+            ==== 
+             <call 11>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &lr]
+
+              For connection: run-call-entry
+              ==== 
+               <call 12 (\) >
+
+               For connection: run-call-entry
+               ==== 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+               ---- 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-cross-sequence
+             ==== 
+              <call 13>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+ [[<call 13> (&prs)]]
+             ---- 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            Has connection: parent-block-map
+
+           ....
+          ....
+         ....
+        ....
+
+        For connection: run-cross-do
+        ==== 
+         [token= do]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= ->]
+
+          For connection: run-function-def-entry
+          ==== 
+           <<node/<fdef>>>
+
+           For connection: run-call-entry
+           ==== 
+            <call 10>
+
+            For connection: run-data-entry
+            ==== 
+             <data 2 ...>
+
+             For connection: run-data-entry
+             ==== 
+              [token= .()]
+
+              For connection: run-data-leave
+              ==== 
+               <... data>
+              ....
+             ....
+            ....
+           ....
+          ....
+
+          For connection: run-block-entry
+          ==== 
+           <block 2:2>
+
+           For connection: run-call-entry
+           ==== 
+            <call 11>
+
+            For connection: run-call-entry
+            ==== 
+             [token= &lr]
+
+             For connection: run-call-entry
+             ==== 
+              <call 12 (\) >
+
+              For connection: run-call-entry
+              ==== 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+              ---- 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-cross-sequence
+            ==== 
+             <call 13>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            For connection: run-call-entry-direct
+            ==== 
+
+            Annotated: 
+ [[<call 13> (&prs)]]
+            ---- 
+             [token= &prs]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "OK"]
+             ....
+            ....
+           ....
+
+           Has connection: parent-block-map
+
+          ....
+         ....
+        ....
+
+        For connection: run-call-entry-direct
+        ==== 
+
+        Annotated: 
+        ---- 
+         [token= values]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= t]
+         ....
+        ....
+       ....
+
+       For connection: run-call-entry-direct
+       ==== 
+
+       Annotated: 
+       ---- 
+        [token= do]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= ->]
+
+         For connection: run-function-def-entry
+         ==== 
+          <<node/<fdef>>>
+
+          For connection: run-call-entry
+          ==== 
+           <call 6>
+
+           For connection: run-data-entry
+           ==== 
+            <data 1 ...>
+
+            For connection: run-data-entry
+            ==== 
+             [token= .()]
+
+             For connection: run-data-leave
+             ==== 
+              <... data>
+             ....
+            ....
+           ....
+          ....
+         ....
+
+         For connection: run-fundef-arrow-sequence
+         ==== 
+          <call 8 (\) >
+
+          For connection: run-call-entry
+          ==== 
+           [token= values]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= t]
+           ....
+          ....
+
+          For connection: run-cross-sequence
+          ==== 
+           <call 9>
+
+           For connection: run-call-entry
+           ==== 
+            [token= do]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= ->]
+
+             For connection: run-function-def-entry
+             ==== 
+              <<node/<fdef>>>
+
+              For connection: run-call-entry
+              ==== 
+               <call 10>
+
+               For connection: run-data-entry
+               ==== 
+                <data 2 ...>
+
+                For connection: run-data-entry
+                ==== 
+                 [token= .()]
+
+                 For connection: run-data-leave
+                 ==== 
+                  <... data>
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-block-entry
+             ==== 
+              <block 2:2>
+
+              For connection: run-call-entry
+              ==== 
+               <call 11>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &lr]
+
+                For connection: run-call-entry
+                ==== 
+                 <call 12 (\) >
+
+                 For connection: run-call-entry
+                 ==== 
+                  [token= format]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= t]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= "Fo..."]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= x]
+                    ....
+                   ....
+                  ....
+                 ....
+
+                 For connection: run-call-entry-direct
+                 ==== 
+
+                 Annotated: 
+                 ---- 
+                  [token= format]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= t]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= "Fo..."]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= x]
+                    ....
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-cross-sequence
+               ==== 
+                <call 13>
+
+                For connection: run-call-entry
+                ==== 
+                 [token= &prs]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "OK"]
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+ [[<call 13> (&prs)]]
+               ---- 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              Has connection: parent-block-map
+
+             ....
+            ....
+           ....
+
+           For connection: run-call-entry-direct
+           ==== 
+
+           Annotated: 
+           ---- 
+            [token= do]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= ->]
+
+             For connection: run-function-def-entry
+             ==== 
+              <<node/<fdef>>>
+
+              For connection: run-call-entry
+              ==== 
+               <call 10>
+
+               For connection: run-data-entry
+               ==== 
+                <data 2 ...>
+
+                For connection: run-data-entry
+                ==== 
+                 [token= .()]
+
+                 For connection: run-data-leave
+                 ==== 
+                  <... data>
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-block-entry
+             ==== 
+              <block 2:2>
+
+              For connection: run-call-entry
+              ==== 
+               <call 11>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &lr]
+
+                For connection: run-call-entry
+                ==== 
+                 <call 12 (\) >
+
+                 For connection: run-call-entry
+                 ==== 
+                  [token= format]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= t]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= "Fo..."]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= x]
+                    ....
+                   ....
+                  ....
+                 ....
+
+                 For connection: run-call-entry-direct
+                 ==== 
+
+                 Annotated: 
+                 ---- 
+                  [token= format]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= t]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= "Fo..."]
+
+                    For connection: run-call-sequence
+                    ==== 
+                     [token= x]
+                    ....
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-cross-sequence
+               ==== 
+                <call 13>
+
+                For connection: run-call-entry
+                ==== 
+                 [token= &prs]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "OK"]
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+ [[<call 13> (&prs)]]
+               ---- 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              Has connection: parent-block-map
+
+             ....
+            ....
+           ....
+          ....
+
+          For connection: run-cross-do
+          ==== 
+           [token= do]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= ->]
+
+            For connection: run-function-def-entry
+            ==== 
+             <<node/<fdef>>>
+
+             For connection: run-call-entry
+             ==== 
+              <call 10>
+
+              For connection: run-data-entry
+              ==== 
+               <data 2 ...>
+
+               For connection: run-data-entry
+               ==== 
+                [token= .()]
+
+                For connection: run-data-leave
+                ==== 
+                 <... data>
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-block-entry
+            ==== 
+             <block 2:2>
+
+             For connection: run-call-entry
+             ==== 
+              <call 11>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &lr]
+
+               For connection: run-call-entry
+               ==== 
+                <call 12 (\) >
+
+                For connection: run-call-entry
+                ==== 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+
+                For connection: run-call-entry-direct
+                ==== 
+
+                Annotated: 
+                ---- 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-cross-sequence
+              ==== 
+               <call 13>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+ [[<call 13> (&prs)]]
+              ---- 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             Has connection: parent-block-map
+
+            ....
+           ....
+          ....
+
+          For connection: run-call-entry-direct
+          ==== 
+
+          Annotated: 
+          ---- 
+           [token= values]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= t]
+           ....
+          ....
+         ....
+
+         For connection: run-block-entry
+         ==== 
+          <block 1:1>
+
+          For connection: run-call-entry
+          ==== 
+           <call 7>
+
+           For connection: run-call-entry
+           ==== 
+            [token= &prs]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= "No..."]
+            ....
+
+            For connection: element-association
+            ==== 
+             <<node/>>
+            ....
+           ....
+
+           For connection: run-nested-block-entry
+           ==== 
+            <block 2:2>
+
+            For connection: run-call-entry
+            ==== 
+             <call 11>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &lr]
+
+              For connection: run-call-entry
+              ==== 
+               <call 12 (\) >
+
+               For connection: run-call-entry
+               ==== 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+               ---- 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-cross-sequence
+             ==== 
+              <call 13>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+ [[<call 13> (&prs)]]
+             ---- 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            Has connection: parent-block-map
+
+           ....
+          ....
+
+          For connection: run-lexical-scope
+          ==== 
+           <<node/>>
+          ....
+         ....
+        ....
+       ....
+      ....
+
+      For connection: run-cross-do
+      ==== 
+       [token= do]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= ->]
+
+        For connection: run-function-def-entry
+        ==== 
+         <<node/<fdef>>>
+
+         For connection: run-call-entry
+         ==== 
+          <call 6>
+
+          For connection: run-data-entry
+          ==== 
+           <data 1 ...>
+
+           For connection: run-data-entry
+           ==== 
+            [token= .()]
+
+            For connection: run-data-leave
+            ==== 
+             <... data>
+            ....
+           ....
+          ....
+         ....
+        ....
+
+        For connection: run-fundef-arrow-sequence
+        ==== 
+         <call 8 (\) >
+
+         For connection: run-call-entry
+         ==== 
+          [token= values]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= t]
+          ....
+         ....
+
+         For connection: run-cross-sequence
+         ==== 
+          <call 9>
+
+          For connection: run-call-entry
+          ==== 
+           [token= do]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= ->]
+
+            For connection: run-function-def-entry
+            ==== 
+             <<node/<fdef>>>
+
+             For connection: run-call-entry
+             ==== 
+              <call 10>
+
+              For connection: run-data-entry
+              ==== 
+               <data 2 ...>
+
+               For connection: run-data-entry
+               ==== 
+                [token= .()]
+
+                For connection: run-data-leave
+                ==== 
+                 <... data>
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-block-entry
+            ==== 
+             <block 2:2>
+
+             For connection: run-call-entry
+             ==== 
+              <call 11>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &lr]
+
+               For connection: run-call-entry
+               ==== 
+                <call 12 (\) >
+
+                For connection: run-call-entry
+                ==== 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+
+                For connection: run-call-entry-direct
+                ==== 
+
+                Annotated: 
+                ---- 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-cross-sequence
+              ==== 
+               <call 13>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+ [[<call 13> (&prs)]]
+              ---- 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             Has connection: parent-block-map
+
+            ....
+           ....
+          ....
+
+          For connection: run-call-entry-direct
+          ==== 
+
+          Annotated: 
+          ---- 
+           [token= do]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= ->]
+
+            For connection: run-function-def-entry
+            ==== 
+             <<node/<fdef>>>
+
+             For connection: run-call-entry
+             ==== 
+              <call 10>
+
+              For connection: run-data-entry
+              ==== 
+               <data 2 ...>
+
+               For connection: run-data-entry
+               ==== 
+                [token= .()]
+
+                For connection: run-data-leave
+                ==== 
+                 <... data>
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-block-entry
+            ==== 
+             <block 2:2>
+
+             For connection: run-call-entry
+             ==== 
+              <call 11>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &lr]
+
+               For connection: run-call-entry
+               ==== 
+                <call 12 (\) >
+
+                For connection: run-call-entry
+                ==== 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+
+                For connection: run-call-entry-direct
+                ==== 
+
+                Annotated: 
+                ---- 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-cross-sequence
+              ==== 
+               <call 13>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+ [[<call 13> (&prs)]]
+              ---- 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             Has connection: parent-block-map
+
+            ....
+           ....
+          ....
+         ....
+
+         For connection: run-cross-do
+         ==== 
+          [token= do]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= ->]
+
+           For connection: run-function-def-entry
+           ==== 
+            <<node/<fdef>>>
+
+            For connection: run-call-entry
+            ==== 
+             <call 10>
+
+             For connection: run-data-entry
+             ==== 
+              <data 2 ...>
+
+              For connection: run-data-entry
+              ==== 
+               [token= .()]
+
+               For connection: run-data-leave
+               ==== 
+                <... data>
+               ....
+              ....
+             ....
+            ....
+           ....
+
+           For connection: run-block-entry
+           ==== 
+            <block 2:2>
+
+            For connection: run-call-entry
+            ==== 
+             <call 11>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &lr]
+
+              For connection: run-call-entry
+              ==== 
+               <call 12 (\) >
+
+               For connection: run-call-entry
+               ==== 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+               ---- 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-cross-sequence
+             ==== 
+              <call 13>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+ [[<call 13> (&prs)]]
+             ---- 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            Has connection: parent-block-map
+
+           ....
+          ....
+         ....
+
+         For connection: run-call-entry-direct
+         ==== 
+
+         Annotated: 
+         ---- 
+          [token= values]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= t]
+          ....
+         ....
+        ....
+
+        For connection: run-block-entry
+        ==== 
+         <block 1:1>
+
+         For connection: run-call-entry
+         ==== 
+          <call 7>
+
+          For connection: run-call-entry
+          ==== 
+           [token= &prs]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= "No..."]
+           ....
+
+           For connection: element-association
+           ==== 
+            <<node/>>
+           ....
+          ....
+
+          For connection: run-nested-block-entry
+          ==== 
+           <block 2:2>
+
+           For connection: run-call-entry
+           ==== 
+            <call 11>
+
+            For connection: run-call-entry
+            ==== 
+             [token= &lr]
+
+             For connection: run-call-entry
+             ==== 
+              <call 12 (\) >
+
+              For connection: run-call-entry
+              ==== 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+              ---- 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-cross-sequence
+            ==== 
+             <call 13>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            For connection: run-call-entry-direct
+            ==== 
+
+            Annotated: 
+ [[<call 13> (&prs)]]
+            ---- 
+             [token= &prs]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "OK"]
+             ....
+            ....
+           ....
+
+           Has connection: parent-block-map
+
+          ....
+         ....
+
+         For connection: run-lexical-scope
+         ==== 
+          <<node/>>
+         ....
+        ....
+       ....
+      ....
+
+      For connection: run-call-entry-direct
+      ==== 
+
+      Annotated: 
+      ---- 
+       [token= x]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= -1]
+       ....
+      ....
+     ....
+
+     For connection: element-association
+     ==== 
+      <<node/>>
+     ....
+    ....
+
+    For connection: run-nested-block-entry
+    ==== 
+     <block 1:1>
+
+     For connection: run-call-entry
+     ==== 
+      <call 7>
+
+      For connection: run-call-entry
+      ==== 
+       [token= &prs]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= "No..."]
+       ....
+
+       For connection: element-association
+       ==== 
+        <<node/>>
+       ....
+      ....
+
+      For connection: run-nested-block-entry
+      ==== 
+       <block 2:2>
+
+       For connection: run-call-entry
+       ==== 
+        <call 11>
+
+        For connection: run-call-entry
+        ==== 
+         [token= &lr]
+
+         For connection: run-call-entry
+         ==== 
+          <call 12 (\) >
+
+          For connection: run-call-entry
+          ==== 
+           [token= format]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= t]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= "Fo..."]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= x]
+             ....
+            ....
+           ....
+          ....
+
+          For connection: run-call-entry-direct
+          ==== 
+
+          Annotated: 
+          ---- 
+           [token= format]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= t]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= "Fo..."]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= x]
+             ....
+            ....
+           ....
+          ....
+         ....
+        ....
+
+        For connection: run-cross-sequence
+        ==== 
+         <call 13>
+
+         For connection: run-call-entry
+         ==== 
+          [token= &prs]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= "OK"]
+          ....
+         ....
+        ....
+
+        For connection: run-call-entry-direct
+        ==== 
+
+        Annotated: 
+ [[<call 13> (&prs)]]
+        ---- 
+         [token= &prs]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= "OK"]
+         ....
+        ....
+       ....
+
+       Has connection: parent-block-map
+
+      ....
+     ....
+
+     For connection: run-lexical-scope
+     ==== 
+      <<node/>>
+     ....
+    ....
+   ....
+
+   For connection: run-call-entry-direct
+   ==== 
+
+   Annotated: 
+ [[<call 3> (&if)]]
+   ---- 
+    [token= &if]
+
+    For connection: run-call-entry
+    ==== 
+     <call 4 (\) >
+
+     For connection: run-call-entry
+     ==== 
+      [token= =?]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= x]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= -1]
+       ....
+      ....
+     ....
+
+     For connection: run-cross-sequence
+     ==== 
+      <call 5>
+
+      For connection: run-call-entry
+      ==== 
+       [token= do]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= ->]
+
+        For connection: run-function-def-entry
+        ==== 
+         <<node/<fdef>>>
+
+         For connection: run-call-entry
+         ==== 
+          <call 6>
+
+          For connection: run-data-entry
+          ==== 
+           <data 1 ...>
+
+           For connection: run-data-entry
+           ==== 
+            [token= .()]
+
+            For connection: run-data-leave
+            ==== 
+             <... data>
+            ....
+           ....
+          ....
+         ....
+        ....
+
+        For connection: run-fundef-arrow-sequence
+        ==== 
+         <call 8 (\) >
+
+         For connection: run-call-entry
+         ==== 
+          [token= values]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= t]
+          ....
+         ....
+
+         For connection: run-cross-sequence
+         ==== 
+          <call 9>
+
+          For connection: run-call-entry
+          ==== 
+           [token= do]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= ->]
+
+            For connection: run-function-def-entry
+            ==== 
+             <<node/<fdef>>>
+
+             For connection: run-call-entry
+             ==== 
+              <call 10>
+
+              For connection: run-data-entry
+              ==== 
+               <data 2 ...>
+
+               For connection: run-data-entry
+               ==== 
+                [token= .()]
+
+                For connection: run-data-leave
+                ==== 
+                 <... data>
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-block-entry
+            ==== 
+             <block 2:2>
+
+             For connection: run-call-entry
+             ==== 
+              <call 11>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &lr]
+
+               For connection: run-call-entry
+               ==== 
+                <call 12 (\) >
+
+                For connection: run-call-entry
+                ==== 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+
+                For connection: run-call-entry-direct
+                ==== 
+
+                Annotated: 
+                ---- 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-cross-sequence
+              ==== 
+               <call 13>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+ [[<call 13> (&prs)]]
+              ---- 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             Has connection: parent-block-map
+
+            ....
+           ....
+          ....
+
+          For connection: run-call-entry-direct
+          ==== 
+
+          Annotated: 
+          ---- 
+           [token= do]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= ->]
+
+            For connection: run-function-def-entry
+            ==== 
+             <<node/<fdef>>>
+
+             For connection: run-call-entry
+             ==== 
+              <call 10>
+
+              For connection: run-data-entry
+              ==== 
+               <data 2 ...>
+
+               For connection: run-data-entry
+               ==== 
+                [token= .()]
+
+                For connection: run-data-leave
+                ==== 
+                 <... data>
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-block-entry
+            ==== 
+             <block 2:2>
+
+             For connection: run-call-entry
+             ==== 
+              <call 11>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &lr]
+
+               For connection: run-call-entry
+               ==== 
+                <call 12 (\) >
+
+                For connection: run-call-entry
+                ==== 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+
+                For connection: run-call-entry-direct
+                ==== 
+
+                Annotated: 
+                ---- 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-cross-sequence
+              ==== 
+               <call 13>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+ [[<call 13> (&prs)]]
+              ---- 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             Has connection: parent-block-map
+
+            ....
+           ....
+          ....
+         ....
+
+         For connection: run-cross-do
+         ==== 
+          [token= do]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= ->]
+
+           For connection: run-function-def-entry
+           ==== 
+            <<node/<fdef>>>
+
+            For connection: run-call-entry
+            ==== 
+             <call 10>
+
+             For connection: run-data-entry
+             ==== 
+              <data 2 ...>
+
+              For connection: run-data-entry
+              ==== 
+               [token= .()]
+
+               For connection: run-data-leave
+               ==== 
+                <... data>
+               ....
+              ....
+             ....
+            ....
+           ....
+
+           For connection: run-block-entry
+           ==== 
+            <block 2:2>
+
+            For connection: run-call-entry
+            ==== 
+             <call 11>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &lr]
+
+              For connection: run-call-entry
+              ==== 
+               <call 12 (\) >
+
+               For connection: run-call-entry
+               ==== 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+               ---- 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-cross-sequence
+             ==== 
+              <call 13>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+ [[<call 13> (&prs)]]
+             ---- 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            Has connection: parent-block-map
+
+           ....
+          ....
+         ....
+
+         For connection: run-call-entry-direct
+         ==== 
+
+         Annotated: 
+         ---- 
+          [token= values]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= t]
+          ....
+         ....
+        ....
+
+        For connection: run-block-entry
+        ==== 
+         <block 1:1>
+
+         For connection: run-call-entry
+         ==== 
+          <call 7>
+
+          For connection: run-call-entry
+          ==== 
+           [token= &prs]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= "No..."]
+           ....
+
+           For connection: element-association
+           ==== 
+            <<node/>>
+           ....
+          ....
+
+          For connection: run-nested-block-entry
+          ==== 
+           <block 2:2>
+
+           For connection: run-call-entry
+           ==== 
+            <call 11>
+
+            For connection: run-call-entry
+            ==== 
+             [token= &lr]
+
+             For connection: run-call-entry
+             ==== 
+              <call 12 (\) >
+
+              For connection: run-call-entry
+              ==== 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+              ---- 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-cross-sequence
+            ==== 
+             <call 13>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            For connection: run-call-entry-direct
+            ==== 
+
+            Annotated: 
+ [[<call 13> (&prs)]]
+            ---- 
+             [token= &prs]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "OK"]
+             ....
+            ....
+           ....
+
+           Has connection: parent-block-map
+
+          ....
+         ....
+
+         For connection: run-lexical-scope
+         ==== 
+          <<node/>>
+         ....
+        ....
+       ....
+      ....
+
+      For connection: run-cross-sequence
+      ==== 
+       <call 8 (\) >
+
+       For connection: run-call-entry
+       ==== 
+        [token= values]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= t]
+        ....
+       ....
+
+       For connection: run-cross-sequence
+       ==== 
+        <call 9>
+
+        For connection: run-call-entry
+        ==== 
+         [token= do]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= ->]
+
+          For connection: run-function-def-entry
+          ==== 
+           <<node/<fdef>>>
+
+           For connection: run-call-entry
+           ==== 
+            <call 10>
+
+            For connection: run-data-entry
+            ==== 
+             <data 2 ...>
+
+             For connection: run-data-entry
+             ==== 
+              [token= .()]
+
+              For connection: run-data-leave
+              ==== 
+               <... data>
+              ....
+             ....
+            ....
+           ....
+          ....
+
+          For connection: run-block-entry
+          ==== 
+           <block 2:2>
+
+           For connection: run-call-entry
+           ==== 
+            <call 11>
+
+            For connection: run-call-entry
+            ==== 
+             [token= &lr]
+
+             For connection: run-call-entry
+             ==== 
+              <call 12 (\) >
+
+              For connection: run-call-entry
+              ==== 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+              ---- 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-cross-sequence
+            ==== 
+             <call 13>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            For connection: run-call-entry-direct
+            ==== 
+
+            Annotated: 
+ [[<call 13> (&prs)]]
+            ---- 
+             [token= &prs]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "OK"]
+             ....
+            ....
+           ....
+
+           Has connection: parent-block-map
+
+          ....
+         ....
+        ....
+
+        For connection: run-call-entry-direct
+        ==== 
+
+        Annotated: 
+        ---- 
+         [token= do]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= ->]
+
+          For connection: run-function-def-entry
+          ==== 
+           <<node/<fdef>>>
+
+           For connection: run-call-entry
+           ==== 
+            <call 10>
+
+            For connection: run-data-entry
+            ==== 
+             <data 2 ...>
+
+             For connection: run-data-entry
+             ==== 
+              [token= .()]
+
+              For connection: run-data-leave
+              ==== 
+               <... data>
+              ....
+             ....
+            ....
+           ....
+          ....
+
+          For connection: run-block-entry
+          ==== 
+           <block 2:2>
+
+           For connection: run-call-entry
+           ==== 
+            <call 11>
+
+            For connection: run-call-entry
+            ==== 
+             [token= &lr]
+
+             For connection: run-call-entry
+             ==== 
+              <call 12 (\) >
+
+              For connection: run-call-entry
+              ==== 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+              ---- 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-cross-sequence
+            ==== 
+             <call 13>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            For connection: run-call-entry-direct
+            ==== 
+
+            Annotated: 
+ [[<call 13> (&prs)]]
+            ---- 
+             [token= &prs]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "OK"]
+             ....
+            ....
+           ....
+
+           Has connection: parent-block-map
+
+          ....
+         ....
+        ....
+       ....
+
+       For connection: run-cross-do
+       ==== 
+        [token= do]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= ->]
+
+         For connection: run-function-def-entry
+         ==== 
+          <<node/<fdef>>>
+
+          For connection: run-call-entry
+          ==== 
+           <call 10>
+
+           For connection: run-data-entry
+           ==== 
+            <data 2 ...>
+
+            For connection: run-data-entry
+            ==== 
+             [token= .()]
+
+             For connection: run-data-leave
+             ==== 
+              <... data>
+             ....
+            ....
+           ....
+          ....
+         ....
+
+         For connection: run-block-entry
+         ==== 
+          <block 2:2>
+
+          For connection: run-call-entry
+          ==== 
+           <call 11>
+
+           For connection: run-call-entry
+           ==== 
+            [token= &lr]
+
+            For connection: run-call-entry
+            ==== 
+             <call 12 (\) >
+
+             For connection: run-call-entry
+             ==== 
+              [token= format]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= t]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "Fo..."]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= x]
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+             ---- 
+              [token= format]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= t]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "Fo..."]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= x]
+                ....
+               ....
+              ....
+             ....
+            ....
+           ....
+
+           For connection: run-cross-sequence
+           ==== 
+            <call 13>
+
+            For connection: run-call-entry
+            ==== 
+             [token= &prs]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "OK"]
+             ....
+            ....
+           ....
+
+           For connection: run-call-entry-direct
+           ==== 
+
+           Annotated: 
+ [[<call 13> (&prs)]]
+           ---- 
+            [token= &prs]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= "OK"]
+            ....
+           ....
+          ....
+
+          Has connection: parent-block-map
+
+         ....
+        ....
+       ....
+
+       For connection: run-call-entry-direct
+       ==== 
+
+       Annotated: 
+       ---- 
+        [token= values]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= t]
+        ....
+       ....
+      ....
+
+      For connection: run-call-entry-direct
+      ==== 
+
+      Annotated: 
+      ---- 
+       [token= do]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= ->]
+
+        For connection: run-function-def-entry
+        ==== 
+         <<node/<fdef>>>
+
+         For connection: run-call-entry
+         ==== 
+          <call 6>
+
+          For connection: run-data-entry
+          ==== 
+           <data 1 ...>
+
+           For connection: run-data-entry
+           ==== 
+            [token= .()]
+
+            For connection: run-data-leave
+            ==== 
+             <... data>
+            ....
+           ....
+          ....
+         ....
+        ....
+
+        For connection: run-fundef-arrow-sequence
+        ==== 
+         <call 8 (\) >
+
+         For connection: run-call-entry
+         ==== 
+          [token= values]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= t]
+          ....
+         ....
+
+         For connection: run-cross-sequence
+         ==== 
+          <call 9>
+
+          For connection: run-call-entry
+          ==== 
+           [token= do]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= ->]
+
+            For connection: run-function-def-entry
+            ==== 
+             <<node/<fdef>>>
+
+             For connection: run-call-entry
+             ==== 
+              <call 10>
+
+              For connection: run-data-entry
+              ==== 
+               <data 2 ...>
+
+               For connection: run-data-entry
+               ==== 
+                [token= .()]
+
+                For connection: run-data-leave
+                ==== 
+                 <... data>
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-block-entry
+            ==== 
+             <block 2:2>
+
+             For connection: run-call-entry
+             ==== 
+              <call 11>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &lr]
+
+               For connection: run-call-entry
+               ==== 
+                <call 12 (\) >
+
+                For connection: run-call-entry
+                ==== 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+
+                For connection: run-call-entry-direct
+                ==== 
+
+                Annotated: 
+                ---- 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-cross-sequence
+              ==== 
+               <call 13>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+ [[<call 13> (&prs)]]
+              ---- 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             Has connection: parent-block-map
+
+            ....
+           ....
+          ....
+
+          For connection: run-call-entry-direct
+          ==== 
+
+          Annotated: 
+          ---- 
+           [token= do]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= ->]
+
+            For connection: run-function-def-entry
+            ==== 
+             <<node/<fdef>>>
+
+             For connection: run-call-entry
+             ==== 
+              <call 10>
+
+              For connection: run-data-entry
+              ==== 
+               <data 2 ...>
+
+               For connection: run-data-entry
+               ==== 
+                [token= .()]
+
+                For connection: run-data-leave
+                ==== 
+                 <... data>
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-block-entry
+            ==== 
+             <block 2:2>
+
+             For connection: run-call-entry
+             ==== 
+              <call 11>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &lr]
+
+               For connection: run-call-entry
+               ==== 
+                <call 12 (\) >
+
+                For connection: run-call-entry
+                ==== 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+
+                For connection: run-call-entry-direct
+                ==== 
+
+                Annotated: 
+                ---- 
+                 [token= format]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= t]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= "Fo..."]
+
+                   For connection: run-call-sequence
+                   ==== 
+                    [token= x]
+                   ....
+                  ....
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-cross-sequence
+              ==== 
+               <call 13>
+
+               For connection: run-call-entry
+               ==== 
+                [token= &prs]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "OK"]
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+ [[<call 13> (&prs)]]
+              ---- 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             Has connection: parent-block-map
+
+            ....
+           ....
+          ....
+         ....
+
+         For connection: run-cross-do
+         ==== 
+          [token= do]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= ->]
+
+           For connection: run-function-def-entry
+           ==== 
+            <<node/<fdef>>>
+
+            For connection: run-call-entry
+            ==== 
+             <call 10>
+
+             For connection: run-data-entry
+             ==== 
+              <data 2 ...>
+
+              For connection: run-data-entry
+              ==== 
+               [token= .()]
+
+               For connection: run-data-leave
+               ==== 
+                <... data>
+               ....
+              ....
+             ....
+            ....
+           ....
+
+           For connection: run-block-entry
+           ==== 
+            <block 2:2>
+
+            For connection: run-call-entry
+            ==== 
+             <call 11>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &lr]
+
+              For connection: run-call-entry
+              ==== 
+               <call 12 (\) >
+
+               For connection: run-call-entry
+               ==== 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+               ---- 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-cross-sequence
+             ==== 
+              <call 13>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+ [[<call 13> (&prs)]]
+             ---- 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            Has connection: parent-block-map
+
+           ....
+          ....
+         ....
+
+         For connection: run-call-entry-direct
+         ==== 
+
+         Annotated: 
+         ---- 
+          [token= values]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= t]
+          ....
+         ....
+        ....
+
+        For connection: run-block-entry
+        ==== 
+         <block 1:1>
+
+         For connection: run-call-entry
+         ==== 
+          <call 7>
+
+          For connection: run-call-entry
+          ==== 
+           [token= &prs]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= "No..."]
+           ....
+
+           For connection: element-association
+           ==== 
+            <<node/>>
+           ....
+          ....
+
+          For connection: run-nested-block-entry
+          ==== 
+           <block 2:2>
+
+           For connection: run-call-entry
+           ==== 
+            <call 11>
+
+            For connection: run-call-entry
+            ==== 
+             [token= &lr]
+
+             For connection: run-call-entry
+             ==== 
+              <call 12 (\) >
+
+              For connection: run-call-entry
+              ==== 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+              ---- 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-cross-sequence
+            ==== 
+             <call 13>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            For connection: run-call-entry-direct
+            ==== 
+
+            Annotated: 
+ [[<call 13> (&prs)]]
+            ---- 
+             [token= &prs]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "OK"]
+             ....
+            ....
+           ....
+
+           Has connection: parent-block-map
+
+          ....
+         ....
+
+         For connection: run-lexical-scope
+         ==== 
+          <<node/>>
+         ....
+        ....
+       ....
+      ....
+     ....
+
+     For connection: run-cross-do
+     ==== 
+      [token= do]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= ->]
+
+       For connection: run-function-def-entry
+       ==== 
+        <<node/<fdef>>>
+
+        For connection: run-call-entry
+        ==== 
+         <call 6>
+
+         For connection: run-data-entry
+         ==== 
+          <data 1 ...>
+
+          For connection: run-data-entry
+          ==== 
+           [token= .()]
+
+           For connection: run-data-leave
+           ==== 
+            <... data>
+           ....
+          ....
+         ....
+        ....
+       ....
+
+       For connection: run-fundef-arrow-sequence
+       ==== 
+        <call 8 (\) >
+
+        For connection: run-call-entry
+        ==== 
+         [token= values]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= t]
+         ....
+        ....
+
+        For connection: run-cross-sequence
+        ==== 
+         <call 9>
+
+         For connection: run-call-entry
+         ==== 
+          [token= do]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= ->]
+
+           For connection: run-function-def-entry
+           ==== 
+            <<node/<fdef>>>
+
+            For connection: run-call-entry
+            ==== 
+             <call 10>
+
+             For connection: run-data-entry
+             ==== 
+              <data 2 ...>
+
+              For connection: run-data-entry
+              ==== 
+               [token= .()]
+
+               For connection: run-data-leave
+               ==== 
+                <... data>
+               ....
+              ....
+             ....
+            ....
+           ....
+
+           For connection: run-block-entry
+           ==== 
+            <block 2:2>
+
+            For connection: run-call-entry
+            ==== 
+             <call 11>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &lr]
+
+              For connection: run-call-entry
+              ==== 
+               <call 12 (\) >
+
+               For connection: run-call-entry
+               ==== 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+               ---- 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-cross-sequence
+             ==== 
+              <call 13>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+ [[<call 13> (&prs)]]
+             ---- 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            Has connection: parent-block-map
+
+           ....
+          ....
+         ....
+
+         For connection: run-call-entry-direct
+         ==== 
+
+         Annotated: 
+         ---- 
+          [token= do]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= ->]
+
+           For connection: run-function-def-entry
+           ==== 
+            <<node/<fdef>>>
+
+            For connection: run-call-entry
+            ==== 
+             <call 10>
+
+             For connection: run-data-entry
+             ==== 
+              <data 2 ...>
+
+              For connection: run-data-entry
+              ==== 
+               [token= .()]
+
+               For connection: run-data-leave
+               ==== 
+                <... data>
+               ....
+              ....
+             ....
+            ....
+           ....
+
+           For connection: run-block-entry
+           ==== 
+            <block 2:2>
+
+            For connection: run-call-entry
+            ==== 
+             <call 11>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &lr]
+
+              For connection: run-call-entry
+              ==== 
+               <call 12 (\) >
+
+               For connection: run-call-entry
+               ==== 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+
+               For connection: run-call-entry-direct
+               ==== 
+
+               Annotated: 
+               ---- 
+                [token= format]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= t]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= "Fo..."]
+
+                  For connection: run-call-sequence
+                  ==== 
+                   [token= x]
+                  ....
+                 ....
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-cross-sequence
+             ==== 
+              <call 13>
+
+              For connection: run-call-entry
+              ==== 
+               [token= &prs]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "OK"]
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+ [[<call 13> (&prs)]]
+             ---- 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            Has connection: parent-block-map
+
+           ....
+          ....
+         ....
+        ....
+
+        For connection: run-cross-do
+        ==== 
+         [token= do]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= ->]
+
+          For connection: run-function-def-entry
+          ==== 
+           <<node/<fdef>>>
+
+           For connection: run-call-entry
+           ==== 
+            <call 10>
+
+            For connection: run-data-entry
+            ==== 
+             <data 2 ...>
+
+             For connection: run-data-entry
+             ==== 
+              [token= .()]
+
+              For connection: run-data-leave
+              ==== 
+               <... data>
+              ....
+             ....
+            ....
+           ....
+          ....
+
+          For connection: run-block-entry
+          ==== 
+           <block 2:2>
+
+           For connection: run-call-entry
+           ==== 
+            <call 11>
+
+            For connection: run-call-entry
+            ==== 
+             [token= &lr]
+
+             For connection: run-call-entry
+             ==== 
+              <call 12 (\) >
+
+              For connection: run-call-entry
+              ==== 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+
+              For connection: run-call-entry-direct
+              ==== 
+
+              Annotated: 
+              ---- 
+               [token= format]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= t]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= "Fo..."]
+
+                 For connection: run-call-sequence
+                 ==== 
+                  [token= x]
+                 ....
+                ....
+               ....
+              ....
+             ....
+            ....
+
+            For connection: run-cross-sequence
+            ==== 
+             <call 13>
+
+             For connection: run-call-entry
+             ==== 
+              [token= &prs]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "OK"]
+              ....
+             ....
+            ....
+
+            For connection: run-call-entry-direct
+            ==== 
+
+            Annotated: 
+ [[<call 13> (&prs)]]
+            ---- 
+             [token= &prs]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "OK"]
+             ....
+            ....
+           ....
+
+           Has connection: parent-block-map
+
+          ....
+         ....
+        ....
+
+        For connection: run-call-entry-direct
+        ==== 
+
+        Annotated: 
+        ---- 
+         [token= values]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= t]
+         ....
+        ....
+       ....
+
+       For connection: run-block-entry
+       ==== 
+        <block 1:1>
+
+        For connection: run-call-entry
+        ==== 
+         <call 7>
+
+         For connection: run-call-entry
+         ==== 
+          [token= &prs]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= "No..."]
+          ....
+
+          For connection: element-association
+          ==== 
+           <<node/>>
+          ....
+         ....
+
+         For connection: run-nested-block-entry
+         ==== 
+          <block 2:2>
+
+          For connection: run-call-entry
+          ==== 
+           <call 11>
+
+           For connection: run-call-entry
+           ==== 
+            [token= &lr]
+
+            For connection: run-call-entry
+            ==== 
+             <call 12 (\) >
+
+             For connection: run-call-entry
+             ==== 
+              [token= format]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= t]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "Fo..."]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= x]
+                ....
+               ....
+              ....
+             ....
+
+             For connection: run-call-entry-direct
+             ==== 
+
+             Annotated: 
+             ---- 
+              [token= format]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= t]
+
+               For connection: run-call-sequence
+               ==== 
+                [token= "Fo..."]
+
+                For connection: run-call-sequence
+                ==== 
+                 [token= x]
+                ....
+               ....
+              ....
+             ....
+            ....
+           ....
+
+           For connection: run-cross-sequence
+           ==== 
+            <call 13>
+
+            For connection: run-call-entry
+            ==== 
+             [token= &prs]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "OK"]
+             ....
+            ....
+           ....
+
+           For connection: run-call-entry-direct
+           ==== 
+
+           Annotated: 
+ [[<call 13> (&prs)]]
+           ---- 
+            [token= &prs]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= "OK"]
+            ....
+           ....
+          ....
+
+          Has connection: parent-block-map
+
+         ....
+        ....
+
+        For connection: run-lexical-scope
+        ==== 
+         <<node/>>
+        ....
+       ....
+      ....
+     ....
+
+     For connection: run-call-entry-direct
+     ==== 
+
+     Annotated: 
+     ---- 
+      [token= x]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= -1]
+      ....
+     ....
+    ....
+
+    For connection: element-association
+    ==== 
+     <<node/>>
+    ....
+   ....
+  ....
+
+  For connection: element-review
+  ==== 
+   <<node/>>
+  ....
+
+  For connection: run-call-entry-direct
+  ==== 
+
+  Annotated: 
+ [[<call 1> (x) (&if)]]
+  ---- 
+   [token= x]
+
+   For connection: run-call-entry
+   ==== 
+    <call 2>
+
+    For connection: run-call-entry
+    ==== 
+     [token= test-...]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= "ab..."]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= "cd"]
+      ....
+     ....
+    ....
+   ....
+  ....
+ ....
+
+ For connection: run-call-entry-direct
+ ==== 
+
+ Annotated: 
+ [[<call 0> (my) (x)]]
+ ---- 
+  [token= my]
+
+  For connection: run-call-sequence
+  ==== 
+   [token= ,x]
+
+   For connection: run-call-sequence
+   ==== 
+    [token= :::]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= int]
+    ....
+   ....
+  ....
+ ....
+....

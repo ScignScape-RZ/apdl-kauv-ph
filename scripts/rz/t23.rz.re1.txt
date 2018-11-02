@@ -1,0 +1,71 @@
+Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t23.rz
+<<node/<root> (&test-arg-vec-str)>>
+
+For connection: run-block-entry
+==== 
+ <block 0:0>
+
+ For connection: run-call-entry
+ ==== 
+  <call 0>
+
+  For connection: run-call-entry
+  ==== 
+   [token= &test...]
+
+   For connection: run-call-sequence
+   ==== 
+    [token= "ok1"]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= "ok2"]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= "ok3"]
+     ....
+    ....
+   ....
+
+   For connection: element-association
+   ==== 
+    <<node/>>
+   ....
+  ....
+
+  For connection: element-review
+  ==== 
+   <<node/>>
+  ....
+ ....
+
+ For connection: run-call-entry-direct
+ ==== 
+
+ Annotated: 
+ [[<call 0> (&test-arg-vec-str)]]
+ ---- 
+  [token= &test...]
+
+  For connection: run-call-sequence
+  ==== 
+   [token= "ok1"]
+
+   For connection: run-call-sequence
+   ==== 
+    [token= "ok2"]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= "ok3"]
+    ....
+   ....
+  ....
+
+  For connection: element-association
+  ==== 
+   <<node/>>
+  ....
+ ....
+....

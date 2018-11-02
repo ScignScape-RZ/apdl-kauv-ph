@@ -1,0 +1,193 @@
+Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t6.rz
+<<node/<root> (&test-dfr)>>
+
+For connection: run-block-entry
+==== 
+ <block 0:0>
+
+ For connection: run-call-entry
+ ==== 
+  <call 0>
+
+  For connection: run-call-entry
+  ==== 
+   [token= &test...]
+
+   For connection: run-call-entry
+   ==== 
+    <call 1 (\) >
+
+    For connection: run-call-entry
+    ==== 
+     [token= +]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= 2]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= 3]
+      ....
+     ....
+    ....
+
+    For connection: run-cross-sequence
+    ==== 
+     <call 2 (\) >
+
+     For connection: run-call-entry
+     ==== 
+      [token= +]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= 5]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= 6]
+       ....
+      ....
+     ....
+
+     For connection: run-call-entry-direct
+     ==== 
+
+     Annotated: 
+     ---- 
+      [token= +]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= 5]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= 6]
+       ....
+      ....
+     ....
+    ....
+
+    For connection: run-call-entry-direct
+    ==== 
+
+    Annotated: 
+    ---- 
+     [token= +]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= 2]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= 3]
+      ....
+     ....
+    ....
+   ....
+
+   For connection: element-association
+   ==== 
+    <<node/>>
+   ....
+  ....
+
+  For connection: element-review
+  ==== 
+   <<node/>>
+  ....
+ ....
+
+ For connection: run-call-entry-direct
+ ==== 
+
+ Annotated: 
+ [[<call 0> (&test-dfr)]]
+ ---- 
+  [token= &test...]
+
+  For connection: run-call-entry
+  ==== 
+   <call 1 (\) >
+
+   For connection: run-call-entry
+   ==== 
+    [token= +]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= 2]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= 3]
+     ....
+    ....
+   ....
+
+   For connection: run-cross-sequence
+   ==== 
+    <call 2 (\) >
+
+    For connection: run-call-entry
+    ==== 
+     [token= +]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= 5]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= 6]
+      ....
+     ....
+    ....
+
+    For connection: run-call-entry-direct
+    ==== 
+
+    Annotated: 
+    ---- 
+     [token= +]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= 5]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= 6]
+      ....
+     ....
+    ....
+   ....
+
+   For connection: run-call-entry-direct
+   ==== 
+
+   Annotated: 
+   ---- 
+    [token= +]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= 2]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= 3]
+     ....
+    ....
+   ....
+  ....
+
+  For connection: element-association
+  ==== 
+   <<node/>>
+  ....
+ ....
+....

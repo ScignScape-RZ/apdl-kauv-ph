@@ -1,0 +1,10 @@
+
+(block 
+  (<0>my (rz-decl fnd) ::: Fn_Doc*</0>) 
+  (<1>\== fnd default</1>) 
+  (<2>my (rz-decl kenv) ::: KCM_Env*</2>) 
+  (<3>\= kenv
+    (<4>envv _$</4>)</3>) 
+  (<5>-> fnd init kenv</5>) 
+  (<6>my (rz-decl play_sample) ::: $-></6>) 
+  (<9>-> fnd kph-gen "play_sample" "3"</9>))

@@ -1,0 +1,17 @@
+
+
+&test-arg-vec-str "ok1" "ok2" "ok3";
+
+
+,fnd ::: Fn_Doc*;
+fnd \== default; 
+
+,kenv ::: KCM_Env*;
+kenv \= (envv "KCM_Env*");
+
+fnd -> init kenv;
+
+,test-fn ::: .(int)  $-> extern;
+
+fnd -> read  "test-fn";
+

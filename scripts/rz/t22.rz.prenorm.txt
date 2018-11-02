@@ -1,0 +1,3 @@
+
+(block 
+  (<0>&test-prss "ok1" "ok2"</0>))

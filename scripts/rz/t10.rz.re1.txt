@@ -1,0 +1,397 @@
+Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t10.rz
+<<node/<root> (&test-call)>>
+
+For connection: run-block-entry
+==== 
+ <block 0:0>
+
+ For connection: run-call-entry
+ ==== 
+  <call 0>
+
+  For connection: run-call-entry
+  ==== 
+   [token= &test...]
+
+   For connection: run-call-entry
+   ==== 
+    <call 1>
+
+    For connection: run-call-entry
+    ==== 
+     [token= do]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= ->]
+
+      For connection: run-function-def-entry
+      ==== 
+       <<node/<fdef>>>
+
+       For connection: run-call-entry
+       ==== 
+        <call 2>
+
+        For connection: run-data-entry
+        ==== 
+         <data 1 ...>
+
+         For connection: run-data-entry
+         ==== 
+          [token= .()]
+
+          For connection: run-data-leave
+          ==== 
+           <... data>
+          ....
+         ....
+        ....
+       ....
+      ....
+
+      For connection: run-block-entry
+      ==== 
+       <block 1:1>
+
+       For connection: run-call-entry
+       ==== 
+        <call 3>
+
+        For connection: run-call-entry
+        ==== 
+         [token= &prn]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= 80]
+         ....
+
+         For connection: element-association
+         ==== 
+          <<node/>>
+         ....
+
+         For connection: element-association
+         ==== 
+          <<node/>>
+         ....
+        ....
+       ....
+
+       For connection: run-lexical-scope
+       ==== 
+        <<node/>>
+       ....
+
+       For connection: run-lexical-scope
+       ==== 
+        <<node/>>
+       ....
+      ....
+     ....
+    ....
+
+    For connection: run-call-entry-direct
+    ==== 
+
+    Annotated: 
+    ---- 
+     [token= do]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= ->]
+
+      For connection: run-function-def-entry
+      ==== 
+       <<node/<fdef>>>
+
+       For connection: run-call-entry
+       ==== 
+        <call 2>
+
+        For connection: run-data-entry
+        ==== 
+         <data 1 ...>
+
+         For connection: run-data-entry
+         ==== 
+          [token= .()]
+
+          For connection: run-data-leave
+          ==== 
+           <... data>
+          ....
+         ....
+        ....
+       ....
+      ....
+
+      For connection: run-block-entry
+      ==== 
+       <block 1:1>
+
+       For connection: run-call-entry
+       ==== 
+        <call 3>
+
+        For connection: run-call-entry
+        ==== 
+         [token= &prn]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= 80]
+         ....
+
+         For connection: element-association
+         ==== 
+          <<node/>>
+         ....
+
+         For connection: element-association
+         ==== 
+          <<node/>>
+         ....
+        ....
+       ....
+
+       For connection: run-lexical-scope
+       ==== 
+        <<node/>>
+       ....
+
+       For connection: run-lexical-scope
+       ==== 
+        <<node/>>
+       ....
+      ....
+     ....
+    ....
+   ....
+
+   For connection: element-association
+   ==== 
+    <<node/>>
+   ....
+  ....
+
+  For connection: run-nested-block-entry
+  ==== 
+   <block 1:1>
+
+   For connection: run-call-entry
+   ==== 
+    <call 3>
+
+    For connection: run-call-entry
+    ==== 
+     [token= &prn]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= 80]
+     ....
+
+     For connection: element-association
+     ==== 
+      <<node/>>
+     ....
+
+     For connection: element-association
+     ==== 
+      <<node/>>
+     ....
+    ....
+   ....
+
+   For connection: run-lexical-scope
+   ==== 
+    <<node/>>
+   ....
+
+   For connection: run-lexical-scope
+   ==== 
+    <<node/>>
+   ....
+  ....
+
+  For connection: element-review
+  ==== 
+   <<node/>>
+  ....
+ ....
+
+ For connection: run-call-entry-direct
+ ==== 
+
+ Annotated: 
+ [[<call 0> (&test-call)]]
+ ---- 
+  [token= &test...]
+
+  For connection: run-call-entry
+  ==== 
+   <call 1>
+
+   For connection: run-call-entry
+   ==== 
+    [token= do]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= ->]
+
+     For connection: run-function-def-entry
+     ==== 
+      <<node/<fdef>>>
+
+      For connection: run-call-entry
+      ==== 
+       <call 2>
+
+       For connection: run-data-entry
+       ==== 
+        <data 1 ...>
+
+        For connection: run-data-entry
+        ==== 
+         [token= .()]
+
+         For connection: run-data-leave
+         ==== 
+          <... data>
+         ....
+        ....
+       ....
+      ....
+     ....
+
+     For connection: run-block-entry
+     ==== 
+      <block 1:1>
+
+      For connection: run-call-entry
+      ==== 
+       <call 3>
+
+       For connection: run-call-entry
+       ==== 
+        [token= &prn]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= 80]
+        ....
+
+        For connection: element-association
+        ==== 
+         <<node/>>
+        ....
+
+        For connection: element-association
+        ==== 
+         <<node/>>
+        ....
+       ....
+      ....
+
+      For connection: run-lexical-scope
+      ==== 
+       <<node/>>
+      ....
+
+      For connection: run-lexical-scope
+      ==== 
+       <<node/>>
+      ....
+     ....
+    ....
+   ....
+
+   For connection: run-call-entry-direct
+   ==== 
+
+   Annotated: 
+   ---- 
+    [token= do]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= ->]
+
+     For connection: run-function-def-entry
+     ==== 
+      <<node/<fdef>>>
+
+      For connection: run-call-entry
+      ==== 
+       <call 2>
+
+       For connection: run-data-entry
+       ==== 
+        <data 1 ...>
+
+        For connection: run-data-entry
+        ==== 
+         [token= .()]
+
+         For connection: run-data-leave
+         ==== 
+          <... data>
+         ....
+        ....
+       ....
+      ....
+     ....
+
+     For connection: run-block-entry
+     ==== 
+      <block 1:1>
+
+      For connection: run-call-entry
+      ==== 
+       <call 3>
+
+       For connection: run-call-entry
+       ==== 
+        [token= &prn]
+
+        For connection: run-call-sequence
+        ==== 
+         [token= 80]
+        ....
+
+        For connection: element-association
+        ==== 
+         <<node/>>
+        ....
+
+        For connection: element-association
+        ==== 
+         <<node/>>
+        ....
+       ....
+      ....
+
+      For connection: run-lexical-scope
+      ==== 
+       <<node/>>
+      ....
+
+      For connection: run-lexical-scope
+      ==== 
+       <<node/>>
+      ....
+     ....
+    ....
+   ....
+  ....
+
+  For connection: element-association
+  ==== 
+   <<node/>>
+  ....
+ ....
+....

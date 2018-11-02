@@ -1,0 +1,11 @@
+
+(block 
+  (<0>&test-arg-vec-str "ok1" "ok2" "ok3"</0>) 
+  (<1>my (rz-decl fnd) ::: Fn_Doc*</1>) 
+  (<2>\== fnd default</2>) 
+  (<3>my (rz-decl kenv) ::: KCM_Env*</3>) 
+  (<4>\= kenv
+    (<5>envv "KCM_Env*"</5>)</4>) 
+  (<6>-> fnd init kenv</6>) 
+  (<7>my (rz-decl test-fn) ::: $-></7>) 
+  (<9>-> fnd read "test-fn"</9>))

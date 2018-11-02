@@ -1,0 +1,19 @@
+
+(block 
+  (<0>my (rz-decl x) ::: int</0>) 
+  (<1>\= x
+    (<2>test-find "abcdef" "de"</2>)</1>) 
+  (<3>&if
+   (<4>=? x 3</4>) 
+   (<5>do ->
+    (block 
+      (<7>&lr
+       (<8>format t "Found: ~a~%" x</8>)</7>) 
+      (<9>&prs "OK"</9>))</5>) 
+   (<10>values t</10>) 
+   (<11>do ->
+    (block 
+      (<13>&prs "Not Found"</13>))</11>)</3>) 
+  (<14>&lr
+   (<15>format t "review, x = ~a~%" x</15>)</14>) 
+  (<16>&prs "done."</16>))

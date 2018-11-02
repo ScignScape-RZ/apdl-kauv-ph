@@ -1,0 +1,137 @@
+Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t28.rz
+<<node/<root> (&lr)>>
+
+For connection: run-block-entry
+==== 
+ <block 0:0>
+
+ For connection: run-call-entry
+ ==== 
+  <call 0>
+
+  For connection: run-call-entry
+  ==== 
+   [token= &lr]
+
+   For connection: run-call-entry
+   ==== 
+    <call 1 (\) >
+
+    For connection: run-call-entry
+    ==== 
+     [token= format]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= t]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= "Fo..."]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= 77]
+       ....
+      ....
+     ....
+    ....
+
+    For connection: run-call-entry-direct
+    ==== 
+
+    Annotated: 
+    ---- 
+     [token= format]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= t]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= "Fo..."]
+
+       For connection: run-call-sequence
+       ==== 
+        [token= 77]
+       ....
+      ....
+     ....
+    ....
+   ....
+
+   For connection: element-association
+   ==== 
+    <<node/>>
+   ....
+  ....
+
+  For connection: element-review
+  ==== 
+   <<node/>>
+  ....
+ ....
+
+ For connection: run-call-entry-direct
+ ==== 
+
+ Annotated: 
+ [[<call 0> (&lr)]]
+ ---- 
+  [token= &lr]
+
+  For connection: run-call-entry
+  ==== 
+   <call 1 (\) >
+
+   For connection: run-call-entry
+   ==== 
+    [token= format]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= t]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= "Fo..."]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= 77]
+      ....
+     ....
+    ....
+   ....
+
+   For connection: run-call-entry-direct
+   ==== 
+
+   Annotated: 
+   ---- 
+    [token= format]
+
+    For connection: run-call-sequence
+    ==== 
+     [token= t]
+
+     For connection: run-call-sequence
+     ==== 
+      [token= "Fo..."]
+
+      For connection: run-call-sequence
+      ==== 
+       [token= 77]
+      ....
+     ....
+    ....
+   ....
+  ....
+
+  For connection: element-association
+  ==== 
+   <<node/>>
+  ....
+ ....
+....

@@ -1,0 +1,36 @@
+Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t19.rz
+<<node/<root> (&prn)>>
+
+For connection: run-block-entry
+==== 
+ <block 0:0>
+
+ For connection: run-call-entry
+ ==== 
+  <call 0>
+
+  For connection: run-call-entry
+  ==== 
+   [token= &prn]
+
+   For connection: run-call-sequence
+   ==== 
+    [token= 8]
+   ....
+  ....
+ ....
+
+ For connection: run-call-entry-direct
+ ==== 
+
+ Annotated: 
+ [[<call 0> (&prn)]]
+ ---- 
+  [token= &prn]
+
+  For connection: run-call-sequence
+  ==== 
+   [token= 8]
+  ....
+ ....
+....

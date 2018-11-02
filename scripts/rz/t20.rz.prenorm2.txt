@@ -1,0 +1,10 @@
+
+(block 
+  (<<my>> <<fnd>> <<:::>> <<Fn_Doc*>>) 
+  (<<fnd>> <<\==>> <<default>>) 
+  (<<my>> <<kenv>> <<:::>> <<KCM_Env*>>) 
+  (<<kenv>> <<\=>>
+    (<<envv>> <<KCM_Env*>>)) 
+  (<<fnd>> <</->>> <<init>> <<kenv>>) 
+  (<<my>> <<test-fn>> <<:::>> <<$->>>) 
+  (<<fnd>> <</->>> <<read>> <<test-fn>>))

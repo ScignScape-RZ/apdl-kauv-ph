@@ -1,0 +1,11 @@
+
+(block 
+  (<<&test-arg-vec-str>> <<ok1>> <<ok2>> <<ok3>>) 
+  (<<my>> <<fnd>> <<:::>> <<Fn_Doc*>>) 
+  (<<fnd>> <<\==>> <<default>>) 
+  (<<my>> <<kenv>> <<:::>> <<KCM_Env*>>) 
+  (<<kenv>> <<\=>>
+    (<<envv>> <<KCM_Env*>>)) 
+  (<<fnd>> <</->>> <<init>> <<kenv>>) 
+  (<<my>> <<test-fn>> <<:::>> <<$->>>) 
+  (<<fnd>> <</->>> <<read>> <<test-fn>>))

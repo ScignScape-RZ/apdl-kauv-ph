@@ -1,0 +1,7 @@
+
+(block 
+  (<0>&test-call
+   (<1>do ->
+    (block 
+      (<3>&lr
+       (<4>format t "Found: ~a~%" 77</4>)</3>))</1>)</0>))

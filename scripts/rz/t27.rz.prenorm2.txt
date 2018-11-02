@@ -1,0 +1,16 @@
+
+(block 
+  (<<my>> <<x>> <<:::>> <<int>>) 
+  (<<x>> <<\=>>
+    (<<test-find>> <<abcdef>> <<cd>>)) 
+  (<<&if>>
+   (<<x>> <<=?>> <<-1>>) 
+   (<<do>> <<->>>
+    (block 
+      (<<&prs>> <<Not Found>>))) 
+   (<<values>> <<t>>) 
+   (<<do>> <<->>>
+    (block 
+      (<<&lr>>
+       (<<format>> <<t>> <<Found: ~a~%>> <<x>>)) 
+      (<<&prs>> <<OK>>)))))
