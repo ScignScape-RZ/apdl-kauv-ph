@@ -19,8 +19,6 @@ CONFIG += no_keywords
 
 include(../../../../find-ecl-sexp.pri)
 
-message($$ECL_DIR)
-message($$CL_CXX_DIR)
 
 DEFINES += USE_KANS
 

@@ -8,7 +8,6 @@ PROJECT_NAME = rz-code-generators
 
 include(../build-group.pri)
 
-#depends on: rz-graph-visit  rz-code-elements
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR \
   $$SRC_GROUP_DIR/rz-graph-token \
@@ -48,4 +47,7 @@ SOURCES += \
 
 LIBS += -L$$TARGETSDIR -lrz-graph-core -lrz-graph-token -lrz-graph-visit \
   -lrz-graph-valuer -lrz-function-def -lrz-code-elements
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
 

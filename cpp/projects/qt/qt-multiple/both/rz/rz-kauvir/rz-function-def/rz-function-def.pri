@@ -35,3 +35,6 @@ SOURCES += \
    $$SRC_DIR/rz-function-def-info.cpp \
    $$SRC_DIR/rz-type-formation.cpp \
    $$SRC_DIR/rz-function-def-syntax.cpp \
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

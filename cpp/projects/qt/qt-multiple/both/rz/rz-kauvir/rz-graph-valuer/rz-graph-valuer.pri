@@ -6,9 +6,6 @@
 
 PROJECT_NAME = rz-graph-valuer
 
-#depends on rz-graph-embed (rz-graph-build rz-graph-token rz-graph-core)
- # rz-function-def rz-code-elements
-
 include(../build-group.pri)
 
 TARGET = $$PROJECT_NAME
@@ -46,7 +43,6 @@ HEADERS += \
    $$SRC_DIR/string/rz-match-literal.h \
 
 
-
 SOURCES += \
    $$SRC_DIR/valuer/rz-lisp-graph-valuer.cpp \
    $$SRC_DIR/valuer/rz-lisp-symbol.cpp \
@@ -62,3 +58,7 @@ SOURCES += \
    $$SRC_DIR/string/rz-string.cpp \
    $$SRC_DIR/string/rz-keyword.cpp \
    $$SRC_DIR/string/rz-match-literal.cpp \
+
+   
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

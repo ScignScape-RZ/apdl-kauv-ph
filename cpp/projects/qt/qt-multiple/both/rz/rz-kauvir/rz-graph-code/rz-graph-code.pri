@@ -8,8 +8,6 @@ PROJECT_NAME = rz-graph-code
 
 include(../build-group.pri)
 
-#depends on  rz-graph-visit  rz-graph-sre  rz-graph-core  rz-graph-token  rz-graph-run
-#  rz-graph-valuer  rz-clasp-project  rz-code-generators
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR  \
   $$SRC_GROUP_DIR/rz-graph-token  $$SRC_GROUP_DIR/rz-graph-core \
@@ -40,6 +38,9 @@ SOURCES += \
   $$SRC_DIR/prerun/rz-re-prerun-anticipate.cpp \
   $$SRC_DIR/prerun/rz-re-prerun-normalize.cpp \
   $$SRC_DIR/prerun/rz-re-prerun-tokens.cpp \
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
 
 
 

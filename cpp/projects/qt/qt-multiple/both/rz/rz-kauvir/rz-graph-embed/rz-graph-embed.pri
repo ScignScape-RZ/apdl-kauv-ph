@@ -6,8 +6,6 @@
 
 PROJECT_NAME = rz-graph-embed
 
-#depends on: rz-graph-build (rz-graph-token)
-
 include(../build-group.pri)
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR  \
@@ -39,3 +37,6 @@ SOURCES += \
    $$SRC_DIR/rz-graph-embed-token.cpp \
    $$SRC_DIR/rz-graph-run-embedder.cpp \
    $$SRC_DIR/rz-graph-embed-check.cpp \
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

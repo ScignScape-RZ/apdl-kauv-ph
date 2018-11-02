@@ -63,3 +63,6 @@ LIBS += -L$$TARGETSDIR  \
 LIBS += -lrz-code-generators
 
 LIBS += -L$$TARGETSDIR -lsexpr
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

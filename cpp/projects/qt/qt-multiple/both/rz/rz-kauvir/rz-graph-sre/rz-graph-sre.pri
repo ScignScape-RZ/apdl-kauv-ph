@@ -8,8 +8,6 @@ PROJECT_NAME = rz-graph-sre
 
 include(../build-group.pri)
 
-#depends on rz-graph-run
-
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR $$SRC_GROUP_DIR/rz-graph-core \
 
 
@@ -35,6 +33,9 @@ HEADERS += \
   $$SRC_DIR/rz-sre-token.h \
 
 
-
 SOURCES += \
   $$SRC_DIR/rz-sre-token.cpp \
+
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

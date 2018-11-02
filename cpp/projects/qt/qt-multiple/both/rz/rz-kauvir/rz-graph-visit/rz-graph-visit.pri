@@ -6,9 +6,6 @@
 
 PROJECT_NAME = rz-graph-visit
 
-#depends on: rz-graph-embed-run (rz-graph-build rz-graph-valuer
-# rz-graph-token rz-graph-run rz-graph-embed) rz-graph-core
-
 include(../build-group.pri)
 
 
@@ -50,3 +47,6 @@ SOURCES += \
 
 
 LIBS += -L$$TARGETSDIR -lrz-code-elements
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

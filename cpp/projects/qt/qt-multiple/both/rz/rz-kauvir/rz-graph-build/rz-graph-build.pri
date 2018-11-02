@@ -6,7 +6,6 @@
 
 PROJECT_NAME = rz-graph-build
 
-#depends on: rz-graph-token  rz-graph-core
 
 include(../build-group.pri)
 
@@ -41,3 +40,6 @@ HEADERS += \
 SOURCES += \
     $$SRC_DIR/rz-lisp-document.cpp \
     $$SRC_DIR/rz-lisp-graph-result-holder.cpp \
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

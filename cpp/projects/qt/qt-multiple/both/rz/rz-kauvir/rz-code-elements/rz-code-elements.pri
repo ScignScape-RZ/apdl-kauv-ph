@@ -8,7 +8,6 @@ PROJECT_NAME = rz-code-elements
 
 include(../build-group.pri)
 
-#depends on: rz-graph-visit
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR \
   $$SRC_GROUP_DIR/rz-graph-token \
@@ -37,3 +36,6 @@ SOURCES += \
 LIBS += -L$$TARGETSDIR -lrz-graph-core -lrz-graph-token  \
   -lrz-function-def
 
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

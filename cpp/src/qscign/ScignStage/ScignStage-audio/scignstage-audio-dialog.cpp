@@ -7,8 +7,6 @@
 
 #include "scignstage-audio-dialog.h"
 
-//?#include "ScignStage/subwindows/scignstage-image-tile.h"
-
 #include "styles.h"
 
 
@@ -453,6 +451,68 @@ void ScignStage_Audio_Dialog::check_phr()
     phr_init_function_(*phr_);
  }
 #endif
+}
+
+void ScignStage_Audio_Dialog::play_next_sample()
+{
+ handle_sample_down();
+}
+
+void ScignStage_Audio_Dialog::play_next_sample_in_peer_group()
+{
+ handle_peer_down();
+}
+
+void ScignStage_Audio_Dialog::play_previous_sample()
+{
+ handle_sample_up();
+}
+
+void ScignStage_Audio_Dialog::play_previous_sample_in_peer_group()
+{
+ handle_peer_up();
+}
+
+void ScignStage_Audio_Dialog::show_sentence_text(int index)
+{
+ Test_Sample* ts = samples_->at(index);
+ sentence_label_->setText(ts->sentence()->raw_text().replace('_', ' '));
+}
+
+void ScignStage_Audio_Dialog::show_distractor_text(int index)
+{
+ Test_Sample* ts = samples_->at(index);
+ nav_panel_->set_distractor_text(ts->distractor_to_string());
+}
+
+void ScignStage_Audio_Dialog::highlight_sample(int index)
+{
+ if(last_highlight_)
+   last_highlight_->setStyleSheet("QLabel{background:none;}");
+ Test_Sample* ts = samples_->at(index);
+ QLabel* lbl = sample_to_label_map_[ts].first;
+ lbl->setStyleSheet("QLabel{background:yellow;}");
+}
+
+void ScignStage_Audio_Dialog::highlight_peers(int index)
+{
+ Test_Sample* ts = samples_->at(index);
+ QVector<Test_Sample*>* apl = ts->sentence()->applicable_samples_ptr();
+
+ for(Test_Sample* tsa : *apl)
+ {
+  if(tsa == ts)
+    continue;
+  QLabel* lbl = sample_to_label_map_[tsa].first;
+  lbl->setStyleSheet("QLabel{background:pink;}");
+ }
+
+}
+
+void ScignStage_Audio_Dialog::test_data_to_text(QString result,
+  int test, int column)
+{
+
 }
 
 void ScignStage_Audio_Dialog::check_qnam()

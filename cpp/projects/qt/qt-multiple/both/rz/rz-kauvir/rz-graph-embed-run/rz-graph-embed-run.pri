@@ -6,8 +6,6 @@
 
 PROJECT_NAME = rz-graph-embed-run
 
-#depends on: rz-graph-valuer
-
 include(../build-group.pri)
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR  $$SRC_GROUP_DIR/rz-graph-core  \
@@ -31,3 +29,6 @@ HEADERS += \
 SOURCES += \
    $$SRC_DIR/rz-graph-embed-run-valuer.cpp \
 
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

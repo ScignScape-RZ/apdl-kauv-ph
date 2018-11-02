@@ -8,9 +8,6 @@ PROJECT_NAME = rz-graph-core
 
 include(../build-group.pri)
 
-message($$SRC_DIR)
-
-
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR
 
 INCLUDEPATH += $$QHYP_SRC_GROUP_DIR
@@ -18,8 +15,6 @@ INCLUDEPATH += $$QHYP_SRC_GROUP_DIR
 
 INCLUDEPATH += $$SRC_GROUP_DIR/rz-graph-token
 
-
-#depends on (none)
 
 DEFINES += RELAE_LABEL_NODES
 DEFINES += CAON_DEBUG
@@ -88,3 +83,6 @@ SOURCES += \
   $$SRC_DIR/output/rz-re-pre-init-lisp.cpp \
   $$SRC_DIR/output/rz-re-pre-normal-lisp.cpp \
   $$SRC_DIR/output/rz-re-pre-run-lisp.cpp \
+
+message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
+mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
