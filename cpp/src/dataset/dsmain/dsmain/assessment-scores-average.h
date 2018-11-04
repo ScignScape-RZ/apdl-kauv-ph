@@ -42,14 +42,6 @@ public:
 
  void to_strings(QStringList& qsl);
 
-// ACCESSORS__DECLARE__PASSK(quint8 ,background_nondisruption, precon<rdbl_t> ,pre)
-// ACCESSORS__DECLARE__PASSK(quint8 ,speech_nondistortion, precon<rdbl_t> ,pre)
-// ACCESSORS__DECLARE__PASSK(quint8 ,overall_quality, precon<rdbl_t> ,pre)
-
-// void set_background_nondisruption(quint8 q, int pre = q);
-// void set_speech_nondistortion(quint8 q, precon<rdbl_t> pre = precon<rdbl_t>(6));
-// void set_overall_quality(quint8 q, precon<rdbl_t> pre = precon<rdbl_t>(q));
-
  ACCESSORS__DECLARE__DO(double ,background_nondisruption)
  ACCESSORS__DECLARE__DO(double ,speech_nondistortion)
  ACCESSORS__DECLARE__DO(double ,overall_quality)

@@ -52,9 +52,9 @@ Kauvir_Code_Model::Kauvir_Code_Model()
     current_proxy_scope_(new  KCM_Proxy_Scope),
     current_file_(nullptr), direct_eval_fn_(nullptr),
     make_kcm_command_package_from_channel_group_fn_(nullptr),
-    make_kcm_command_package_fn_(nullptr), 
-	envv_fn_(nullptr), kph_generator_(nullptr),
-	runtime_scope_id_count_(0)
+    make_kcm_command_package_fn_(nullptr),
+ envv_fn_(nullptr), kph_generator_(nullptr),
+ runtime_scope_id_count_(0)
 {
  runtime_scope_ids_.push({0,0});
 
@@ -375,7 +375,7 @@ void Kauvir_Code_Model::finalize_anon_fdef(quint64 clo, QString symbol_name)
 
  // //  stack or queue?
  //QPair< QPair<KCM_Expression*, int>, QPair<int, int> > pr = current_nested_expression_coords_.pop();
- //QPair< QPair<KCM_Expression*, int>, QPair<int, int> > pr = //current_nested_expression_coords_.dequeue();
+ //QPair< QPair<KCM_Expression*, int>, QPair<int, int> > pr = current_nested_expression_coords_.dequeue();
 
  // is this always ok?
  QPair< QPair<KCM_Expression*, int>, QPair<int, int> > pr = current_nested_expression_coords_[get_current_runtime_scope_id()].takeLast();
@@ -614,7 +614,6 @@ void Kauvir_Code_Model::hold_dissolve(int code, KCM_Channel_Group& kcg)
 KCM_Expression* Kauvir_Code_Model::dissolve_to_expression(KCM_Channel_Group& kcg)
 {
  KCM_Channel_Group* xkcg = kcg.branch_copy();
- //QString kcm_code = make_kcm_code();
  KCM_Expression* result = new KCM_Expression(xkcg);
  return result;
 }
@@ -834,7 +833,7 @@ QString Kauvir_Code_Model::get_ouput_type_name(KCM_Report_Syntax& kcrs, const KC
  QString result = kto->kauvir_type_object()->name();
  if(result.isEmpty())
  {
-  //?
+  // //?
   result = "auto";
  }
  else

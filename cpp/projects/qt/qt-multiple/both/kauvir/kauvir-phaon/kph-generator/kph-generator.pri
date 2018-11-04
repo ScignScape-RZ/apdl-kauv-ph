@@ -21,12 +21,6 @@ CONFIG += no_keywords
 
 DEFINES += USE_KANS
 
-
-#INCLUDEPATH += $$KAUVIR_KCM_SRC_GROUP_DIR \
-#  $$KAUVIR_KCM_SRC_GROUP_DIR/kauvir-type-system \
-#  $$KAUVIR_KCM_SRC_GROUP_DIR/kauvir-code-model
-
-
 HEADERS += \
   $$SRC_DIR/kph-generator.h \
   $$SRC_DIR/kph-generator-substitutions.h \
@@ -43,10 +37,3 @@ LIBS += -L$$TARGETSDIR -lPhaonLib -lkauvir-code-model -lkauvir-type-system \
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
 mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
-
-
-#LIBS += -L$$TARGETSDIR -lkcm-lisp-bridge  \
-#  -lkauvir-code-model -lkauvir-type-system -lrz-dynamo-generator
-
-#LIBS += -L$$TARGETSDIR -lkcm-command-package -lkcm-command-runtime \
-#   -lkcm-direct-eval -lkcm-scopes

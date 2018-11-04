@@ -73,7 +73,6 @@ void Phaon_XML_Document::transpile(QString path)
    QStringRef txt = qxr.text();
    run_state(tt, qs.toString(), qxr.attributes(), txt.toString());
   }
-  //qDebug() << qs;
  }
  QString text = "- Auto generated\n.\n";
  for(Phaon_XML_Line* l : lines_)
@@ -141,7 +140,6 @@ void Phaon_XML_Document::run_state(QChar tt, QString tagn,
   l->code = attributes.value("c").toInt();
   l->ch_code = attributes.value("chc").toInt();
   l->ty_code = attributes.value("tyc").toInt();
-  //l->text = attributes.value("n").toString();
   _this.lines_.push_back(l);
   _this.state_ = Stream_States::Arg;
  }  },

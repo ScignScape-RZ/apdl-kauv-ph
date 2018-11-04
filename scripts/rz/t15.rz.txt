@@ -1,4 +1,4 @@
-Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t15.rz
+Root node: C:/scign/SSQM/ar/scripts/rz/t15.rz
 <<node/<root> (&test-if-then-else)>>
 
 For connection: run-block-entry

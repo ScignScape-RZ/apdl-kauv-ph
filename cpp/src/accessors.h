@@ -93,7 +93,7 @@
 
 #ifndef ACCESSORS__SDECLARE
 #define ACCESSORS__SDECLARE(type, name) \
- void set_##name(type name);// { name##_ = _arg_; }
+ void set_##name(type name);
 #endif
 
 #ifndef ACCESSORS__SET__IMPL
@@ -104,7 +104,7 @@
 
 #ifndef ACCESSORS__GDECLARE
 #define ACCESSORS__GDECLARE(type, name) \
- type name() const;// { return name##_; }
+ type name() const;
 #endif
 
 

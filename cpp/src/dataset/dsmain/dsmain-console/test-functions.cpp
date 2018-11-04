@@ -56,19 +56,6 @@ void* insert_envv(void* kind, void* test)
  return hold.value(*k);
 }
 
-//void* insert_envv(void* kind, void* test)
-//{
-// static QMap<QString, void*> hold;
-// QString* k = reinterpret_cast<QString*>(kind);
-// if(test)
-// {
-////  void** pv = new void*;
-////  *pv = test;
-//  hold[*k] = test;
-// }
-// return hold.value(*k);
-//}
-
 void* p_envv(void* kind)
 {
  if(kind)
@@ -98,21 +85,6 @@ void* envv(void* kind)
  }
 }
 
-//void* envv(void* kind)
-//{
-// if(kind)
-// {
-//  qDebug() << "Kind: " << *(QString*)kind;
-//  //void* pv = insert_envv(kind, nullptr);
-//  return insert_envv(kind, nullptr);
-// }
-// else
-// {
-//  qDebug() << "In envv: Return kind could not be determined.";
-//  return nullptr;
-// }
-//}
-
 void test_0_ss(QString s1, QString s2)
 {
  qDebug() << "s1 = " << s1 << "s2 = " << s2;
@@ -140,7 +112,6 @@ void init_test_functions(void* origin, Kauvir_Code_Model& kcm,
 {
  QString* satypename = new QString("ScignStage_Audio_Dialog*");
  insert_envv(satypename, origin);
- //_insert_envv(satypename, origin);
 
  kcm.set_envv_fn(&p_envv);
 

@@ -1,4 +1,4 @@
-Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t14.rz
+Root node: C:/scign/SSQM/ar/scripts/rz/t14.rz
 <<node/<root> (&test-arg-vec-calls)>>
 
 For connection: run-block-entry

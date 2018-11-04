@@ -1,4 +1,4 @@
-Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t5.rz
+Root node: C:/scign/SSQM/ar/scripts/rz/t5.rz
 <<node/<root> (&prdn)>>
 
 For connection: run-block-entry

@@ -10,5 +10,7 @@ targets
 Contents
 *.pro.user
 screenshots
+*.rz.*
+
 
 

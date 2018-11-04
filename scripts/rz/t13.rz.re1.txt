@@ -1,4 +1,4 @@
-Root node: C:/apdl-repos/kauv-ph/archive/scripts/rz/t13.rz
+Root node: C:/scign/SSQM/ar/scripts/rz/t13.rz
 <<node/<root> (&test-dfr-call)>>
 
 For connection: run-block-entry

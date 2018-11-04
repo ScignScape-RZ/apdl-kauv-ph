@@ -8,9 +8,6 @@ PROJECT_NAME = kph-generator-console
 
 include(../build-group.pri)
 
-
-#
-
 TEMPLATE = app
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR
@@ -28,13 +25,6 @@ DEFINES += USE_KANS
 
 DEFINES += DEFAULT_KPH_FOLDER=\\\"$$CPP_ROOT_DIR/kph\\\"
 
-
-
-#INCLUDEPATH += $$KAUVIR_KCM_SRC_GROUP_DIR \
-#  $$KAUVIR_KCM_SRC_GROUP_DIR/kauvir-type-system \
-#  $$KAUVIR_KCM_SRC_GROUP_DIR/kauvir-code-model
-
-
 HEADERS += \
   $$SRC_DIR/test-functions.h \
 
@@ -48,17 +38,5 @@ LIBS += -L$$TARGETSDIR -lkph-generator
 LIBS += -L$$TARGETSDIR -lPhaonLib -lkauvir-code-model -lkauvir-type-system \
    -lkcm-command-package -lkcm-direct-eval -lkcm-scopes -lkauvir-phaon
 
-
-#LIBS += -L$$TARGETSDIR -lPhaonLib -lkauvir-code-model -lkauvir-type-system \
-#   -lkcm-command-package -lkcm-direct-eval -lkcm-scopes
-
-
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
 mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
-
-
-#LIBS += -L$$TARGETSDIR -lkcm-lisp-bridge  \
-#  -lkauvir-code-model -lkauvir-type-system -lrz-dynamo-generator
-
-#LIBS += -L$$TARGETSDIR -lkcm-command-package -lkcm-command-runtime \
-#   -lkcm-direct-eval -lkcm-scopes

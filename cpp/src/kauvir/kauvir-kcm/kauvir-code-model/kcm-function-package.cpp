@@ -82,7 +82,6 @@ int KCM_Function_Package::split_byte_code(int& xbc)
  int len = bc % 10;
  bc /= 10;
  int l10 = 1;
-// rbc = bc % (10 ^ len);
  for(int i = 0; i <= len; ++i)
  {
   l10 *= 10;

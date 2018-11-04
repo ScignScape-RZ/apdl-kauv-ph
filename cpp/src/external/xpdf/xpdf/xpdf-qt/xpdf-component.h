@@ -1,10 +1,11 @@
-//========================================================================
-//
-// Xpdf_Component.h
-//
-// Copyright 2015 Glyph & Cog, LLC
-//
-//========================================================================
+//  BASED ON (with small modifications) code Copyright 2015 Glyph & Cog, LLC
+
+//  This specific file and project
+//           Copyright Nathaniel Christen 2018.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
 
 #ifndef XPDF_COMPONENT__H
 #define XPDF_COMPONENT__H
@@ -54,8 +55,6 @@ public:
 
 private:
 
-  //run_msg(QString msg);
-
   QString state_;
 
 
@@ -68,4 +67,4 @@ private:
   GList *viewers;		// [XpdfViewer]
 };
 
-#endif
+#endif // XPDF_COMPONENT__H

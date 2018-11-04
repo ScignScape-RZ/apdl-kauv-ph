@@ -32,7 +32,6 @@ class Test_Sample
  Assessment_Scores_Average* assessment_scores_;
  Assessment_Scores_Average* assessment_scores_with_load_;
  Test_Sentence* sentence_;
- //Distractor* distractor_;
 
  int index_in_peer_set_;
 

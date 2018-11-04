@@ -8,7 +8,6 @@
 
 QT += widgets multimedia
 
-#
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR
 
@@ -31,16 +30,6 @@ DEFINES += DEFAULT_ICON_FOLDER=\\\"$$CPP_ROOT_DIR/assets/icons\\\"
 DEFINES += ABOUT_FILE_FOLDER=\\\"$$CPP_ROOT_DIR/about/about-files\\\"
 
 DEFINES += SAMPLES_FOLDER=\\\"$$DATA_ROOT_DIR/samples\\\"
-
-
-
-#INCLUDEPATH += $$RZ_KAUVIR_SRC_GROUP_DIR \
-#  $$RZ_KAUVIR_SRC_GROUP_DIR/rz-graph-core  $$RZ_KAUVIR_SRC_GROUP_DIR/rz-graph-token  \
-#  $$RELAE_SRC_GROUP_DIR  $$KAUVIR_KCM_SRC_GROUP_DIR
-
-#INCLUDEPATH += $$SRC_ROOT_DIR/rpdf/xpdf/aconf \
-#  $$SRC_ROOT_DIR/rpdf/xpdf/goo
-
 
 
 CONFIG += no_keywords
@@ -85,41 +74,3 @@ LIBS += -L$$TARGETSDIR -ldsmain
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
 mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
-
-
-#LIBS += -L$$TARGETSDIR -lkcm-lisp-bridge  \
-#  -lkauvir-code-model -lkauvir-type-system -lrz-dynamo-generator
-
-#LIBS += -L$$TARGETSDIR -lkcm-command-package -lkcm-command-runtime \
-#   -lkcm-direct-eval -lfn-doc
-
-## R/Z ...
-
-#LIBS += -L$$TARGETSDIR  \
-#   -lrz-graph-core \
-#   -lrz-graph-token \
-#   -lrz-graph-code \
-#   -lrz-graph-visit \
-#   -lrz-code-generators \
-#   -lrz-graph-build \
-#   -lrz-graph-valuer \
-#   -lrz-graph-embed \
-#   -lrz-graph-embed-run \
-#   -lrz-graph-run \
-#   -lrz-graph-sre \
-#   -lrz-function-def \
-#   -lrz-code-elements \
-#   -lkcm-scopes \
-#   -lbasic-functions \
-#   -lkcm-env \
-
-
-#LIBS += -L$$TARGETSDIR -lqring
-
-
-
-#LIBS += -L$$ECL_DIR -lecl
-#LIBS += -L$$CL_CXX_DIR/install/lib64 -lcl_cxx
-
-#LIBS += -L$$TARGETSDIR -lsexpr
-

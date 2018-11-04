@@ -41,12 +41,8 @@ void Test_Series::parse_data(QString path)
  int i = 0;
  Test_Sample* ts;
 
- //int c = 0;
-
  for(QString qs : lines)
  {
-  //++c;
-
   if(i == 0)
   {
    ts = new Test_Sample();
@@ -186,7 +182,6 @@ void Test_Series::parse_data_regen(QString path)
     newt += QString("+:%1\n").arg(qs);
    }
    i = 0;
-   //ts->set_sentence(qs.replace('_', ' '));
   }
  }
  save_file(path + ".rev", newt);

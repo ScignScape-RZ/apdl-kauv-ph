@@ -47,7 +47,7 @@ void KPH_Generator::encode(KCM_Command_Package& kcp, QString fn)
  kcp.channel_names_to_codes(channel_codes);
 
  QTextStream qts(&text_);
- qts << "-\nAuto Generated";//\n.\n";
+ qts << "-\nAuto Generated";
  close_line(qts);
 
  QString args;

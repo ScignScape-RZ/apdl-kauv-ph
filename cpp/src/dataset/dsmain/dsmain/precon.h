@@ -33,9 +33,6 @@ struct precon_pr
 {
  T data;
  precon<T> pre;
-
- //precon_pr(T d) : pre(d), data(d) { }
- //void* pass_fn() { return pre.pass_fn; }
 };
 
 

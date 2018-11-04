@@ -51,12 +51,9 @@ int main(int argc, char* argv[])
  kcm.set_kph_generator(&gen);
  kcm.set_direct_eval_fn(&kcm_direct_eval);
 
- //Phaon_Symbol_Scope* pss = new Phaon_Symbol_Scope;
  Phaon_Symbol_Scope pss;
  init_test_functions(kcm, phr.get_table(), pss);
  phr.get_phaon_scope_queue().push_front(&pss);
- // scopes.phaon_scope_queue().push_front(&pss);
- //scopes.set_phaon_scope(&pss);
 
  KPH_Command_Package khp;
  khp.parse_from_file( DEFAULT_KPH_FOLDER "/dataset/raw/t1.kph" );
@@ -65,13 +62,7 @@ int main(int argc, char* argv[])
 
  khp.init_channel_group(kcm, kcg);
 
-// gen.encode(kcg);
-
-// gen.save_kph_file();
- //
  phr.run(kcg);
 
-
  return 0;
-
 }

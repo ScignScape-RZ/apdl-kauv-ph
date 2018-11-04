@@ -37,11 +37,6 @@ KANS_CLASS_DECLARE(DSM ,Test_Sentence)
 
 USING_KANS(DSM)
 
-//#include "ScignStage/nav-protocols/geometric2d/fore-geometric-2d-panel.h"
-//#include "ScignStage/nav-protocols/geometric2d/series-geometric-2d-panel.h"
-//#include "ScignStage/annotations/annotation-symbols-panel.h"
-
-
 class QDialogButtonBox;
 class QLabel;
 class QLineEdit;
@@ -61,7 +56,6 @@ class QMediaPlayer;
 class QProcess;
 class QTcpServer;
 
-class ScignStage_Image_Tile;
 class ScignStage_Clickable_Label;
 
 class XPDF_Bridge;
@@ -69,7 +63,6 @@ class XPDF_Bridge;
 KANS_CLASS_DECLARE(PhaonLib ,Phaon_Runner)
 USING_KANS(PhaonLib)
 
-//
 QSNS_(ScignStage)
 _QSNS(ScignStage)
 //?namespace QScign { namespace ScignStage {
@@ -96,12 +89,11 @@ class ScignStage_Audio_Dialog : public QDialog
 
  // //  "Pseudo" Toolbar ...
  QHBoxLayout* top_buttons_layout_;
-//? QPushButton* updates_button_;
 
  QPushButton* activate_tcp_button_;
 
  QPushButton* take_screenshot_button_;
-//? QPushButton* sonic_button_;
+
  QPushButton* scignstage_button_;
 
 
@@ -109,19 +101,12 @@ class ScignStage_Audio_Dialog : public QDialog
  QFrame* main_frame_;
  QGridLayout* main_grid_layout_;
 
-
- // //
- QVBoxLayout* annotation_layout_;
-
  NAV_Audio1D_Panel* nav_panel_;
-
- void check_tile_geometric_navigate(int r, int c);
 
  XPDF_Bridge* xpdf_bridge_;
 
  QVector<QString> files_;
- //QVector<Test_Sentence*> sentences_;
- //?
+
  QVector<Test_Sample*>* samples_;
 
  void test_to_string(QString& result, bool wl);
@@ -131,8 +116,6 @@ class ScignStage_Audio_Dialog : public QDialog
  void gmos_to_string(QString& result, bool wl);
 
  void save_to_user_select_file(QString text);
-
- //QMap<Test_Sample*, int> samples_map_;
 
  QMap<Test_Sample*, QPair<QLabel*, int> > sample_to_label_map_;
 
@@ -164,8 +147,6 @@ class ScignStage_Audio_Dialog : public QDialog
  std::function<void()> screenshot_function_;
 
  bool xpdf_is_ready();
-
- void check_qnam();
  void check_phr();
 
  void run_msg(QString msg, QByteArray qba);
@@ -178,11 +159,6 @@ class ScignStage_Audio_Dialog : public QDialog
  void check_launch_xpdf(std::function<void()> fn,
    std::function<void()> waitfn);
  void send_xpdf_msg(QString msg);
-
-// void check_xpdf_port(std::function<void(QString)> truefn,
-//   std::function<void()> falsefn);
-
-
 
  QString load_about_file(QString name);
 
@@ -227,8 +203,6 @@ public:
  void show_distractor_text(int index);
  void highlight_sample(int index);
  void highlight_peers(int index);
- void test_data_to_text(QString result, int test, int column);
-
 
 Q_SIGNALS:
  void canceled(QDialog*);
@@ -244,7 +218,6 @@ public Q_SLOTS:
  void cancel();
 
  void activate_tcp_requested();
- void handle_open_file_requested(QString);
 
  void handle_sample_up();
  void handle_sample_down();

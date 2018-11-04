@@ -53,9 +53,6 @@ void Test_Series_Folder::read_files(Test_Series& ts)
   }
   else if(qfi.fileName() == "data.txt")
   {
-   //QString qs = load_file(qfi.absoluteFilePath());
-   //ds = qs.split('\n');
-   //
    ts.parse_data(qfi.absoluteFilePath());
   }
   else if(qfi.fileName() == "smos.txt")
@@ -100,61 +97,5 @@ void Test_Series_Folder::read_files(Test_Series& ts)
    }
   }
  }
-
-
-// QString text;
-
-
-// int i = 0;
-// int c = 0;
-
-// QString held;
-
-// for(int i = 1; i <= 205; i += 4)
-// {
-//  int x = i + 4;
-//  QString iqs = ds[i];
-//  QString xqs = i == 205?
-//     "3.833-1.917-2.833":
-//     ds[x];
-//  QString m = iqs.mid(0, 18) + xqs.mid(18);
-//  ds[i] = m;
-// }
-
-// QString text = ds.join('\n');
-
-// for(QString qs : ds)
-// {
-//  if(i == 1)
-//  {
-//   text += QString("%1-%2-%3-%4\n").arg(qs).arg(lsm[c])
-//      .arg(lnm[c]).arg(lgm[c]);
-//   ++c;
-//  }
-//  else text += qs + '\n';
-//  if(i == 2)
-//    i = 0;
-//  else
-//    ++i;
-
-// }
-
-// QVector<QString> lines;
-// lines.resize(sm.size());
-// for(QString qs : qsl)
-// {
-//  int c = files.value(qs);
-//  if(c)
-//  {
-//   lines[c-1] = qs + QString("\n%1-%2-%3\n__\n").arg(sm[c]).arg(nm[c]).arg(gm[c]);
-//  }
-// }
-// for(QString l : lines)
-// {
-//  text += l;
-// }
-
-// save_file(dir.absoluteFilePath("__data.txt"), text);
-
 }
 

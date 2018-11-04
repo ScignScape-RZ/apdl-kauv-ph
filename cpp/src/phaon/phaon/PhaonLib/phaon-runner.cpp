@@ -36,9 +36,6 @@ void Phaon_Runner::init_scope_system()
  Kauvir_Type_System* type_system = kcm_->type_system();
  table_ = new Phaon_Channel_Group_Table(*type_system);
 
-// Phaon_Symbol_Scope pss;
-// init_test_functions(kcm, table, pss);
-// scopes.phaon_scope_queue().push_front(&pss);
 }
 
 

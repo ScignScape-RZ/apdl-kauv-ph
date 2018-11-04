@@ -47,12 +47,9 @@ int main(int argc, char* argv[])
  Kauvir_Code_Model& kcm = phr.get_kcm();
  kcm.set_direct_eval_fn(&kcm_direct_eval);
 
- //Phaon_Symbol_Scope* pss = new Phaon_Symbol_Scope;
  Phaon_Symbol_Scope pss;
  init_test_functions(kcm, phr.get_table(), pss);
  phr.get_phaon_scope_queue().push_front(&pss);
- // scopes.phaon_scope_queue().push_front(&pss);
- //scopes.set_phaon_scope(&pss);
 
  KPH_Command_Package khp;
  khp.parse_from_file( DEFAULT_KPH_FOLDER "/test/raw/t1.kph" );

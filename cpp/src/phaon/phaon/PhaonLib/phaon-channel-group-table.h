@@ -62,7 +62,6 @@ public:
  {
   KCM_Channel_Group* kcg = find_channel_group(g);
 
-    //table.init_phaon_function(g1, "test-0-ss", 700, &test_0_ss);
   Phaon_Function phf(pfn);
 
   caon_ptr<KCM_Function_Package> kfp = new KCM_Function_Package(kcg);

@@ -1,10 +1,11 @@
-//========================================================================
-//
-// Xpdf_Component.cc
-//
-// Copyright 2015 Glyph & Cog, LLC
-//
-//========================================================================
+//  BASED ON (with small modifications) code Copyright 2015 Glyph & Cog, LLC
+
+//  This specific file and project
+//           Copyright Nathaniel Christen 2018.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
 
 #include <aconf.h>
 
@@ -72,172 +73,18 @@ void xpdf_component_main(int argc, char *argv[], Xpdf_Component** _xpc)
    *_xpc = xpc;
 }
 
-#ifdef HIDE
-// //  R/Z Workflow ...
-
-struct RZW
-{
- Xpdf_Component& xpa;
- int peer_port;
- QString current_tcp_msg;
- QNetworkAccessManager& qnam;
-};
-
-void send_msg(RZW& rzw, QString msg)
-{
- QString addr = QString("http://localhost:%1/").arg(rzw.peer_port);
-
- QNetworkRequest req;
-
- req.setUrl( QUrl(addr) );
- req.setHeader(QNetworkRequest::ContentTypeHeader, "text/plain");
-
- //int myport = 18262;
-
- //QString msg = QString("%1##%2").arg(name).arg(page);
- //QString msg = QString("open:%1##%2").arg(name).arg(page);
- //QString msg = QString("hello:%1").arg(myport);
-
-
- QByteArray qba = msg.toLatin1();
- qba.append("<//>");
- qba.prepend("<<>>");
-
- QNetworkReply* reply = rzw.qnam.post(req, qba);
- QObject::connect(reply, &QNetworkReply::finished,
-   [reply]()
- {
-  reply->deleteLater();
- });
- //QEventLoop qel;
-
- //QString result;
-
-// QObject::connect(reply, &QNetworkReply::finished,
-//  [this, reply]()
-// {
-//  QString result = QString::fromLatin1( reply->readAll() );
-//  if(result.isEmpty())
-//  {
-//   result = "Process not found.";
-//  }
-//  qDebug() << "Result: " << result;
-//  reply->deleteLater();
-//  //qel.exit();
-// });
-}
-
-void run_msg(RZW& rzw, QString msg)
-{
- rzw.current_tcp_msg = msg;
-// QMessageBox::information(nullptr, "Qt Server",
-//                          QString("received: %1")
-//                          .arg(msg));
- int index = msg.indexOf(':');
- QString key = msg.left(index);
-
- QString arg = msg.mid(index + 1);
-
-  QMessageBox::information(nullptr, "Qt Server",
-                           QString("received: %1, %2")
-                           .arg(key).arg(arg));
-
-}
-#endif
-
-
 //------------------------------------------------------------------------
 // Xpdf_Component
 //------------------------------------------------------------------------
 
 Xpdf_Component::Xpdf_Component(int &argc, char **argv)
 {
-
-#ifdef HIDE
- QTcpServer* tcp_server = new QTcpServer();
- QMap<qintptr, QByteArray>* temps = new QMap<qintptr, QByteArray>();
-
- QString waiting_message;
-
- int port = 18262; // // r z 1
-
- if (!tcp_server->listen(QHostAddress::LocalHost, port))
- {
-  QMessageBox::critical(nullptr, "Qt Server",
-                        QString("Unable to start the server: %1.")
-                        .arg(tcp_server->errorString()));
- }
- else
- {
-  waiting_message = QString("Server waiting on IP: %1\nport: %2\n\n")
-    .arg(tcp_server->serverAddress().toString()).arg(tcp_server->serverPort());
-
-  QMessageBox::information(nullptr, "Qt Server",
-                           QString(waiting_message));
- }
-
- RZW* rzw = new RZW{*this, 18261, "", *(new QNetworkAccessManager)};
-
- QObject::connect(tcp_server, &QTcpServer::newConnection, [this, rzw, tcp_server, temps]
- {
-  QTcpSocket* clientConnection = tcp_server->nextPendingConnection();
-  QMessageBox::information(nullptr, "Qt Server ...",
-    QString("received: %1, %2")
-    .arg(QString::fromLatin1("received")).arg(0));
-  QObject::connect(clientConnection, &QTcpSocket::readyRead, [clientConnection, this, rzw, temps]
-  {
-   qintptr sd = clientConnection->socketDescriptor();
-   QByteArray received = clientConnection->readAll();
-   QMessageBox::information(nullptr, "Qt Server",
-     QString("received: %1, %2")
-     .arg(QString::fromLatin1(received)).arg(sd));
-
-//   while(clientConnection->bytesAvailable())
-//   {
-//    received.append(clientConnection->readAll());
-//       QMessageBox::information(nullptr, "Qt Server",
-//                                QString("received: %1, %2")
-//                                .arg(QString::fromLatin1(received)).arg(sd));
-//   }
-////   QMessageBox::information(nullptr, "Qt Server",
-////                            QString("received: %1, %2")
-////                            .arg(QString::fromLatin1(received)).arg(sd));
-//   if(received.endsWith("<//>"))
-//   {
-//    received.chop(4);
-//    QByteArray qba = (*temps)[sd];
-//    qba.append(received);
-//    QByteArray block = "OK";
-//    clientConnection->write(block);
-//    clientConnection->disconnectFromHost();
-//    temps->remove(sd);
-
-//    int index = qba.indexOf("<<>>");
-
-//    if(index != -1)
-//    {
-//     QString msg = QString::fromLatin1(qba.mid(index + 4));
-//     if(msg != rzw->current_tcp_msg)
-//       run_msg(*rzw, msg);
-//    }
-//   }
-//   else
-//   {
-//    (*temps)[sd] += received;
-//    clientConnection->disconnectFromHost();
-//   }
-  });
- });
-
-#endif
-
-
-
  const char *fileName, *dest;
  GString *color;
  GBool ok;
  int pg, i;
 
+// // skipping this for embedded ...
 // setApplicationName("XpdfReader");
 // setApplicationVersion(xpdfVersion);
 
@@ -254,7 +101,7 @@ Xpdf_Component::Xpdf_Component(int &argc, char **argv)
  //--- set up GlobalParams; handle command line arguments
  globalParams = new GlobalParams(cfgFileArg);
 #ifdef _WIN32
- QString dir;// = applicationDirPath();
+ QString dir; // // this is N/A ... = applicationDirPath();
  globalParams->setBaseDir(dir.toLocal8Bit().constData());
  dir += "/t1fonts";
  globalParams->setupBaseFonts(dir.toLocal8Bit().constData());
@@ -311,15 +158,6 @@ Xpdf_Component::Xpdf_Component(int &argc, char **argv)
  errorEventType = QEvent::registerEventType();
 
  viewers = new GList();
-
-// // // rz
-// connect(this, &Xpdf_Component::window_ready, [rzw, port]
-// {
-//  QMessageBox::information(nullptr, "Qt Server",
-//                           QString("hello:xpdf;%1")
-//                           .arg(port));
-//  send_msg(*rzw, QString("hello:xpdf;%1").arg(port));
-// });
 
  QMessageBox::information(nullptr, "About XPDF",
    "The XPDF Component is based on XPDF Software Copyright 2015 "

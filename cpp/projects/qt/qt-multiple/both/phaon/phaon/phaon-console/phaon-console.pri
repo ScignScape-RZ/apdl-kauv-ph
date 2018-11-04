@@ -8,8 +8,6 @@ PROJECT_NAME = phaon-console
 
 include(../build-group.pri)
 
-#
-
 TEMPLATE = app
 
 DEFINES += DEFAULT_KPF_FOLDER=\\\"$$CPP_ROOT_DIR/kph\\\"

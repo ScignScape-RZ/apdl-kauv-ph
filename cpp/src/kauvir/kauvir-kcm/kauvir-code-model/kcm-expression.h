@@ -39,7 +39,7 @@ class KCM_Expression
 
  KCM_Statement* implied_statement_;
 
- // temporary? ...
+ // // temporary? ...
  KCM_Callable_Value* ref_anon_;
 
 

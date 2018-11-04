@@ -73,8 +73,6 @@ class Kauvir_Code_Model
  typedef std::function<void(Kauvir_Code_Model* kcm,
    KCM_Command_Package* cpkg, KCM_Lisp_Bridge* bridge)> direct_eval_fn_type;
 
- //typedef std::function<void*(void*)> envv_fn_type;
-
  typedef std::function<KCM_Command_Package*(const KCM_Channel_Group& kcg)>
    make_kcm_command_package_from_channel_group_fn_type;
 
@@ -145,7 +143,7 @@ class Kauvir_Code_Model
  envv_fn_type envv_fn_;
 
  KPH_Generator* kph_generator_;
- 
+
  QPair<int, int> get_current_runtime_scope_id();
 
 
@@ -163,7 +161,7 @@ public:
 
  ACCESSORS(direct_eval_fn_type ,direct_eval_fn)
  ACCESSORS(envv_fn_type ,envv_fn)
- 
+
  ACCESSORS(KPH_Generator* ,kph_generator)
 
  ACCESSORS(make_kcm_command_package_from_channel_group_fn_type

@@ -63,12 +63,6 @@
 
 #include <QListWidget>
 
-//#include "subwindows/scignstage-clickable-label.h"
-
-//#include "ScignStage/paraviews/scignstage-navigation-protocol-dialog.h"
-
-//#include "ScignStage/paraviews/scignstage-png-dialog.h"
-
 #include "dsmain/test-series.h"
 #include "dsmain/test-sample.h"
 #include "dsmain/audio-sample.h"
@@ -92,19 +86,6 @@ USING_KANS(TextIO)
 USING_KANS(Phaon)
 
 //USING_QSNS(ScignStage)
-
-// // kai
-void ScignStage_Audio_Dialog::test_msgbox(QString msg)
-{
- QString m = QString("Received Message: %1").arg(msg);
- QMessageBox::information(this, "Test OK", m);
-}
-
-void ScignStage_Audio_Dialog::play_sample(int index)
-{
- current_index_ = index;
- play_file_at_current_index();
-}
 
 
 ScignStage_Audio_Dialog::ScignStage_Audio_Dialog(XPDF_Bridge* xpdf_bridge,
@@ -134,6 +115,10 @@ ScignStage_Audio_Dialog::ScignStage_Audio_Dialog(XPDF_Bridge* xpdf_bridge,
 
  button_ok_->setEnabled(false);
 
+ // // unless this is being embedded ...
+ button_proceed_->setEnabled(false);
+ button_cancel_->setText("Close");
+
  button_box_->addButton(button_ok_, QDialogButtonBox::AcceptRole);
  button_box_->addButton(button_proceed_, QDialogButtonBox::ApplyRole);
  button_box_->addButton(button_cancel_, QDialogButtonBox::RejectRole);
@@ -152,82 +137,28 @@ ScignStage_Audio_Dialog::ScignStage_Audio_Dialog(XPDF_Bridge* xpdf_bridge,
 
  top_buttons_layout_ = new QHBoxLayout;
 
- //?updates_button_ = new QPushButton("Updates Dialog", this);
-
  take_screenshot_button_ = new QPushButton("Screenshot", this);
 
  activate_tcp_button_ = new QPushButton("Activate TCP", this);
 
-
- //?scignstage_button_ = new QPushButton("ScignStage", this);
- //?sonic_button_ = new QPushButton("SONIC", this);
-
- //?updates_button_->setStyleSheet(colorful_button_style_sheet_());
- //?open_image_button_->setStyleSheet(colorful_button_style_sheet_());
  take_screenshot_button_->setStyleSheet(colorful_button_style_sheet_());
  activate_tcp_button_->setStyleSheet(colorful_button_style_sheet_());
-
- //?scignstage_button_->setStyleSheet(colorful_button_style_sheet_());
-
- //?sonic_button_->setStyleSheet(colorful_button_style_sheet_());
-
-//? connect(updates_button_, SIGNAL(clicked()),
-//   this, SLOT(updates_dialog_requested()));
-
-// connect(take_screenshot_button_, SIGNAL(clicked()),
-//   this, SIGNAL(take_screenshot_requested()));
 
  connect(take_screenshot_button_, SIGNAL(clicked()),
    this, SLOT(handle_take_screenshot_requested()));
 
-
-//? connect(open_image_button_, SIGNAL(clicked()),
-//   this, SIGNAL(open_image_requested()));
-
  connect(activate_tcp_button_, SIGNAL(clicked()),
    this, SLOT(activate_tcp_requested()));
 
-//? connect(scignstage_button_, SIGNAL(clicked()),
-//   this, SLOT(open_scignstage_navigation_protocol_dialog()));
-
-
  top_buttons_layout_->addStretch();
 
- //?top_buttons_layout_->addWidget(updates_button_);
-
- //?top_buttons_layout_->addWidget(patient_info_button_);
- //?top_buttons_layout_->addWidget(diagnostic_report_button_);
-
  top_buttons_layout_->addWidget(activate_tcp_button_);
- //?top_buttons_layout_->addWidget(open_image_button_);
+
  top_buttons_layout_->addWidget(take_screenshot_button_);
-
- //?top_buttons_layout_->addWidget(scignstage_button_);
-
- //?top_buttons_layout_->addWidget(sonic_button_);
-
- // //////////////////////////////////////////////
 
  main_layout_->addLayout(top_buttons_layout_);
 
  middle_layout_ = new QHBoxLayout;
-
- //?middle_layout_->addStretch();
-
- // //   Foreground
-// main_table_ = new QTableWidget(this);
-
-// main_table_->setMinimumHeight(300);
-
-// main_table_->setMinimumWidth(300);
-
-// middle_layout_->addWidget(main_table_);
-// main_table_->setRowCount(10);
-// main_table_->setColumnCount(4);
-// main_table_->setContextMenuPolicy(Qt::CustomContextMenu);
-// QTableWidgetItem* twi0_0 = new QTableWidgetItem();
-// twi0_0->setText("PLSOFF_Panel_1_nominal_Cafeteria_Noise_ETSI_14.8dB_AMR_WB_12k65_16_f1s1.wav");
-// main_table_->setItem(0, 0, twi0_0);
 
  // //   Foreground
  main_frame_ = new QFrame(this);
@@ -236,9 +167,6 @@ ScignStage_Audio_Dialog::ScignStage_Audio_Dialog(XPDF_Bridge* xpdf_bridge,
 
  main_frame_->setMinimumWidth(300);
 
-
-// main_frame_->setRowCount(10);
-// main_frame_->setColumnCount(4);
  main_frame_->setContextMenuPolicy(Qt::CustomContextMenu);
 
  main_grid_layout_ = new QGridLayout;
@@ -246,7 +174,6 @@ ScignStage_Audio_Dialog::ScignStage_Audio_Dialog(XPDF_Bridge* xpdf_bridge,
  int r = 0;
 
  files_.resize(ts1->samples().size());
- //sentences_.resize(files_.size());
 
  max_index_ = files_.size() - 1;
 
@@ -287,12 +214,10 @@ ScignStage_Audio_Dialog::ScignStage_Audio_Dialog(XPDF_Bridge* xpdf_bridge,
 
   QLabel* lbl = new QLabel(f, this);
   sample_to_label_map_[sa] = {lbl, r};
-  //samples_
 
   main_grid_layout_->addWidget(lbl, r + 2, 0);
 
   files_[r] = f;
-  //sentences_[r] = sa->sentence();//->raw_text();
 
   QStringList qsl;
   sa->assessment_scores()->to_strings(qsl);
@@ -340,24 +265,12 @@ ScignStage_Audio_Dialog::ScignStage_Audio_Dialog(XPDF_Bridge* xpdf_bridge,
      int r, c, rs, cs;
      main_grid_layout_->getItemPosition(i, &r, &c, &rs, &cs);
      run_message_by_grid_position(qp, r, c);
-//     if(c == 0)
-//     {
-//      current_index_ = r - 2;
-//      open_pdf_file(QString("Test: %1").arg(current_index_));
-//      //play_file_at_current_index();
-//     }
 
     }
    }
   }
 
  });
-
-
-
- // middle_layout_->addStretch();
-
-
 
  main_layout_->addLayout(middle_layout_);
 
@@ -366,17 +279,6 @@ ScignStage_Audio_Dialog::ScignStage_Audio_Dialog(XPDF_Bridge* xpdf_bridge,
  main_layout_->addWidget(sentence_label_);
 
  nav_panel_ = new NAV_Audio1D_Panel(0, 100, 50, this);
-
-
-// connect(nav_panel_, SIGNAL(zoom_in_requested()),
-//   main_table_, SLOT(zoom_in()));
-
-// connect(nav_panel_, SIGNAL(zoom_out_requested()),
-//   main_table_, SLOT(zoom_out()));
-
-// connect(nav_panel_, SIGNAL(scale_ratio_change_requested(qreal)),
-//   main_table_, SLOT(change_scale_ratio(qreal)));
-
 
  connect(nav_panel_, SIGNAL(sample_up_requested()),
    this, SLOT(handle_sample_up()));
@@ -400,17 +302,6 @@ ScignStage_Audio_Dialog::ScignStage_Audio_Dialog(XPDF_Bridge* xpdf_bridge,
  connect(nav_panel_, SIGNAL(volume_change_requested(int)),
    this, SLOT(handle_volume_change_requested(int)));
 
-// connect(nav_panel_, SIGNAL(geometric_left_requested()),
-//   this, SLOT(handle_geometric_left()));
-// connect(nav_panel_, SIGNAL(geometric_right_requested()),
-//   this, SLOT(handle_geometric_right()));
-// connect(nav_panel_, SIGNAL(series_previous_requested()),
-//   this, SLOT(handle_series_previous()));
-// connect(nav_panel_, SIGNAL(series_next_requested()),
-//   this, SLOT(handle_series_next()));
-
-
-
  main_layout_->addWidget(nav_panel_);
 
 
@@ -428,10 +319,6 @@ ScignStage_Audio_Dialog::ScignStage_Audio_Dialog(XPDF_Bridge* xpdf_bridge,
  }
 #endif // USING_XPDF
 
-// original_width_ = this->width();
-// original_height_ = this->height();
-
-// show();
 }
 
 void ScignStage_Audio_Dialog::handle_take_screenshot_requested()
@@ -451,6 +338,19 @@ void ScignStage_Audio_Dialog::check_phr()
     phr_init_function_(*phr_);
  }
 #endif
+}
+
+// // KAI
+void ScignStage_Audio_Dialog::test_msgbox(QString msg)
+{
+ QString m = QString("Received Message: %1").arg(msg);
+ QMessageBox::information(this, "Test OK", m);
+}
+
+void ScignStage_Audio_Dialog::play_sample(int index)
+{
+ current_index_ = index;
+ play_file_at_current_index();
 }
 
 void ScignStage_Audio_Dialog::play_next_sample()
@@ -507,18 +407,6 @@ void ScignStage_Audio_Dialog::highlight_peers(int index)
   lbl->setStyleSheet("QLabel{background:pink;}");
  }
 
-}
-
-void ScignStage_Audio_Dialog::test_data_to_text(QString result,
-  int test, int column)
-{
-
-}
-
-void ScignStage_Audio_Dialog::check_qnam()
-{
-// if(!qnam_)
-//   qnam_ = new QNetworkAccessManager;
 }
 
 
@@ -625,7 +513,7 @@ void ScignStage_Audio_Dialog::run_smos_message(const QPoint& p, int col)
   bool proceed = ask_pdf_proceed("smos");
   if(proceed)
   {
-   open_pdf_file(ABOUT_FILE_FOLDER "/main.pdf", 2);
+   open_pdf_file(ABOUT_FILE_FOLDER "/main.pdf", 3);
   }
  },[this, col]
  {
@@ -648,7 +536,7 @@ void ScignStage_Audio_Dialog::run_nmos_message(const QPoint& p, int col)
   bool proceed = ask_pdf_proceed("nmos");
   if(proceed)
   {
-   open_pdf_file(ABOUT_FILE_FOLDER "/main.pdf", 2);
+   open_pdf_file(ABOUT_FILE_FOLDER "/main.pdf", 3);
   }
  },[this, col]
  {
@@ -671,7 +559,7 @@ void ScignStage_Audio_Dialog::run_gmos_message(const QPoint& p, int col)
   bool proceed = ask_pdf_proceed("gmos");
   if(proceed)
   {
-   open_pdf_file(ABOUT_FILE_FOLDER "/main.pdf", 2);
+   open_pdf_file(ABOUT_FILE_FOLDER "/main.pdf", 3);
   }
  },[this, col]
  {
@@ -795,7 +683,6 @@ void ScignStage_Audio_Dialog::run_message_by_grid_position(const QPoint& p, int 
  auto it = static_map.find({r, c});
  if(it != static_map.end())
  {
-  //auto fn = *it;
   (this->**it)(p, c);
   return;
  }
@@ -862,61 +749,12 @@ void ScignStage_Audio_Dialog::run_kph(const QByteArray& qba)
 void ScignStage_Audio_Dialog::run_msg(QString msg, QByteArray qba)
 {
  qDebug() << QString("received: %1").arg(msg);
- //?current_tcp_msg_ = msg;
 
  if(msg == "kph")
  {
   run_kph(qba);
  }
-
-// int index = msg.indexOf(':');
-// QString key = msg.left(index);
-// QString arg = msg.mid(index + 1);
-
-
 }
-
-//void ScignStage_Audio_Dialog::check_xpdf_port(std::function<void(QString)> truefn,
-//  std::function<void()> falsefn)
-//{
-// check_qnam();
-
-// int port = 18262; // // r z 1
-// QString addr = QString("http://localhost:%1/").arg(port);
-
-// QNetworkRequest req;
-
-// req.setUrl( QUrl(addr) );
-// req.setHeader(QNetworkRequest::ContentTypeHeader, "text/plain");
-
-// int myport = 18261;
-
-// //QString msg = QString("%1##%2").arg(name).arg(page);
-// //QString msg = QString("open:%1##%2").arg(name).arg(page);
-// QString msg = QString("hello:%1").arg(myport);
-
-
-// QByteArray qba = msg.toLatin1();
-// qba.append("<//>");
-// qba.prepend("<<>>");
-
-// QNetworkReply* reply = qnam_->post(req, qba);
-
-// QObject::connect(reply, &QNetworkReply::finished,
-//  [this, reply, truefn]()
-// {
-//  QString result = QString::fromLatin1( reply->readAll() );
-//  truefn(result);
-//  reply->deleteLater();
-// });
-
-// QObject::connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error),
-//  [this, reply, falsefn](QNetworkReply::NetworkError code)
-// {
-//  falsefn();
-//  reply->deleteLater();
-// });
-//}
 
 bool ScignStage_Audio_Dialog::xpdf_is_ready()
 {
@@ -949,32 +787,8 @@ void ScignStage_Audio_Dialog::check_launch_xpdf(std::function<void()> fn,
   waitfn();
   return;
  }
-
-// check_xpdf_port(
-// [fn, this](QString)
-// {
-//  fn();
-// },
-// [waitfn, this]
-// {
-////  xpdf_process_ = new QProcess();
-////  QString program = XPDF_PATH;
-////  QString err_file = XPDF_PATH ".err";
-////  xpdf_process_->setStandardErrorFile(err_file);
-////  xpdf_process_->setProgram(program);
-////  connect(xpdf_process_, &QProcess::started, waitfn);
-////  xpdf_process_->start();
-// });
-
-
-
 }
 
-void ScignStage_Audio_Dialog::handle_open_file_requested(QString path)
-{
-// current_image_file_ = path;
-// main_table_->open_file(path);
-}
 
 void ScignStage_Audio_Dialog::activate_tcp_requested()
 {
@@ -1055,7 +869,7 @@ void ScignStage_Audio_Dialog::activate_tcp_requested()
 #else
  QMessageBox::information(this, "Kauvir/Phaon Needed",
    QString(
-     "To use TCP for testing/demoing \"Kernal Application Interface\" "
+     "To use TCP for testing/demoing \"Kernel Application Interface\" "
      "functions you need to build several additional libraries "
      "(see the build-order.txt file for Qt project files and %1, line %2).")
      .arg(__FILE__).arg(__LINE__)
@@ -1147,6 +961,11 @@ void ScignStage_Audio_Dialog::handle_peer_up()
 
 void ScignStage_Audio_Dialog::handle_peer_down()
 {
+ if(!last_sample_)
+ {
+  handle_sample_first();
+  return;
+ }
  QVector<Test_Sample*>* peers = last_sample_->get_peer_samples();
  int i = last_sample_->index_in_peer_set() + 1;
  Test_Sample* samp = peers->value(i, peers->value(0));
@@ -1169,49 +988,18 @@ void ScignStage_Audio_Dialog::handle_sample_up()
 
 ScignStage_Audio_Dialog::~ScignStage_Audio_Dialog()
 {
- // //  and so one ...
- delete button_ok_;
- delete button_proceed_;
- delete button_cancel_;
+ //  //  Child widgets should delete automatically ...
 }
-
-void ScignStage_Audio_Dialog::check_tile_geometric_navigate(int r, int c)
-{
- QString tile_file = QString("r%1c%2").arg(r).arg(c);
-
-
-}
-
 
 void ScignStage_Audio_Dialog::handle_sample_replay()
 {
  play_file_at_current_index();
-// ScignStage_Image_Tile* current_tile = series_panel_->current_tile();
-// if(current_tile)
-// {
-//  int r = current_tile->get_dimensional_annotation(0);
-//  if(r > 0)
-//  {
-//   --r;
-//   int c = current_tile->get_dimensional_annotation(1);
-//   check_tile_geometric_navigate(r, c);
-//  }
-// }
 }
-
 
 void ScignStage_Audio_Dialog::handle_sample_first()
 {
  current_index_ = 0;
  play_file_at_current_index();
-// ScignStage_Image_Tile* current_tile = series_panel_->current_tile();
-// if(current_tile)
-// {
-//  int r = current_tile->get_dimensional_annotation(0);
-//  ++r;
-//  int c = current_tile->get_dimensional_annotation(1);
-//  check_tile_geometric_navigate(r, c);
-// }
 }
 
 

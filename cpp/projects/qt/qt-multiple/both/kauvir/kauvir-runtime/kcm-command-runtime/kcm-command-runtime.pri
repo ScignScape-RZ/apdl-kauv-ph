@@ -17,10 +17,6 @@ INCLUDEPATH += $$KCM_RUNTIME_EVAL_SRC_GROUP_DIR
 INCLUDEPATH += $$PHAON_SRC_GROUP_DIR
 INCLUDEPATH += $$QHYP_SRC_GROUP_DIR
 
-
-#
-
-
 HEADERS +=  \
   $$SRC_DIR/kcm-command-runtime-router.h \
   $$SRC_DIR/kcm-command-runtime-router-qob.h \
@@ -40,7 +36,7 @@ CONFIG += no_keywords
 
 
 LIBS += -L$$TARGETSDIR -lkcm-scopes -lkauvir-code-model \
-  -lkcm-command-package -lPhaonLib # -lkcm-lisp-bridge
+  -lkcm-command-package -lPhaonLib
 
 
 exists($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/kauvir--kauvir-kcm--kcm-lisp-bridge)\

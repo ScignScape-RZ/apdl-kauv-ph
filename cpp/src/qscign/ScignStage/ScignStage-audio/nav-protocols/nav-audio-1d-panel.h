@@ -44,7 +44,6 @@ class QScrollArea;
 class QGridLayout;
 
 
-
 //?QSNS_(ScignStage)
 //namespace QScign { namespace ScignStage {
 
@@ -59,9 +58,6 @@ class NAV_Audio1D_Panel : public QFrame
 
  QVBoxLayout* main_layout_;
  QHBoxLayout* navigation_layout_;
-
-
- QVBoxLayout* sort_series_layout_;
 
  ScignStage_Image_Tile* current_sample_;
 
@@ -81,9 +77,6 @@ class NAV_Audio1D_Panel : public QFrame
 
  QLabel* sample_replay_label_;
  QPushButton* sample_replay_button_;
-
-
- //QHBoxLayout* navigation_buttons_layout_;
 
  QVBoxLayout* first_layout_;
  QVBoxLayout* replay_layout_;
@@ -109,21 +102,12 @@ class NAV_Audio1D_Panel : public QFrame
  QLabel* distractor_label_;
  QLineEdit* distractor_line_edit_;
 
-
-// QPushButton* volume_up_button_;
-// QPushButton* volume_down_button_;
-
-
-
  QSlider* volume_slider_;
 
  qreal old_zoom_slider_value_;
 
  int volume_min_;
  int volume_max_;
-
-//? void check_sample_geometric_navigate(int r, int c);
-
 
 public:
 
@@ -159,15 +143,12 @@ public Q_SLOTS:
  void zoom_slider_value_changed(int);
  void volume_slider_value_changed(int);
 
-// void set_sample_and_distractor_text(int r, int c);
-
-
 };
 
 //_QSNS(ScignStage)
 
 
-#endif  // NAV_GEOMETRIC_2D_PANEL__H
+#endif  // NAV_AUDIO_1D_PANEL__H
 
 
 

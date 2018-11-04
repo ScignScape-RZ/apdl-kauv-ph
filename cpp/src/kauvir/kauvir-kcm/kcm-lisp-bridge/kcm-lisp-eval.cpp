@@ -490,7 +490,6 @@ void KCM_Lisp_Eval::prepare_dynamo_callbacks(void** pass_on)
     cl_object cclo = cl_cxx_backend::nth_arg(arglist, 1);
     hdcode = ecl_to_fixnum(cclo);
     clo = cl_cxx_backend::nth_arg(arglist, 2);
-    //clo1 = cl_cxx_backend::nth_arg(arglist, 1);
    }
    if(rdg)
    {
@@ -1330,7 +1329,6 @@ BASIC_DEFINE_CALLBACK(symbol-init-via-type, symbol_init_via_type)
    if(size > 0)
    {
     QString symbol_name = cl_arglist_to_qstring(arglist, 1);
-     // // quint64 result = runtime->bridge().get_value_of_symbol(symbol_name);
     QString mode;
     quint64 result = runtime->bridge().get_interpreted_value_of_symbol(symbol_name, mode);
     if(mode == "fixnum")
@@ -1386,10 +1384,6 @@ BASIC_DEFINE_CALLBACK(symbol-init-via-type, symbol_init_via_type)
     {
      access = cl_arglist_to_qstring(arglist, 2);
     }
-
-    quint64 fixnum = ecl_to_fixnum(lambda_pos);
-
-    //  just a plain cl_object or ...?
    }
    else
    {
@@ -1430,8 +1424,8 @@ void KCM_Lisp_Eval::prepare_callbacks()
  pass_on[0] = kcm_lisp_runtime_;
  pass_on[1] = this;
 
+ // //  TODO: delete unused ...
  cl_cxx_backend::eval_string("(DEFPACKAGE \"KM\")");
-
  cl_cxx_backend::eval_string("(DEFPACKAGE \"KA\")");
  cl_cxx_backend::eval_string("(DEFPACKAGE \"KB\")");
  cl_cxx_backend::eval_string("(DEFPACKAGE \"KI\")");
@@ -1442,8 +1436,6 @@ void KCM_Lisp_Eval::prepare_callbacks()
  cl_cxx_backend::eval_string("(DEFPACKAGE \"CX\")");
 
  prepare_dynamo_callbacks(pass_on);
-
- //prepare_cy_callbacks(pass_on);
 
 
  define_callback(
@@ -1671,9 +1663,7 @@ void KCM_Lisp_Eval::prepare_callbacks()
      access = cl_arglist_to_qstring(arglist, 2);
     }
 
-    quint64 fixnum = ecl_to_fixnum(lambda_pos);
-
-    //  just a plain cl_object or ...?
+    // //  just a plain cl_object or ...?
     cl_object lisp_function = cl_cxx_backend::nth_arg(arglist, 3);
 
     cl_object* save_cl = new cl_object;

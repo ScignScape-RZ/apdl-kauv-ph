@@ -87,20 +87,6 @@ int main(int argc, char **argv)
  });
 #endif
 
-#ifdef HIDE
- dlg.connect(&dlg, &ScignStage_WSI_Dialog::open_folder_requested,
-   [&dlg]()
- {
-
-  QString str = QFileDialog::getExistingDirectory(nullptr, "Select Image Folder",
-    DEFAULT_FOLDER);
-
-  dlg.open_folder(str);
-
- });
-#endif // def HIDE
-
-
  QObject::connect(&dlg, &ScignStage_Audio_Dialog::canceled,
    []()
  {

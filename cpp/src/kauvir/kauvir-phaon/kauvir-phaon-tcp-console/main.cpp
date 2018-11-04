@@ -55,7 +55,6 @@ void init_qba(QByteArray& qba)
  quint64 ms = QDateTime::currentMSecsSinceEpoch();
  pre.append(QByteArray::number(ms));
  pre.append(':');
- //QString pre = QString("<<>>%1@%2").arg("kph").arg(QDateTime::currentDateTime().toString());
  qba.prepend(pre);
 
 }
@@ -139,7 +138,8 @@ int main_via_qnam(int argc, char* argv[])
 
 int main(int argc, char* argv[])
 {
- //return main_via_socket(argc, argv);
+ // choose one ...
+ // // return main_via_socket(argc, argv);
  return main_via_qnam(argc, argv);
 }
 

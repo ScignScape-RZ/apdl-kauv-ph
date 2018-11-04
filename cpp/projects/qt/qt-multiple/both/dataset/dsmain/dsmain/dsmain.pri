@@ -9,11 +9,11 @@ include(../build-group.pri)
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR
 INCLUDEPATH += $$KAUVIR_KCM_SRC_GROUP_DIR $$KAUVIR_KCM_SRC_GROUP_DIR/kcm-lisp-bridge
 
-
-INCLUDEPATH += $$SEXP_DIR
-INCLUDEPATH += $$SEXP_DIR/pingus/
-
-INCLUDEPATH += $$SRC_GROUP_DIR/prague
+exists($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/kauvir--kauvir-kcm--kcm-lisp-bridge) \#/
+{
+ INCLUDEPATH += $$SEXP_DIR
+ INCLUDEPATH += $$SEXP_DIR/pingus/
+}
 
 
 DEFINES += CAON_DEBUG
@@ -59,14 +59,3 @@ SOURCES += \
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
 mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
-
-
-
-#LIBS += -L$$TARGETSDIR -lkcm-lisp-bridge  \
-#  -lkauvir-code-model -lkauvir-type-system
-
-#LIBS += -L$$TARGETSDIR -lkcm-command-package -lkcm-command-runtime \
-#   -lkcm-direct-eval -lfn-doc
-
-
-
