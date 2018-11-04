@@ -14,7 +14,10 @@ include(../../../../find-ecl-sexp.pri)
 TEMPLATE = app
 
 INCLUDEPATH += $$SRC_DIR $$SRC_GROUP_DIR
+
 INCLUDEPATH += $$KAUVIR_KCM_SRC_GROUP_DIR $$KAUVIR_KCM_SRC_GROUP_DIR/kcm-lisp-bridge
+INCLUDEPATH += $$KCM_RUNTIME_EVAL_SRC_GROUP_DIR
+
 
 CONFIG += no_keywords
 

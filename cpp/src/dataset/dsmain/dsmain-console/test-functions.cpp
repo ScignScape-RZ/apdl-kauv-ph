@@ -17,9 +17,9 @@
 
 #include "kauvir-code-model/kcm-callable-value.h"
 
-#include "kauvir-runtime/kcm-command-runtime/kcm-command-runtime-table.h"
+#include "kcm-command-runtime/kcm-command-runtime-table.h"
 
-#include "kauvir-runtime/kcm-command-runtime/kcm-command-runtime-router.h"
+#include "kcm-command-runtime/kcm-command-runtime-router.h"
 
 #include "PhaonLib/phaon-channel-group-table.h"
 #include "PhaonLib/phaon-symbol-scope.h"

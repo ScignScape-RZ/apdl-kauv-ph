@@ -1,26 +1,29 @@
 
+//           Copyright Nathaniel Christen 2018.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
+#include "kcm-command-package/kcm-command-package.h"
+
+#include "kauvir-code-model/kauvir-code-model.h"
 
 
-#include "kauvir-runtime/kcm-command-package/kcm-command-package.h"
+#include "kcm-lisp-bridge/kcm-lisp-bridge.h"
+#include "kcm-lisp-bridge/kcm-lisp-embed-environment.h"
+#include "kcm-lisp-bridge/kcm-lisp-eval.h"
+#include "kcm-lisp-bridge/kcm-lisp-runtime.h"
 
-#include "kauvir-kcm/kauvir-code-model/kauvir-code-model.h"
+#include "kcm-command-runtime/kcm-command-runtime-table.h"
 
+#include "kcm-scopes/kcm-scope-system.h"
 
-#include "kauvir-kcm/kcm-lisp-bridge/kcm-lisp-bridge.h"
-#include "kauvir-kcm/kcm-lisp-bridge/kcm-lisp-embed-environment.h"
-#include "kauvir-kcm/kcm-lisp-bridge/kcm-lisp-eval.h"
-#include "kauvir-kcm/kcm-lisp-bridge/kcm-lisp-runtime.h"
+#include "basic-functions/rz-dynamo-basic-functions.h"
 
-#include "kauvir-runtime/kcm-command-runtime/kcm-command-runtime-table.h"
+#include "kcm-direct-eval/kcm-direct-eval.h"
 
-#include "kcm-runtime-eval/kcm-scopes/kcm-scope-system.h"
-
-#include "kcm-runtime-eval/basic-functions/rz-dynamo-basic-functions.h"
-
-#include "kcm-runtime-eval/kcm-direct-eval/kcm-direct-eval.h"
-
-#include "kcm-runtime-eval/fn-doc/fn-doc.h"
-#include "kcm-runtime-eval/kcm-env/kcm-env.h"
+#include "fn-doc/fn-doc.h"
+#include "kcm-env/kcm-env.h"
 
 #include <QApplication>
 

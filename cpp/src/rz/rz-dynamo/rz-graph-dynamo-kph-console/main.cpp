@@ -4,19 +4,10 @@
 //     (See accompanying file LICENSE_1_0.txt or copy at
 //           http://www.boost.org/LICENSE_1_0.txt)
 
-
 #include "kph-generator/kph-generator.h"
 #include "kph-generator/kph-generator-substitutions.h"
 
 #include "rz-graph-visit/rz-lisp-graph-visitor-dynamo.h"
-
-#include <QtEndian>
-
-#include <QtGlobal>
-#include <QtCore>
-
-
-#include <QDebug>
 
 #include "rzns.h"
 
@@ -30,10 +21,8 @@
 #include "rz-graph-visit/rz-lisp-graph-visitor.h"
 #include "rz-code-generators/rz-dynamo-output.h"
 
-
 #include "sexp/parser.hpp"
 #include "lisp/writer.hpp"
-
 
 #include "kcm-lisp-bridge/kcm-lisp-runtime.h"
 
@@ -41,16 +30,10 @@
 
 #include "kauvir-type-system/kauvir-universal-class.h"
 
-#include "kcm-runtime-eval/basic-functions/rz-dynamo-basic-functions.h"
+#include "basic-functions/rz-dynamo-basic-functions.h"
 
-
-#include "kcm-runtime-eval/fn-doc/fn-doc.h"
-#include "kcm-runtime-eval/kcm-env/kcm-env.h"
-
-
-#include <functional>
-#include <QDebug>
-
+#include "fn-doc/fn-doc.h"
+#include "kcm-env/kcm-env.h"
 
 #include "kcm-lisp-bridge/kcm-lisp-bridge.h"
 #include "kcm-lisp-bridge/kcm-lisp-embed-environment.h"
@@ -59,12 +42,19 @@
 #include "kauvir-code-model/kauvir-code-model.h"
 #include "kauvir-code-model/kcm-channel-group.h"
 
+#include "kcm-command-runtime/kcm-command-runtime-table.h"
+#include "kcm-scopes/kcm-scope-system.h"
+#include "kcm-direct-eval/kcm-direct-eval.h"
 
-#include "kauvir-runtime/kcm-command-runtime/kcm-command-runtime-table.h"
-#include "kcm-runtime-eval/kcm-scopes/kcm-scope-system.h"
+#include <QtEndian>
 
+#include <QtGlobal>
+#include <QtCore>
+#include <QDebug>
 
-#include "kcm-runtime-eval/kcm-direct-eval/kcm-direct-eval.h"
+#include <functional>
+#include <QDebug>
+
 
 
 USING_KANS(KCM)

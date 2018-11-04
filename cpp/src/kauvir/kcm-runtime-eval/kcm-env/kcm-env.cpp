@@ -6,7 +6,7 @@
 
 #include "kcm-env.h"
 
-#include "kcm-runtime-eval/kcm-scopes/kcm-scope-system.h"
+#include "kcm-scopes/kcm-scope-system.h"
 
 #include <QDebug>
 

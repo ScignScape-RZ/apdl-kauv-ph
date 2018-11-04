@@ -9,7 +9,7 @@
 #include "kcm-lisp-bridge/kcm-lisp-embed-environment.h"
 #include "kcm-lisp-bridge/kcm-lisp-eval.h"
 
-#include "kcm-runtime-eval/kcm-direct-eval/kcm-direct-eval.h"
+#include "kcm-direct-eval/kcm-direct-eval.h"
 
 #include "kcm-lisp-bridge/kcm-lisp-runtime.h"
 
