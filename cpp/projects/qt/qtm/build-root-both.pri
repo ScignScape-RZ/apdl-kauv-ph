@@ -73,8 +73,8 @@ DESTDIR = $$TARGETSDIR
 
 INCLUDEPATH += $$SRC_DIR $$SRC_ROOT_DIR $$SRC_GLOBAL_DIR
 
-INCLUDEPATH += $$SRC_ROOT_DIR/qscign $$SRC_ROOT_DIR/kauvir \
-  $$SRC_ROOT_DIR/phaon $$SRC_ROOT_DIR/script $$SRC_ROOT_DIR/dataset
+#INCLUDEPATH += $$SRC_ROOT_DIR/qscign $$SRC_ROOT_DIR/kauvir \
+#  $$SRC_ROOT_DIR/phaon $$SRC_ROOT_DIR/script $$SRC_ROOT_DIR/dataset
 
 
 #groups
