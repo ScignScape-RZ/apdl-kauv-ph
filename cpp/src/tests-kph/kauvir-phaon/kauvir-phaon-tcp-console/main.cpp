@@ -9,7 +9,7 @@
 
 #include "kauvir-code-model/kauvir-code-model.h"
 #include "kauvir-code-model/kcm-channel-group.h"
-#include "kcm-runtime-eval/kcm-scopes/kcm-scope-system.h"
+#include "kcm-scopes/kcm-scope-system.h"
 
 
 #include "PhaonLib/phaon-namespace.h"
@@ -24,9 +24,9 @@
 #include "PhaonLib/phaon-channel-group-table.h"
 #include "PhaonLib/phaon-runner.h"
 
-#include "kcm-runtime-eval/kcm-direct-eval/kcm-direct-eval.h"
+#include "kcm-direct-eval/kcm-direct-eval.h"
 
-#include "kauvir-runtime/kcm-command-package/kcm-command-package.h"
+#include "kcm-command-package/kcm-command-package.h"
 
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
@@ -43,7 +43,7 @@ USING_KANS(PhaonLib)
 void init_qba(QByteArray& qba)
 {
  KPH_Command_Package kcp;
- kcp.parse_from_file( DEFAULT_KPF_FOLDER "/dataset/raw/t1.kph" );
+ kcp.parse_from_file( DEFAULT_KPH_FOLDER "/dataset/raw/t1.kph" );
 
 
  kcp.supply_data(qba);

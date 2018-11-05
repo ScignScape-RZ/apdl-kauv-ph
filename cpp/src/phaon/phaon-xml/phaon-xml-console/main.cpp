@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 {
  Phaon_XML_Document pxd;
 
- pxd.set_url_from_file( DEFAULT_KPF_FOLDER "/test/xml/t1.xml" );
+ pxd.set_url_from_file( DEFAULT_KPH_FOLDER "/test/xml/t1.xml" );
 
  pxd.transpile();
 

@@ -63,6 +63,11 @@ public:
  void supply_data(QByteArray& qba) const;
  void absorb_data(const QByteArray& qba);
 
+ static QVector<KPH_Command_Package*> parse_multi_from_file(QString path);
+ static QVector<KPH_Command_Package*> parse_multi_from_string(QString path,
+   const QString& qs);
+ static void parse_multi_from_string(QString path,
+   const QString& qs, int i1, int i2, QVector<KPH_Command_Package*>& result);
 
 };
 

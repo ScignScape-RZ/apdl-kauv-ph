@@ -178,7 +178,8 @@ void KPH_Command_Package::parse_from_string_list(QString path, const QStringList
    break;
   case '#' : // expression
    {
-    current_expression_code = qs.mid(1).toInt();
+   if(qs[1] != '#')
+     current_expression_code = qs.mid(1).toInt();
    }
    break;
   case '@' : // type name
@@ -238,3 +239,43 @@ void KPH_Command_Package::parse_from_string_list(QString path, const QStringList
  }
 }
 
+QVector<KPH_Command_Package*> KPH_Command_Package::parse_multi_from_file(QString path)
+{
+ QString qs = load_file(path);
+ return parse_multi_from_string(path, qs);
+}
+
+QVector<KPH_Command_Package*> KPH_Command_Package::parse_multi_from_string(QString path,
+  const QString& qs)
+{
+ int index = qs.indexOf("\n.\n##\n.\n");
+ if(index == -1)
+ {
+  KPH_Command_Package* kph = new KPH_Command_Package;
+  kph->parse_from_string(path, qs);
+  return {kph};
+ }
+ QVector<KPH_Command_Package*> result;
+ parse_multi_from_string(path, qs, 0, index + 6, result);
+ return result;
+}
+
+void KPH_Command_Package::parse_multi_from_string(QString path,
+  const QString& qs, int i1, int i2, QVector<KPH_Command_Package*>& result)
+{
+ QString mid = qs.mid(i1, i2 - i1);
+ KPH_Command_Package* kph = new KPH_Command_Package;
+ kph->parse_from_string(path, mid);
+ result.push_back(kph);
+ i2 += 2;
+ int i3 = path.indexOf("\n.\n##\n.\n", i2);
+ if(i3 == -1)
+ {
+  QString mid = qs.mid(i2);
+  KPH_Command_Package* kph = new KPH_Command_Package;
+  kph->parse_from_string(path, mid);
+  result.push_back(kph);
+  return;
+ }
+ parse_multi_from_string(path, qs, i2, i3 + 6, result);
+}
