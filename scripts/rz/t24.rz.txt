@@ -1,4 +1,4 @@
-Root node: C:/scign/SSQM/ar/scripts/rz/t24.rz
+Root node: C:/scign/prag/ar/scripts/rz/t24.rz
 <<node/<root> (&test-arg-vec-str)>>
 
 For connection: run-block-entry

@@ -30,19 +30,19 @@ SUBDIRS += \
   kauvir/kauvir-runtime/kcm-command-runtime \
 
 SUBDIRS += \
-  kauvir/kauvir-phaon/kph-generator \
+  tests-kph/kauvir-phaon/kph-generator \
 
 SUBDIRS += \
   kauvir/kcm-runtime-eval/kcm-direct-eval \
-  kauvir/kauvir-phaon/kauvir-phaon \
+  tests-kph/kauvir-phaon/kauvir-phaon \
 
 SUBDIRS += \
   qscign/ScignStage/ScignStage-audio \
 
 SUBDIRS += \
   phaon/phaon/phaon-console \
-  kauvir/kauvir-phaon/kauvir-phaon-console \
-  kauvir/kauvir-phaon/kph-tcp-console \
+  tests-kph/kauvir-phaon/kauvir-phaon-console \
+  tests-kph/kauvir-phaon/kph-tcp-console \
 
 SUBDIRS += \
   dataset/dsmain/_run__dsmain-console \
@@ -52,7 +52,7 @@ SUBDIRS += \
   phaon/phaon-xml/phaon-xml-console \
 
 SUBDIRS += \
-  kauvir/kauvir-phaon/kph-generator-console \
+  tests-kph/kauvir-phaon/kph-generator-console \
 
 SUBDIRS += \
   kauvir/kcm-runtime-eval/kcm-env \

@@ -1,2 +1,0 @@
-
-RZ_LISP_GRAPH_FUNCTION_DECLARE(my, My, 1, Preempt)

@@ -86,7 +86,7 @@ XPDF_SRC_GROUP_DIR = $$SRC_ROOT_DIR/external/xpdf
 QHYP_SRC_GROUP_DIR = $$SRC_ROOT_DIR/qscign/qhyp
 SCIGNSTAGE_SRC_GROUP_DIR = $$SRC_ROOT_DIR/qscign/ScignStage
 
-KAUVIR_PHAON_SRC_GROUP_DIR = $$SRC_ROOT_DIR/kauvir/kauvir-phaon
+KAUVIR_PHAON_SRC_GROUP_DIR = $$SRC_ROOT_DIR/tests-kph/kauvir-phaon
 KAUVIR_KCM_SRC_GROUP_DIR = $$SRC_ROOT_DIR/kauvir/kauvir-kcm
 
 PHAON_SRC_GROUP_DIR = $$SRC_ROOT_DIR/phaon/phaon

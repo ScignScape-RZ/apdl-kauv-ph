@@ -1,4 +1,4 @@
-Root node: C:/scign/SSQM/ar/scripts/rz/t2.rz
+Root node: C:/scign/prag/ar/scripts/rz/t2.rz
 <<node/<root> (&test-calls)>>
 
 For connection: run-block-entry
