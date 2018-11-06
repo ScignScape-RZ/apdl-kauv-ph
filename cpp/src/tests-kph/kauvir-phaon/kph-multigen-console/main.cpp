@@ -28,12 +28,13 @@
 
 #include "kcm-direct-eval/kcm-direct-eval.h"
 
+#include "textio.h"
 
 #include "kans.h"
 
 
 USING_KANS(Phaon)
-
+USING_KANS(TextIO)
 
 
 int main(int argc, char* argv[])
@@ -41,6 +42,24 @@ int main(int argc, char* argv[])
  QVector<KPH_Command_Package*> kcps = KPH_Command_Package::parse_multi_from_file(
    DEFAULT_KPH_FOLDER "/dataset/raw-multi/t1.kph" );
 
+ QMap<QString, QString> sigs;
+
+ QMap<QString, QVector<KPH_Command_Package*>> qmap;
+
+ KPH_Command_Package::multi_to_map(kcps, qmap);
+
+ QMapIterator<QString, QVector<KPH_Command_Package*>> it(qmap);
+ while(it.hasNext())
+ {
+  it.next();
+  for(KPH_Command_Package* kcp: kcps)
+  {
+   sigs[it.key()] += kcp->moc_signature() + "\n";
+  }
+ }
+
+ save_file(DEFAULT_KPH_FOLDER "/dataset/raw-multi/t1.kph.sigs",
+   sigs["ScignStage_Audio_Dialog*"]);
 
  return 0;
 }

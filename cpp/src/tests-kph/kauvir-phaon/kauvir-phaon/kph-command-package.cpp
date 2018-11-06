@@ -268,7 +268,7 @@ void KPH_Command_Package::parse_multi_from_string(QString path,
  kph->parse_from_string(path, mid);
  result.push_back(kph);
  i2 += 2;
- int i3 = path.indexOf("\n.\n##\n.\n", i2);
+ int i3 = qs.indexOf("\n.\n##\n.\n", i2);
  if(i3 == -1)
  {
   QString mid = qs.mid(i2);
@@ -278,4 +278,44 @@ void KPH_Command_Package::parse_multi_from_string(QString path,
   return;
  }
  parse_multi_from_string(path, qs, i2, i3 + 6, result);
+}
+
+void KPH_Command_Package::multi_to_map(const QVector<KPH_Command_Package*>& kcps,
+  QMap<QString, QVector<KPH_Command_Package*>>& qmap)
+{
+ for(KPH_Command_Package* kcp: kcps)
+ {
+  QString sigma = kcp->sigma_type_name();
+  if(sigma.isEmpty())
+    continue;
+  qmap[sigma].push_back(kcp);
+ }
+}
+
+QString KPH_Command_Package::sigma_type_name()
+{
+ for(KPH_Carrier* kpc : carriers_)
+ {
+  if(kpc->channel_name() == "sigma")
+  {
+   return kpc->type_name();
+  }
+ }
+ return QString();
+}
+
+QString KPH_Command_Package::moc_signature()
+{
+ QString result = fn_name_ + '(';
+ for(KPH_Carrier* kpc : carriers_)
+ {
+  if(kpc->channel_name() == "lambda")
+  {
+   result += kpc->type_name() + ", ";
+  }
+ }
+ if(result.endsWith(", "))
+   result.chop(2);
+ result += ')';
+ return result;
 }
