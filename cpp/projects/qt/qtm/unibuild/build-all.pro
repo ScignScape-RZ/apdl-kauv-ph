@@ -53,6 +53,7 @@ SUBDIRS += \
 
 SUBDIRS += \
   tests-kph/kauvir-phaon/kph-generator-console \
+  tests-kph/kauvir-phaon/kph-multigen-console \
 
 SUBDIRS += \
   kauvir/kcm-runtime-eval/kcm-env \
