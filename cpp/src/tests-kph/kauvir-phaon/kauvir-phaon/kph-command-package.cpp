@@ -178,8 +178,8 @@ void KPH_Command_Package::parse_from_string_list(QString path, const QStringList
    break;
   case '#' : // expression
    {
-   if(qs[1] != '#')
-     current_expression_code = qs.mid(1).toInt();
+    if(qs[1] != '#')
+      current_expression_code = qs.mid(1).toInt();
    }
    break;
   case '@' : // type name
@@ -238,6 +238,7 @@ void KPH_Command_Package::parse_from_string_list(QString path, const QStringList
   }
  }
 }
+
 
 QVector<KPH_Command_Package*> KPH_Command_Package::parse_multi_from_file(QString path)
 {
