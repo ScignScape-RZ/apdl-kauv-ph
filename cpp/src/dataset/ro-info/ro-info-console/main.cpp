@@ -27,5 +27,6 @@ int main(int argc, char **argv)
  qDebug() << ro.main_executable_path();
  qDebug() << ro.local_article_path();
  qDebug() << ro.main_project_path();
+ qDebug() << '\n' << ro.kai_signatures()["ScignStage_Audio_Dialog"].join("  ");
  return 0;
 }
