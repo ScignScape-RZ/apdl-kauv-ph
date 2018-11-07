@@ -4,8 +4,8 @@
 //     (See accompanying file LICENSE_1_0.txt or copy at
 //           http://www.boost.org/LICENSE_1_0.txt)
 
-#ifndef FN_DOC_VECTOR__H
-#define FN_DOC_VECTOR__H
+#ifndef Fn_Doc_Multi__H
+#define Fn_Doc_Multi__H
 
 
 #include "kans.h"
@@ -14,6 +14,9 @@
 
 #include <QString>
 #include <QObject>
+#include <QList>
+#include <QPair>
+
 
 KANS_CLASS_DECLARE(KCM ,Kauvir_Code_Model)
 KANS_CLASS_DECLARE(KCM ,KCM_Channel_Group)
@@ -32,20 +35,21 @@ USING_KANS(CMD)
 class KCM_Env;
 class Fn_Doc;
 
-class Fn_Doc_Vector : public QObject, public Kauvir_Universal_Class
+class Fn_Doc_Multi : public QObject, public Kauvir_Universal_Class
 {
  Q_OBJECT
 
- KCM_Env* kenv_;
- QVector<QPair<QString, Fn_Doc*>> fns_;
+ Fn_Doc* fnd_;
+
+ QList<QPair<QString, const KCM_Type_Object*>> fns_;
 
 public:
 
- Fn_Doc_Vector();
+ Fn_Doc_Multi();
 
- Fn_Doc_Vector(const Fn_Doc_Vector& rhs);
+ Fn_Doc_Multi(const Fn_Doc_Multi& rhs);
 
- ~Fn_Doc_Vector();
+ ~Fn_Doc_Multi();
 
  Q_INVOKABLE void read(QString fn);
  Q_INVOKABLE void init(KCM_Env* kenv);
@@ -55,7 +59,7 @@ public:
 };
 
 
-Q_DECLARE_METATYPE(Fn_Doc_Vector)
-Q_DECLARE_METATYPE(Fn_Doc_Vector*)
+Q_DECLARE_METATYPE(Fn_Doc_Multi)
+Q_DECLARE_METATYPE(Fn_Doc_Multi*)
 
-#endif //FN_DOC_VECTOR__H
+#endif //Fn_Doc_Multi__H

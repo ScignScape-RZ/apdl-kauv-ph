@@ -4,7 +4,7 @@
 //     (See accompanying file LICENSE_1_0.txt or copy at
 //           http://www.boost.org/LICENSE_1_0.txt)
 
-#include "fn-doc-vector.h"
+#include "fn-doc-multi.h"
 
 #include "kcm-scopes/kcm-scope-system.h"
 
@@ -23,48 +23,52 @@
 
 #include <QDebug>
 
-Fn_Doc_Vector::Fn_Doc_Vector()
-  :  kenv_(nullptr)
+Fn_Doc_Multi::Fn_Doc_Multi()
+  :  fnd_(nullptr)
 {
 
 }
 
-Fn_Doc_Vector::Fn_Doc_Vector(const Fn_Doc_Vector& rhs)
-  :  kenv_(rhs.kenv_), fns_(rhs.fns_)
+Fn_Doc_Multi::Fn_Doc_Multi(const Fn_Doc_Multi& rhs)
+  :  fnd_(rhs.fnd_)
 {
 
 }
 
-Fn_Doc_Vector::~Fn_Doc_Vector()
+Fn_Doc_Multi::~Fn_Doc_Multi()
 {
-
+ // // should be unnecessary
+ // // delete fnd_;
 }
 
-void Fn_Doc_Vector::init(KCM_Env* kenv)
+void Fn_Doc_Multi::init(KCM_Env* kenv)
 {
- kenv_ = kenv;
+ fnd_ = new Fn_Doc;
+ fnd_->init(kenv);
 }
 
 
-void Fn_Doc_Vector::read(QString fn)
+void Fn_Doc_Multi::read(QString fn)
 {
- Fn_Doc* fnd = new Fn_Doc;
- fnd->init(kenv_);
- fns_.push_back({fn, fnd});
-}
-
-void Fn_Doc_Vector::kph_gen_multi(QString path)
-{
- QString text;
- for(QPair<QString, Fn_Doc*> pr : fns_)
+ const KCM_Type_Object* kto = fnd_->get_type_object_from_symbol_name(fn);
+ if(kto)
  {
-  QString fn = pr.first;
-  Fn_Doc* fnd = pr.second;
-  fnd->kph_gen(fn, QString());
+  fns_.push_back({fn, kto});
  }
 }
 
-//void Fn_Doc_Vector::kph_gen(QString fn, QString subs)
+void Fn_Doc_Multi::kph_gen_multi(QString path)
+{
+ QString text;
+ for(QPair<QString, const KCM_Type_Object*> pr : fns_)
+ {
+  QString fn = pr.first;
+  const KCM_Type_Object* kto = pr.second;
+  fnd_->kph_gen(fn, QString());
+ }
+}
+
+//void Fn_Doc_Multi::kph_gen(QString fn, QString subs)
 //{
 // qDebug() << "fn: " << fn;
 // const KCM_Type_Object* kto = scopes_->get_type_object_from_symbol_name(fn);

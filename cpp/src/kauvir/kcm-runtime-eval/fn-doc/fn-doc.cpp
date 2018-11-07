@@ -67,6 +67,11 @@ void Fn_Doc::read(QString fn)
  }
 }
 
+const KCM_Type_Object* Fn_Doc::get_type_object_from_symbol_name(QString fn)
+{
+ return scopes_->get_type_object_from_symbol_name(fn);
+}
+
 void Fn_Doc::kph_gen(QString fn, QString subs)
 {
  qDebug() << "fn: " << fn;
@@ -75,7 +80,15 @@ void Fn_Doc::kph_gen(QString fn, QString subs)
  {
   if(kenv_)
   {
-   kenv_->kph_gen(kto->channel_group(), subs, fn);
+   kenv_->kph_gen(kto->channel_group(), subs, fn, nullptr);
   }
+ }
+}
+
+void Fn_Doc::kph_gen(const KCM_Type_Object* kto, QString& text)
+{
+ if(kenv_)
+ {
+  kenv_->kph_gen(kto->channel_group(), &text);
  }
 }

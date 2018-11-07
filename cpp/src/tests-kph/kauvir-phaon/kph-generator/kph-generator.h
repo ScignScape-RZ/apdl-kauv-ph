@@ -40,6 +40,8 @@ public:
  KPH_Generator(QString file_path,
    KPH_Generator_Substitutions* subs = nullptr);
 
+ KPH_Generator(KPH_Generator_Substitutions* subs = nullptr);
+
  ACCESSORS(QString ,file_path)
  ACCESSORS(QString ,text)
  ACCESSORS(KPH_Generator_Substitutions* ,subs)

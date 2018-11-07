@@ -29,6 +29,12 @@ KPH_Generator::KPH_Generator(QString file_path,
 
 }
 
+KPH_Generator::KPH_Generator(KPH_Generator_Substitutions* subs)
+  :  subs_(subs)
+{
+
+}
+
 void KPH_Generator::close_line(QTextStream& qts)
 {
  qts << "\n.\n";

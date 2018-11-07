@@ -51,8 +51,12 @@ public:
  Q_INVOKABLE void read(QString fn);
  Q_INVOKABLE void init(KCM_Env* kenv);
  Q_INVOKABLE void kph_gen(QString fn, QString subs);
- 
+
+ const KCM_Type_Object* get_type_object_from_symbol_name(QString fn);
+
  QString test_summary();
+
+ void kph_gen(const KCM_Type_Object* kto, QString& text);
 
 };
 
