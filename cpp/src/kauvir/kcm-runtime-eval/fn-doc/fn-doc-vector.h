@@ -36,10 +36,8 @@ class Fn_Doc_Vector : public QObject, public Kauvir_Universal_Class
 {
  Q_OBJECT
 
- KCM_Scope_System* scopes_;
  KCM_Env* kenv_;
-
- QVector<Fn_Doc*> fns_;
+ QVector<QPair<QString, Fn_Doc*>> fns_;
 
 public:
 
@@ -49,11 +47,10 @@ public:
 
  ~Fn_Doc_Vector();
 
- ACCESSORS(KCM_Scope_System* ,scopes)
-
  Q_INVOKABLE void read(QString fn);
  Q_INVOKABLE void init(KCM_Env* kenv);
 
+ Q_INVOKABLE void kph_gen_multi(QString path);
 
 };
 

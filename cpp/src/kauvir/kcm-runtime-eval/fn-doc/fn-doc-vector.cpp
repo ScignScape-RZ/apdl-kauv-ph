@@ -24,13 +24,13 @@
 #include <QDebug>
 
 Fn_Doc_Vector::Fn_Doc_Vector()
-  :  scopes_(nullptr), kenv_(nullptr)
+  :  kenv_(nullptr)
 {
 
 }
 
 Fn_Doc_Vector::Fn_Doc_Vector(const Fn_Doc_Vector& rhs)
-  :  scopes_(rhs.scopes_), kenv_(rhs.kenv_), fns_(rhs.fns_)
+  :  kenv_(rhs.kenv_), fns_(rhs.fns_)
 {
 
 }
@@ -43,21 +43,24 @@ Fn_Doc_Vector::~Fn_Doc_Vector()
 void Fn_Doc_Vector::init(KCM_Env* kenv)
 {
  kenv_ = kenv;
- scopes_ = kenv->scopes();
- qDebug() << "init...";
 }
 
 
 void Fn_Doc_Vector::read(QString fn)
 {
- qDebug() << "fn: " << fn;
- const KCM_Type_Object* kto = scopes_->get_type_object_from_symbol_name(fn);
- if(kto)
+ Fn_Doc* fnd = new Fn_Doc;
+ fnd->init(kenv_);
+ fns_.push_back({fn, fnd});
+}
+
+void Fn_Doc_Vector::kph_gen_multi(QString path)
+{
+ QString text;
+ for(QPair<QString, Fn_Doc*> pr : fns_)
  {
-  if(kenv_)
-  {
-   kenv_->report_channel_group(kto->channel_group());
-  }
+  QString fn = pr.first;
+  Fn_Doc* fnd = pr.second;
+  fnd->kph_gen(fn, QString());
  }
 }
 
