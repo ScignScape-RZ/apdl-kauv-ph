@@ -7,7 +7,7 @@
 
 ;;type decl 
 ( ; write_unmediated_ 
- kb::write-qreg-type-binding-statement  :|@#_fnd|  :|_#_:TYPE-DECL|  :|@__Fn_Doc*| 
+ kb::write-qreg-type-binding-statement  :|@#_fnm|  :|_#_:TYPE-DECL|  :|@__Fn_Doc_Multi*| 
  ; nothing nested...
 ) ; _write_unmediated 
 
@@ -17,7 +17,7 @@
 ;statement_
 
 ( ; from write_statement_entry
- kb::symbol-init-via-type  :|@#_fnd| 
+ kb::symbol-init-via-type  :|@#_fnm| 
  ; nothing nested...
 
 );_statement
@@ -54,7 +54,7 @@
 ;statement_
 
 ( ; from write_statement_entry
- kb::write-s1-expression  :|%%_init|  :|@@_fnd|  :|@#_kenv| 
+ kb::write-s1-expression  :|%%_init|  :|@@_fnm|  :|@#_kenv| 
  ; nothing nested...
 
 );_statement
@@ -84,7 +84,7 @@ progn ; sig ...
 ;statement_
 
 ( ; from write_statement_entry
- kb::write-s1-expression  :|%%_kph-gen|  :|@@_fnd|  :|#__str|  "\"play_sample\""  :|#__str|  "\"3\"" 
+ kb::write-s1-expression  :|%%_kph-gen-multi|  :|@@_fnm|  :|#__str|  "\"@/cpp/kph/gen-multi/t1.txt\"" 
  ; nothing nested...
 
 );_statement

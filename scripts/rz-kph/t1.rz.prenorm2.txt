@@ -1,10 +1,10 @@
 
 (block 
-  (<<my>> <<fnd>> <<:::>> <<Fn_Doc*>>) 
-  (<<fnd>> <<\==>> <<default>>) 
+  (<<my>> <<fnm>> <<:::>> <<Fn_Doc_Multi*>>) 
+  (<<fnm>> <<\==>> <<default>>) 
   (<<my>> <<kenv>> <<:::>> <<KCM_Env*>>) 
   (<<kenv>> <<\=>>
     (<<envv>> <<_$>>)) 
-  (<<fnd>> <</->>> <<init>> <<kenv>>) 
+  (<<fnm>> <</->>> <<init>> <<kenv>>) 
   (<<my>> <<play_sample>> <<:::>> <<$->>>) 
-  (<<fnd>> <</->>> <<kph-gen>> <<play_sample>> <<3>>))
+  (<<fnm>> <</->>> <<kph-gen-multi>> <<@/cpp/kph/gen-multi/t1.txt>>))

@@ -1,13 +1,7 @@
 
-,fnd ::: Fn_Doc*;
-fnd \== default;
+;;-- comment out one or the other ...
+--;;
 
-,kenv ::: KCM_Env*;
-kenv \= (envv _$);
-
-fnd -> init kenv;
-
-,play_sample ::: .[ScignStage_Audio_Dialog*] .(int)  $-> extern;
-
-fnd -> kph-gen  "play_sample" "3";
-
+;;-  #t1-multi
+;;-  #t1-single
+<#t1-multi>

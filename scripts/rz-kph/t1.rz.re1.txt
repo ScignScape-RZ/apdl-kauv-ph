@@ -15,7 +15,7 @@ For connection: run-block-entry
 
    For connection: run-call-sequence
    ==== 
-    [token= ,fnd]
+    [token= ,fnm]
 
     For connection: run-call-sequence
     ==== 
@@ -23,7 +23,7 @@ For connection: run-block-entry
 
      For connection: run-call-sequence
      ==== 
-      [token= Fn_Doc*]
+      [token= Fn_Do...]
      ....
     ....
    ....
@@ -39,7 +39,7 @@ For connection: run-block-entry
 
     For connection: run-call-sequence
     ==== 
-     [token= fnd]
+     [token= fnm]
 
      For connection: run-call-sequence
      ==== 
@@ -124,7 +124,7 @@ For connection: run-block-entry
 
        For connection: run-call-sequence
        ==== 
-        [token= fnd]
+        [token= fnm]
 
         For connection: run-call-sequence
         ==== 
@@ -217,20 +217,15 @@ For connection: run-block-entry
 
          For connection: run-call-sequence
          ==== 
-          [token= fnd]
+          [token= fnm]
 
           For connection: run-call-sequence
           ==== 
-           [token= kph-gen]
+           [token= kph-g...]
 
            For connection: run-call-sequence
            ==== 
-            [token= "pl..."]
-
-            For connection: run-call-sequence
-            ==== 
-             [token= "3"]
-            ....
+            [token= "@/..."]
            ....
           ....
          ....
@@ -241,22 +236,17 @@ For connection: run-block-entry
        ==== 
 
        Annotated: 
- [[<call 9> (fnd)]]
+ [[<call 9> (fnm)]]
        ---- 
-        [token= fnd]
+        [token= fnm]
 
         For connection: run-call-sequence
         ==== 
-         [token= kph-gen]
+         [token= kph-g...]
 
          For connection: run-call-sequence
          ==== 
-          [token= "pl..."]
-
-          For connection: run-call-sequence
-          ==== 
-           [token= "3"]
-          ....
+          [token= "@/..."]
          ....
         ....
        ....
@@ -266,7 +256,7 @@ For connection: run-block-entry
       ==== 
 
       Annotated: 
- [[<call 6> (my) (fnd)]]
+ [[<call 6> (my) (fnm)]]
       ---- 
        [token= my]
 
@@ -336,9 +326,9 @@ For connection: run-block-entry
      ==== 
 
      Annotated: 
- [[<call 5> (fnd) (my)]]
+ [[<call 5> (fnm) (my)]]
      ---- 
-      [token= fnd]
+      [token= fnm]
 
       For connection: run-call-sequence
       ==== 
@@ -356,7 +346,7 @@ For connection: run-block-entry
     ==== 
 
     Annotated: 
- [[<call 3> (kenv) (fnd)]]
+ [[<call 3> (kenv) (fnm)]]
     ---- 
      [token= kenv]
 
@@ -424,9 +414,9 @@ For connection: run-block-entry
   ==== 
 
   Annotated: 
- [[<call 1> (fnd) (my)]]
+ [[<call 1> (fnm) (my)]]
   ---- 
-   [token= fnd]
+   [token= fnm]
 
    For connection: run-call-sequence
    ==== 
@@ -439,13 +429,13 @@ For connection: run-block-entry
  ==== 
 
  Annotated: 
- [[<call 0> (my) (fnd)]]
+ [[<call 0> (my) (fnm)]]
  ---- 
   [token= my]
 
   For connection: run-call-sequence
   ==== 
-   [token= ,fnd]
+   [token= ,fnm]
 
    For connection: run-call-sequence
    ==== 
@@ -453,7 +443,7 @@ For connection: run-block-entry
 
     For connection: run-call-sequence
     ==== 
-     [token= Fn_Doc*]
+     [token= Fn_Do...]
     ....
    ....
   ....

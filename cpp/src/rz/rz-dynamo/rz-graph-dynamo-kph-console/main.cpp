@@ -237,6 +237,9 @@ int main(int argc, char* argv[])
  kcm.create_and_register_type_object("Fn_Doc");
  kcm.create_and_register_type_object("Fn_Doc*");
 
+ kcm.create_and_register_type_object("Fn_Doc_Multi");
+ kcm.create_and_register_type_object("Fn_Doc_Multi*");
+
  KCM_Env* kenv = new KCM_Env(nullptr);
  QString kenv_typename = "KCM_Env*";
  insert_envv(&kenv_typename, kenv);

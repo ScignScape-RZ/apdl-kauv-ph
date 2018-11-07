@@ -1,7 +1,7 @@
 
  (kb::write-file-start) 
- (kb::write-qreg-type-binding-statement :|@#_fnd| :|_#_:TYPE-DECL| :|@__Fn_Doc*|) 
- (kb::symbol-init-via-type :|@#_fnd|) 
+ (kb::write-qreg-type-binding-statement :|@#_fnm| :|_#_:TYPE-DECL| :|@__Fn_Doc_Multi*|) 
+ (kb::symbol-init-via-type :|@#_fnm|) 
  (kb::write-promote-expression) 
  (kb::write-cmd-eval) 
  (kb::write-statement-clear) 
@@ -10,7 +10,7 @@
  (kb::write-promote-type-binding-expression :|@#_kenv|) 
  (kb::write-cmd-eval) 
  (kb::write-statement-clear) 
- (kb::write-s1-expression :|%%_init| :|@@_fnd| :|@#_kenv|) 
+ (kb::write-s1-expression :|%%_init| :|@@_fnm| :|@#_kenv|) 
  (kb::write-promote-expression) 
  (kb::write-cmd-eval) 
  (kb::write-statement-clear) 
@@ -22,7 +22,7 @@
     (ka::kc :|kcg_add_lambda_carrier_via_type_name| kcg "int") 
     (setq kto 
      (ka::kc :|kcm_type_object_from_channel_group| kcg))))) 
- (kb::write-s1-expression :|%%_kph-gen| :|@@_fnd| :|#__str| "\"play_sample\"" :|#__str| "\"3\"") 
+ (kb::write-s1-expression :|%%_kph-gen-multi| :|@@_fnm| :|#__str| "\"@/cpp/kph/gen-multi/t1.txt\"") 
  (kb::write-promote-expression) 
  (kb::write-cmd-eval) 
  (kb::write-statement-clear) 

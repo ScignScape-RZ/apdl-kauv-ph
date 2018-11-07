@@ -1,14 +1,13 @@
 
-,fnd ::: Fn_Doc*;
-fnd \== default;
+,fnm ::: Fn_Doc_Multi*;
+fnm \== default;
 
 ,kenv ::: KCM_Env*;
 kenv \= (envv _$);
 
-fnd -> init kenv;
-fnd -> init-multi;
+fnm -> init kenv;
 
 ,play_sample ::: .[ScignStage_Audio_Dialog*] .(int)  $-> extern;
 
-fnd -> kph-gen  "play_sample" "3";
+fnm -> kph-gen-multi  "@/cpp/kph/gen-multi/t1.txt";
 
