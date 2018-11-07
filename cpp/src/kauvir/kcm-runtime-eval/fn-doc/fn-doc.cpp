@@ -85,10 +85,10 @@ void Fn_Doc::kph_gen(QString fn, QString subs)
  }
 }
 
-void Fn_Doc::kph_gen(const KCM_Type_Object* kto, QString& text)
+void Fn_Doc::kph_gen(const KCM_Type_Object* kto, QString fn, QString& text)
 {
  if(kenv_)
  {
-  kenv_->kph_gen(kto->channel_group(), &text);
+  kenv_->kph_gen(kto->channel_group(), fn, &text);
  }
 }

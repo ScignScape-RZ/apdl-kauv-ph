@@ -54,7 +54,7 @@ public:
 
  void report_channel_group(KCM_Channel_Group* kcg);
  void kph_gen(KCM_Channel_Group* kcg, QString subs, QString fn, QString* text);
- void kph_gen(KCM_Channel_Group* kcg, QString* text);
+ void kph_gen(KCM_Channel_Group* kcg, QString fn, QString* text);
 };
 
 

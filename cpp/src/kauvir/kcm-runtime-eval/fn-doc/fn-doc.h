@@ -56,7 +56,7 @@ public:
 
  QString test_summary();
 
- void kph_gen(const KCM_Type_Object* kto, QString& text);
+ void kph_gen(const KCM_Type_Object* kto, QString fn, QString& text);
 
 };
 

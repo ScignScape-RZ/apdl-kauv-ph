@@ -71,7 +71,7 @@ void Fn_Doc_Multi::kph_gen_multi(QString path)
   QString txt;
   QString fn = pr.first;
   const KCM_Type_Object* kto = pr.second;
-  fnd_->kph_gen(kto, txt);
+  fnd_->kph_gen(kto, fn, txt);
   if(it.hasNext())
   {
    if(txt.endsWith('-'))

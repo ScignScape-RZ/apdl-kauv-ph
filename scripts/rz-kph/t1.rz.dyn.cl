@@ -60,9 +60,109 @@
 (PROGN
  (KA::KC :|kcg_clear_all| KCG)
  (KA::KC :|kcg_add_sigma_carrier_via_type_name| KCG "ScignStage_Audio_Dialog*")
+ (KA::KC :|kcg_add_lambda_carrier_via_type_name| KCG "QString")
+ (SETQ KTO (KA::KC :|kcm_type_object_from_channel_group| KCG)))
+(setq kcs (ka::kc :|kcm_promote_overloadable_function_type_binding_to_statement| "test_msgbox" kto))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+; _fn_sig (no def) ...
+
+(ka::kc :|kcg_clear_all| kcg)
+
+; fn_sig_ ...
+(PROGN
+ (KA::KC :|kcg_clear_all| KCG)
+ (KA::KC :|kcg_add_sigma_carrier_via_type_name| KCG "ScignStage_Audio_Dialog*")
+ (SETQ KTO (KA::KC :|kcm_type_object_from_channel_group| KCG)))
+(setq kcs (ka::kc :|kcm_promote_overloadable_function_type_binding_to_statement| "play_next_sample" kto))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+; _fn_sig (no def) ...
+
+(ka::kc :|kcg_clear_all| kcg)
+
+; fn_sig_ ...
+(PROGN
+ (KA::KC :|kcg_clear_all| KCG)
+ (KA::KC :|kcg_add_sigma_carrier_via_type_name| KCG "ScignStage_Audio_Dialog*")
+ (SETQ KTO (KA::KC :|kcm_type_object_from_channel_group| KCG)))
+(setq kcs (ka::kc :|kcm_promote_overloadable_function_type_binding_to_statement| "play_next_sample_in_peer_group" kto))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+; _fn_sig (no def) ...
+
+(ka::kc :|kcg_clear_all| kcg)
+
+; fn_sig_ ...
+(PROGN
+ (KA::KC :|kcg_clear_all| KCG)
+ (KA::KC :|kcg_add_sigma_carrier_via_type_name| KCG "ScignStage_Audio_Dialog*")
+ (SETQ KTO (KA::KC :|kcm_type_object_from_channel_group| KCG)))
+(setq kcs (ka::kc :|kcm_promote_overloadable_function_type_binding_to_statement| "play_previous_sample" kto))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+; _fn_sig (no def) ...
+
+(ka::kc :|kcg_clear_all| kcg)
+
+; fn_sig_ ...
+(PROGN
+ (KA::KC :|kcg_clear_all| KCG)
+ (KA::KC :|kcg_add_sigma_carrier_via_type_name| KCG "ScignStage_Audio_Dialog*")
+ (SETQ KTO (KA::KC :|kcm_type_object_from_channel_group| KCG)))
+(setq kcs (ka::kc :|kcm_promote_overloadable_function_type_binding_to_statement| "play_previous_sample_in_peer_group" kto))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+; _fn_sig (no def) ...
+
+(ka::kc :|kcg_clear_all| kcg)
+
+; fn_sig_ ...
+(PROGN
+ (KA::KC :|kcg_clear_all| KCG)
+ (KA::KC :|kcg_add_sigma_carrier_via_type_name| KCG "ScignStage_Audio_Dialog*")
  (KA::KC :|kcg_add_lambda_carrier_via_type_name| KCG "int")
  (SETQ KTO (KA::KC :|kcm_type_object_from_channel_group| KCG)))
 (setq kcs (ka::kc :|kcm_promote_overloadable_function_type_binding_to_statement| "show_sentence_text" kto))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+; _fn_sig (no def) ...
+
+(ka::kc :|kcg_clear_all| kcg)
+
+; fn_sig_ ...
+(PROGN
+ (KA::KC :|kcg_clear_all| KCG)
+ (KA::KC :|kcg_add_sigma_carrier_via_type_name| KCG "ScignStage_Audio_Dialog*")
+ (KA::KC :|kcg_add_lambda_carrier_via_type_name| KCG "int")
+ (SETQ KTO (KA::KC :|kcm_type_object_from_channel_group| KCG)))
+(setq kcs (ka::kc :|kcm_promote_overloadable_function_type_binding_to_statement| "show_distractor_text" kto))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+; _fn_sig (no def) ...
+
+(ka::kc :|kcg_clear_all| kcg)
+
+; fn_sig_ ...
+(PROGN
+ (KA::KC :|kcg_clear_all| KCG)
+ (KA::KC :|kcg_add_sigma_carrier_via_type_name| KCG "ScignStage_Audio_Dialog*")
+ (KA::KC :|kcg_add_lambda_carrier_via_type_name| KCG "int")
+ (SETQ KTO (KA::KC :|kcm_type_object_from_channel_group| KCG)))
+(setq kcs (ka::kc :|kcm_promote_overloadable_function_type_binding_to_statement| "highlight_sample" kto))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+; _fn_sig (no def) ...
+
+(ka::kc :|kcg_clear_all| kcg)
+
+; fn_sig_ ...
+(PROGN
+ (KA::KC :|kcg_clear_all| KCG)
+ (KA::KC :|kcg_add_sigma_carrier_via_type_name| KCG "ScignStage_Audio_Dialog*")
+ (KA::KC :|kcg_add_lambda_carrier_via_type_name| KCG "int")
+ (SETQ KTO (KA::KC :|kcm_type_object_from_channel_group| KCG)))
+(setq kcs (ka::kc :|kcm_promote_overloadable_function_type_binding_to_statement| "highlight_peers" kto))
 (setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
 (ka::kc :|kcm_direct_eval| cmd-pkg)
 ; _fn_sig (no def) ...
@@ -80,7 +180,70 @@
 (ka::kc :|kcm_kcg_add_fuxe_carrier| kcg kto  "read")
 (ka::kc :|kcg_add_sigma_carrier_via_symbol| kcg "fnm")
 (setq kto (ka::kc :|kcm_type_object__str|))
+(ka::kc :|kcg_add_lambda_carrier_via_typed_literal| kcg kto "test_msgbox")
+(setq kcx (ka::kc :|kcm_dissolve_to_nested_expression| kcg))
+(setq kcs (ka::kc :|kcm_promote_expression_to_statement| kcx))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+(ka::kc :|kcg_clear_all| kcg)
+(ka::kc :|kcm_kcg_add_fuxe_carrier| kcg kto  "read")
+(ka::kc :|kcg_add_sigma_carrier_via_symbol| kcg "fnm")
+(setq kto (ka::kc :|kcm_type_object__str|))
+(ka::kc :|kcg_add_lambda_carrier_via_typed_literal| kcg kto "play_next_sample")
+(setq kcx (ka::kc :|kcm_dissolve_to_nested_expression| kcg))
+(setq kcs (ka::kc :|kcm_promote_expression_to_statement| kcx))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+(ka::kc :|kcg_clear_all| kcg)
+(ka::kc :|kcm_kcg_add_fuxe_carrier| kcg kto  "read")
+(ka::kc :|kcg_add_sigma_carrier_via_symbol| kcg "fnm")
+(setq kto (ka::kc :|kcm_type_object__str|))
+(ka::kc :|kcg_add_lambda_carrier_via_typed_literal| kcg kto "play_next_sample_in_peer_group")
+(setq kcx (ka::kc :|kcm_dissolve_to_nested_expression| kcg))
+(setq kcs (ka::kc :|kcm_promote_expression_to_statement| kcx))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+(ka::kc :|kcg_clear_all| kcg)
+(ka::kc :|kcm_kcg_add_fuxe_carrier| kcg kto  "read")
+(ka::kc :|kcg_add_sigma_carrier_via_symbol| kcg "fnm")
+(setq kto (ka::kc :|kcm_type_object__str|))
+(ka::kc :|kcg_add_lambda_carrier_via_typed_literal| kcg kto "play_previous_sample")
+(setq kcx (ka::kc :|kcm_dissolve_to_nested_expression| kcg))
+(setq kcs (ka::kc :|kcm_promote_expression_to_statement| kcx))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+(ka::kc :|kcg_clear_all| kcg)
+(ka::kc :|kcm_kcg_add_fuxe_carrier| kcg kto  "read")
+(ka::kc :|kcg_add_sigma_carrier_via_symbol| kcg "fnm")
+(setq kto (ka::kc :|kcm_type_object__str|))
+(ka::kc :|kcg_add_lambda_carrier_via_typed_literal| kcg kto "play_previous_sample_in_peer_group")
+(setq kcx (ka::kc :|kcm_dissolve_to_nested_expression| kcg))
+(setq kcs (ka::kc :|kcm_promote_expression_to_statement| kcx))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+(ka::kc :|kcg_clear_all| kcg)
+(ka::kc :|kcm_kcg_add_fuxe_carrier| kcg kto  "read")
+(ka::kc :|kcg_add_sigma_carrier_via_symbol| kcg "fnm")
+(setq kto (ka::kc :|kcm_type_object__str|))
 (ka::kc :|kcg_add_lambda_carrier_via_typed_literal| kcg kto "show_sentence_text")
+(setq kcx (ka::kc :|kcm_dissolve_to_nested_expression| kcg))
+(setq kcs (ka::kc :|kcm_promote_expression_to_statement| kcx))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+(ka::kc :|kcg_clear_all| kcg)
+(ka::kc :|kcm_kcg_add_fuxe_carrier| kcg kto  "read")
+(ka::kc :|kcg_add_sigma_carrier_via_symbol| kcg "fnm")
+(setq kto (ka::kc :|kcm_type_object__str|))
+(ka::kc :|kcg_add_lambda_carrier_via_typed_literal| kcg kto "highlight_sample")
+(setq kcx (ka::kc :|kcm_dissolve_to_nested_expression| kcg))
+(setq kcs (ka::kc :|kcm_promote_expression_to_statement| kcx))
+(setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))
+(ka::kc :|kcm_direct_eval| cmd-pkg)
+(ka::kc :|kcg_clear_all| kcg)
+(ka::kc :|kcm_kcg_add_fuxe_carrier| kcg kto  "read")
+(ka::kc :|kcg_add_sigma_carrier_via_symbol| kcg "fnm")
+(setq kto (ka::kc :|kcm_type_object__str|))
+(ka::kc :|kcg_add_lambda_carrier_via_typed_literal| kcg kto "highlight_peers")
 (setq kcx (ka::kc :|kcm_dissolve_to_nested_expression| kcg))
 (setq kcs (ka::kc :|kcm_promote_expression_to_statement| kcx))
 (setq cmd-pkg (ka::kc :|kcm_statement_to_command_package| kcs))

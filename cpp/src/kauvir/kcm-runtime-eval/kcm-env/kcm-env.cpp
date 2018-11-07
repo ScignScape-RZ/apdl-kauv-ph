@@ -33,10 +33,10 @@ void KCM_Env::kph_gen(KCM_Channel_Group* kcg, QString subs, QString fn, QString*
  }
 }
 
-void KCM_Env::kph_gen(KCM_Channel_Group* kcg, QString* text)
+void KCM_Env::kph_gen(KCM_Channel_Group* kcg, QString fn, QString* text)
 {
  if(kph_gen_fn_)
  {
-  kph_gen_fn_(kcm_, kcg, QString(), QString(), text);
+  kph_gen_fn_(kcm_, kcg, QString(), fn, text);
  }
 }
