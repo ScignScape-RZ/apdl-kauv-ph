@@ -11,6 +11,9 @@ PROJECT_NAME = fn-doc
 include(../build-group.pri)
 
 
+DEFINES += AR_ROOT_DIR=\\\"$$ROOT_DIR\\\"
+
+
 INCLUDEPATH += $$KAUVIR_KCM_SRC_GROUP_DIR \
   $$KAUVIR_KCM_SRC_GROUP_DIR/kauvir-type-system \
   $$KAUVIR_KCM_SRC_GROUP_DIR/kauvir-code-model

@@ -7,4 +7,7 @@
     (<<envv>> <<_$>>)) 
   (<<fnm>> <</->>> <<init>> <<kenv>>) 
   (<<my>> <<play_sample>> <<:::>> <<$->>>) 
+  (<<my>> <<show_sentence_text>> <<:::>> <<$->>>) 
+  (<<fnm>> <</->>> <<read>> <<play_sample>>) 
+  (<<fnm>> <</->>> <<read>> <<show_sentence_text>>) 
   (<<fnm>> <</->>> <<kph-gen-multi>> <<@/cpp/kph/gen-multi/t1.txt>>))

@@ -296,7 +296,8 @@ void init_basic_functions_kci(Kauvir_Code_Model& kcm)
      QString()
     );
 
-  table.init_phaon_function(g1, "read", 710, &fndoc_read);
+  // // use read-f since read also applies to multi ...
+  table.init_phaon_function(g1, "read-f", 710, &fndoc_read);
 
   g1.clear_all();
  }

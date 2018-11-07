@@ -7,4 +7,7 @@
     (<4>envv _$</4>)</3>) 
   (<5>fnm -> init kenv</5>) 
   (<6>my (rz-decl play_sample) ::: $-></6>) 
-  (<9>fnm -> kph-gen-multi "@/cpp/kph/gen-multi/t1.txt"</9>))
+  (<9>my (rz-decl show_sentence_text) ::: $-></9>) 
+  (<12>fnm -> read "play_sample"</12>) 
+  (<13>fnm -> read "show_sentence_text"</13>) 
+  (<14>fnm -> kph-gen-multi "@/cpp/kph/gen-multi/t1.txt"</14>))

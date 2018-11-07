@@ -213,6 +213,198 @@ For connection: run-block-entry
 
         For connection: run-call-entry
         ==== 
+         [token= my]
+
+         For connection: run-call-sequence
+         ==== 
+          [token= ,show...]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= :::]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= $->]
+
+            For connection: run-function-def-entry
+            ==== 
+             <<node/<fdef>>>
+
+             For connection: run-call-entry
+             ==== 
+              <call 10>
+
+              For connection: run-data-entry
+              ==== 
+               <data 3 ...>
+
+               For connection: run-data-entry
+               ==== 
+                [token= Scign...]
+               ....
+
+               For connection: run-data-leave
+               ==== 
+                <... data>
+               ....
+              ....
+
+              For connection: run-cross-data
+              ==== 
+               <call 11>
+
+               For connection: run-data-entry
+               ==== 
+                <data 4 ...>
+
+                For connection: run-data-entry
+                ==== 
+                 [token= int]
+                ....
+
+                For connection: run-data-leave
+                ==== 
+                 <... data>
+                ....
+               ....
+              ....
+             ....
+            ....
+           ....
+          ....
+         ....
+        ....
+
+        For connection: run-cross-sequence
+        ==== 
+         <call 12>
+
+         For connection: run-call-entry
+         ==== 
+          [token= fnm]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= /->]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= read]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= "pl..."]
+            ....
+           ....
+          ....
+         ....
+
+         For connection: run-cross-sequence
+         ==== 
+          <call 13>
+
+          For connection: run-call-entry
+          ==== 
+           [token= fnm]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= /->]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= read]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "sh..."]
+             ....
+            ....
+           ....
+          ....
+
+          For connection: run-cross-sequence
+          ==== 
+           <call 14>
+
+           For connection: run-call-entry
+           ==== 
+            [token= fnm]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= /->]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= kph-g...]
+
+              For connection: run-call-sequence
+              ==== 
+               [token= "@/..."]
+              ....
+             ....
+            ....
+           ....
+          ....
+
+          For connection: run-call-entry-direct
+          ==== 
+
+          Annotated: 
+ [[<call 14> (fnm)]]
+          ---- 
+           [token= fnm]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= /->]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= kph-g...]
+
+             For connection: run-call-sequence
+             ==== 
+              [token= "@/..."]
+             ....
+            ....
+           ....
+          ....
+         ....
+
+         For connection: run-call-entry-direct
+         ==== 
+
+         Annotated: 
+ [[<call 13> (fnm) (fnm)]]
+         ---- 
+          [token= fnm]
+
+          For connection: run-call-sequence
+          ==== 
+           [token= /->]
+
+           For connection: run-call-sequence
+           ==== 
+            [token= read]
+
+            For connection: run-call-sequence
+            ==== 
+             [token= "sh..."]
+            ....
+           ....
+          ....
+         ....
+        ....
+
+        For connection: run-call-entry-direct
+        ==== 
+
+        Annotated: 
+ [[<call 12> (fnm) (fnm)]]
+        ---- 
          [token= fnm]
 
          For connection: run-call-sequence
@@ -221,11 +413,11 @@ For connection: run-block-entry
 
           For connection: run-call-sequence
           ==== 
-           [token= kph-g...]
+           [token= read]
 
            For connection: run-call-sequence
            ==== 
-            [token= "@/..."]
+            [token= "pl..."]
            ....
           ....
          ....
@@ -236,21 +428,66 @@ For connection: run-block-entry
        ==== 
 
        Annotated: 
- [[<call 9> (fnm)]]
+ [[<call 9> (my) (fnm)]]
        ---- 
-        [token= fnm]
+        [token= my]
 
         For connection: run-call-sequence
         ==== 
-         [token= /->]
+         [token= ,show...]
 
          For connection: run-call-sequence
          ==== 
-          [token= kph-g...]
+          [token= :::]
 
           For connection: run-call-sequence
           ==== 
-           [token= "@/..."]
+           [token= $->]
+
+           For connection: run-function-def-entry
+           ==== 
+            <<node/<fdef>>>
+
+            For connection: run-call-entry
+            ==== 
+             <call 10>
+
+             For connection: run-data-entry
+             ==== 
+              <data 3 ...>
+
+              For connection: run-data-entry
+              ==== 
+               [token= Scign...]
+              ....
+
+              For connection: run-data-leave
+              ==== 
+               <... data>
+              ....
+             ....
+
+             For connection: run-cross-data
+             ==== 
+              <call 11>
+
+              For connection: run-data-entry
+              ==== 
+               <data 4 ...>
+
+               For connection: run-data-entry
+               ==== 
+                [token= int]
+               ....
+
+               For connection: run-data-leave
+               ==== 
+                <... data>
+               ....
+              ....
+             ....
+            ....
+           ....
           ....
          ....
         ....
@@ -261,7 +498,7 @@ For connection: run-block-entry
       ==== 
 
       Annotated: 
- [[<call 6> (my) (fnm)]]
+ [[<call 6> (my) (my)]]
       ---- 
        [token= my]
 
