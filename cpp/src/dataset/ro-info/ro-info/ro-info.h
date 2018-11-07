@@ -30,7 +30,9 @@ class RO_Info
  QString main_executable_path_;
  QString root_data_folder_;
  QString root_tests_folder_;
- QStringList kai_signatures_;
+
+ QMap<QString, QStringList> kai_signatures_;
+ typedef QMap<QString, QStringList> kai_signatures_type;
 
 public:
 
@@ -43,7 +45,11 @@ public:
  ACCESSORS(QString ,main_executable_path)
  ACCESSORS(QString ,root_data_folder)
  ACCESSORS(QString ,root_tests_folder)
- ACCESSORS__RGET(QStringList ,kai_signatures)
+
+ ACCESSORS__RGET(kai_signatures_type ,kai_signatures)
+
+ void parse_kai_signatures_from_file(QString class_name,
+   QString path);
 
 
 };
