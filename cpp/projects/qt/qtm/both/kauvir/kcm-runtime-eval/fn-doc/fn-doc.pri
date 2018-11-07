@@ -20,10 +20,13 @@ INCLUDEPATH += $$KCM_RUNTIME_EVAL_SRC_GROUP_DIR
 
 HEADERS +=  \
   $$SRC_DIR/fn-doc.h \
+  $$SRC_DIR/fn-doc-vector.h \
 
 
 SOURCES +=  \
   $$SRC_DIR/fn-doc.cpp \
+  $$SRC_DIR/fn-doc-vector.cpp \
+
 
 CONFIG += no_keywords
 
