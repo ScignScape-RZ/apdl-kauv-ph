@@ -328,6 +328,17 @@ progn ; sig ...
 ;statement_
 
 ( ; from write_statement_entry
+ kb::write-s1-expression  :|%%_read|  :|@@_fnm|  :|#__str|  "\"show_distractor_text\"" 
+ ; nothing nested...
+
+);_statement
+
+(kb::write-promote-expression)
+(kb::write-cmd-eval)
+(kb::write-statement-clear)
+;statement_
+
+( ; from write_statement_entry
  kb::write-s1-expression  :|%%_read|  :|@@_fnm|  :|#__str|  "\"highlight_sample\"" 
  ; nothing nested...
 
@@ -350,7 +361,7 @@ progn ; sig ...
 ;statement_
 
 ( ; from write_statement_entry
- kb::write-s1-expression  :|%%_kph-gen-multi|  :|@@_fnm|  :|#__str|  "\"@/cpp/kph/gen-multi/t1.txt\"" 
+ kb::write-s1-expression  :|%%_kph-gen-multi|  :|@@_fnm|  :|#__str|  "\"@/cpp/kph/gen-multi/t1.kph\"" 
  ; nothing nested...
 
 );_statement

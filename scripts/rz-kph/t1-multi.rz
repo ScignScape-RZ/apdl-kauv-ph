@@ -25,8 +25,9 @@ fnm -> read "play_next_sample_in_peer_group";
 fnm -> read "play_previous_sample";
 fnm -> read "play_previous_sample_in_peer_group";
 fnm -> read "show_sentence_text";
+fnm -> read "show_distractor_text";
 fnm -> read "highlight_sample";
 fnm -> read "highlight_peers";
 
-fnm -> kph-gen-multi  "@/cpp/kph/gen-multi/t1.txt";
+fnm -> kph-gen-multi  "@/cpp/kph/gen-multi/t1.kph";
 

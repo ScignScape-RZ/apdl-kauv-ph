@@ -39,8 +39,11 @@ USING_KANS(TextIO)
 
 int main(int argc, char* argv[])
 {
+ // //  replace "gen-multi" with "raw-multi"
+  //    to test manually-written kph files
+
  QVector<KPH_Command_Package*> kcps = KPH_Command_Package::parse_multi_from_file(
-   DEFAULT_KPH_FOLDER "/dataset/raw-multi/t1.kph" );
+   DEFAULT_KPH_FOLDER "/dataset/gen-multi/t1.kph" );
 
  QMap<QString, QString> sigs;
 
@@ -58,7 +61,7 @@ int main(int argc, char* argv[])
   }
  }
 
- save_file(DEFAULT_KPH_FOLDER "/dataset/raw-multi/t1.kph.sigs",
+ save_file(DEFAULT_KPH_FOLDER "/dataset/gen-multi/t1.kph.sigs",
    sigs["ScignStage_Audio_Dialog*"]);
 
  return 0;

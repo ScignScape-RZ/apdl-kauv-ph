@@ -934,7 +934,7 @@ For connection: run-block-entry
 
                            For connection: run-call-sequence
                            ==== 
-                            [token= "hi..."]
+                            [token= "sh..."]
                            ....
                           ....
                          ....
@@ -978,12 +978,56 @@ For connection: run-block-entry
 
                             For connection: run-call-sequence
                             ==== 
-                             [token= kph-g...]
+                             [token= read]
 
                              For connection: run-call-sequence
                              ==== 
-                              [token= "@/..."]
+                              [token= "hi..."]
                              ....
+                            ....
+                           ....
+                          ....
+
+                          For connection: run-cross-sequence
+                          ==== 
+                           <call 42>
+
+                           For connection: run-call-entry
+                           ==== 
+                            [token= /->]
+
+                            For connection: run-call-sequence
+                            ==== 
+                             [token= fnm]
+
+                             For connection: run-call-sequence
+                             ==== 
+                              [token= kph-g...]
+
+                              For connection: run-call-sequence
+                              ==== 
+                               [token= "@/..."]
+                              ....
+                             ....
+                            ....
+                           ....
+                          ....
+
+                          For connection: run-call-entry-direct
+                          ==== 
+
+                          Annotated: 
+ [[<call 42> (fnm)]]
+                          ---- 
+                           [token= fnm]
+
+                           For connection: run-call-sequence
+                           ==== 
+                            [token= kph-g...]
+
+                            For connection: run-call-sequence
+                            ==== 
+                             [token= "@/..."]
                             ....
                            ....
                           ....
@@ -993,17 +1037,17 @@ For connection: run-block-entry
                          ==== 
 
                          Annotated: 
- [[<call 41> (fnm)]]
+ [[<call 41> (fnm) (fnm)]]
                          ---- 
                           [token= fnm]
 
                           For connection: run-call-sequence
                           ==== 
-                           [token= kph-g...]
+                           [token= read]
 
                            For connection: run-call-sequence
                            ==== 
-                            [token= "@/..."]
+                            [token= "hi..."]
                            ....
                           ....
                          ....
@@ -1043,7 +1087,7 @@ For connection: run-block-entry
 
                          For connection: run-call-sequence
                          ==== 
-                          [token= "hi..."]
+                          [token= "sh..."]
                          ....
                         ....
                        ....
