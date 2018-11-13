@@ -70,9 +70,9 @@ int main(int argc, char **argv)
 
 #ifdef USING_XPDF
  XPDF_Bridge xpdf_bridge(argc, argv);
- ScignStage_Audio_Dialog dlg (&xpdf_bridge, &ts, &ts);
+ ScignStage_Audio_Dialog dlg (&xpdf_bridge, &ts);
 #else
- ScignStage_Audio_Dialog dlg (nullptr, &ts, &ts);
+ ScignStage_Audio_Dialog dlg (nullptr, &ts);
 #endif
 
 #ifdef USING_KPH

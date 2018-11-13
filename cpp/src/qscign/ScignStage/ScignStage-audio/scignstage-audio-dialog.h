@@ -85,7 +85,7 @@ class ScignStage_Audio_Dialog : public QDialog
 
  QLabel* sentence_label_;
 
- QString current_image_file_;
+ //QString current_image_file_;
 
  // //  "Pseudo" Toolbar ...
  QHBoxLayout* top_buttons_layout_;
@@ -185,7 +185,7 @@ public:
 
 
  ScignStage_Audio_Dialog(XPDF_Bridge* xpdf_bridge,
-   Test_Series* ts1, Test_Series* ts2, QWidget* parent = nullptr);
+   Test_Series* ts, QWidget* parent = nullptr);
 
  ~ScignStage_Audio_Dialog();
 

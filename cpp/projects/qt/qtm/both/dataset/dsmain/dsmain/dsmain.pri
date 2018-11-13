@@ -34,6 +34,7 @@ DEFINES += USE_RZNS
 
 HEADERS += \
   $$SRC_DIR/range-int.h \
+  $$SRC_DIR/range-dbl.h \
   $$SRC_DIR/precon.h \
   $$SRC_DIR/assessment-scores.h \
   $$SRC_DIR/audio-sample.h \

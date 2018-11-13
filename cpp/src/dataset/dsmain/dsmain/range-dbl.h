@@ -41,7 +41,7 @@ public:
    pt = nullptr;
  }
 
- static cocon(T r) { return Range_Dbl(r); }
+ static Range_Dbl cocon(T r) { return Range_Dbl(r); }
 
  operator T() { return raw_; }
  void operator=(T r) { raw_ = r; }
@@ -51,4 +51,4 @@ public:
 
 _KANS(DSM)
 
-#endif // RANGE__DBL__H
+#endif // RANGE_DBL__H
