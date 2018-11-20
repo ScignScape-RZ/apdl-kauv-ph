@@ -31,6 +31,7 @@ SOURCES +=  \
 
 CONFIG += no_keywords
 
+DEFINES += USE_KANS
 
 LIBS += -L$$TARGETSDIR -lkauvir-code-model -lkcm-command-runtime \
   -lkcm-lisp-bridge -lfn-doc -lPhaonLib
