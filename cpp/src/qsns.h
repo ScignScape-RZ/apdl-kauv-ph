@@ -22,12 +22,16 @@
 #define QSNS_CLASS_DECLARE(X ,C) \
  namespace QScign { namespace X { class C; } }
 
-
+#ifndef INNER_NS_
 #define INNER_NS_(X) \
  namespace X{
+#endif
 
-#define END_INNER_NS(X) \
+#ifndef _INNER_NS
+#define _INNER_NS(X) \
  }
+#endif
+
 
 #define USING_QSNS(x) \
  using namespace QScign::x;
@@ -44,6 +48,9 @@
 #define END_INNER_NS(X) \
 
 #define USING_QSNS(x) \
+
+#define QSNS_CLASS_DECLARE(X ,C) \
+  class C;
 
 #endif
 

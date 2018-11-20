@@ -47,8 +47,6 @@ NAV_Audio1D_Panel::NAV_Audio1D_Panel(int vmn, int vmx, int v, QWidget* parent)
  sample_distractor_layout_->addWidget(distractor_label_);
  sample_distractor_layout_->addWidget(distractor_line_edit_);
 
- navigation_layout_ = new QHBoxLayout;
-
  zoom_sample_distractor_layout_ = new QVBoxLayout;
 
  volume_layout_ = new QHBoxLayout;

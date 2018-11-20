@@ -55,7 +55,7 @@ Q_SIGNALS:
 struct XPDF_Bridge
 {
  void take_message(QString) {}
- bool is_ready(){}
+ bool is_ready(){ return false; }
  void init(){}
 
 };

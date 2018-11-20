@@ -12,6 +12,9 @@ INCLUDEPATH += $$KAUVIR_KCM_SRC_GROUP_DIR \
   $$KAUVIR_KCM_SRC_GROUP_DIR/kauvir-type-system
 
 
+DEFINES += USE_KANS
+
+
 HEADERS +=  \
   $$SRC_DIR/kcm-scope-system.h \
   $$SRC_DIR/kcm-runtime-scope.h \

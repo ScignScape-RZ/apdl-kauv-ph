@@ -85,7 +85,6 @@ class ScignStage_Audio_Dialog : public QDialog
 
  QLabel* sentence_label_;
 
- //QString current_image_file_;
 
  // //  "Pseudo" Toolbar ...
  QHBoxLayout* top_buttons_layout_;
@@ -93,8 +92,6 @@ class ScignStage_Audio_Dialog : public QDialog
  QPushButton* activate_tcp_button_;
 
  QPushButton* take_screenshot_button_;
-
- QPushButton* scignstage_button_;
 
 
  QScrollArea* grid_scroll_area_;

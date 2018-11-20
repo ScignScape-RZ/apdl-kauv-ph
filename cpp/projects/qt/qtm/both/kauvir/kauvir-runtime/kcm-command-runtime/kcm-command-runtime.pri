@@ -34,6 +34,8 @@ SOURCES +=  \
 
 CONFIG += no_keywords
 
+DEFINES += USE_KANS
+
 
 LIBS += -L$$TARGETSDIR -lkcm-scopes -lkauvir-code-model \
   -lkcm-command-package -lPhaonLib

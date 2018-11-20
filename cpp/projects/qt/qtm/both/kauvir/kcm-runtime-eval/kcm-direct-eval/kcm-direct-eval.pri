@@ -30,7 +30,7 @@ SOURCES +=  \
 
 CONFIG += no_keywords
 
-
+DEFINES += USE_KANS
 
 exists($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/kauvir--kauvir-phaon--kph-generator) \#/
 {
