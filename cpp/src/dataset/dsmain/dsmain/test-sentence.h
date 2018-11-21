@@ -15,10 +15,6 @@
 #include <QString>
 #include <QVector>
 
-#include "range-int.h"
-#include "precon.h"
-
-
 KANS_(DSM)
 
 class Test_Sample;

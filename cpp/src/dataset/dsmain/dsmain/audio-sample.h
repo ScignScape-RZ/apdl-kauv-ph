@@ -14,10 +14,6 @@
 #include <QtGlobal>
 #include <QString>
 
-#include "range-int.h"
-#include "precon.h"
-
-
 KANS_(DSM)
 
 class Distractor;

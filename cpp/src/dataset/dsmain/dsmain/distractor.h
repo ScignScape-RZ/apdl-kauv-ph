@@ -17,10 +17,6 @@
 #include "kans.h"
 #include "accessors.h"
 
-
-#include "range-int.h"
-#include "precon.h"
-
 KANS_(DSM)
 
 class Distractor
